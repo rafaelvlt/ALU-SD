@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/ens3/Documents/Somador/simulation/qsim
+vhard_block
+Z1 !s110 1760013704
+!i10b 1
+!s100 mM58]NoG:BRlB=PC;ViTM3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I6U78GHK[kHgRYnX[<5Umm2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1760013704
+Z5 8Somador.vo
+Z6 FSomador.vo
+!i122 2
+L0 173 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1760013704.000000
+Z9 !s107 Somador.vo|
+Z10 !s90 -work|work|Somador.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vSomador
+R1
+!i10b 1
+!s100 B[Am6O6JCLV`DChcdiN`=2
+R2
+I^>X?o0Mjj^RVo^8UdKEdi0
+R3
+R0
+R4
+R5
+R6
+!i122 2
+L0 32 140
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@somador
+vSomador_vlg_vec_tst
+R1
+!i10b 1
+!s100 ho]FMTmMnAb[d28nN<OM30
+R2
+IKCF1>AR7L9Fb=J:YFZ^Eo2
+R3
+R0
+w1760013700
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 3
+L0 30 56
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+n@somador_vlg_vec_tst
