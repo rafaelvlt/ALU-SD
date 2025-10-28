@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rafae/Documents/quartusProjetos/ComplementoDois/simulation/qsim
+vComplementoDois
+Z1 !s110 1761687666
+!i10b 1
+!s100 1^EBN2?<BBmn:@>=?C`bE2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I=6SEc_lOm@om?WWzc2gQF1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1761687665
+Z5 8ComplementoDois.vo
+Z6 FComplementoDois.vo
+!i122 2
+L0 32 330
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1761687666.000000
+Z9 !s107 ComplementoDois.vo|
+Z10 !s90 -work|work|ComplementoDois.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@complemento@dois
+vComplementoDois_vlg_vec_tst
+R1
+!i10b 1
+!s100 1Pc0@]IF2Vd@1CXd@UCY42
+R2
+IlWzD8I3@h]OiGz2JO8Rbh3
+R3
+R0
+w1761687664
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 3
+L0 30 99
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R11
+R12
+n@complemento@dois_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 @Y;HQC2fPTNABKGlP[cHe3
+R2
+IHeQ<8J]zlMh87AAPf>h;L1
+R3
+R0
+R4
+R5
+R6
+!i122 2
+L0 363 34
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
