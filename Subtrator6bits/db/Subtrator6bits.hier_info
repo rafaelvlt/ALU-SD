@@ -1,0 +1,189 @@
+|Subtrator6bits
+S[0] <= SomadorSeisBits:inst.PRIMEIRO
+S[1] <= SomadorSeisBits:inst.SEGUNDO
+S[2] <= SomadorSeisBits:inst.TERCEIRO
+S[3] <= SomadorSeisBits:inst.QUARTO
+S[4] <= SomadorSeisBits:inst.QUINTO
+S[5] <= SomadorSeisBits:inst.SINAL
+A[0] => SomadorSeisBits:inst.A[0]
+A[1] => SomadorSeisBits:inst.A[1]
+A[2] => SomadorSeisBits:inst.A[2]
+A[3] => SomadorSeisBits:inst.A[3]
+A[4] => SomadorSeisBits:inst.A[4]
+A[5] => SomadorSeisBits:inst.A[5]
+B[0] => ComplementoDois:inst1.E0
+B[1] => ComplementoDois:inst1.E1
+B[2] => ComplementoDois:inst1.E2
+B[3] => ComplementoDois:inst1.E3
+B[4] => ComplementoDois:inst1.E4
+B[5] => ComplementoDois:inst1.E5
+
+
+|Subtrator6bits|SomadorSeisBits:inst
+PRIMEIRO <= Somador:inst.S
+A[0] => Somador:inst.A
+A[1] => Somador:inst2.A
+A[2] => Somador:inst3.A
+A[3] => Somador:inst4.A
+A[4] => Somador:inst5.A
+A[5] => Somador:inst6.A
+B[0] => Somador:inst.B
+B[1] => Somador:inst2.B
+B[2] => Somador:inst3.B
+B[3] => Somador:inst4.B
+B[4] => Somador:inst5.B
+B[5] => Somador:inst6.B
+SEGUNDO <= Somador:inst2.S
+TERCEIRO <= Somador:inst3.S
+QUARTO <= Somador:inst4.S
+QUINTO <= Somador:inst5.S
+SINAL <= Somador:inst6.S
+
+
+|Subtrator6bits|SomadorSeisBits:inst|Somador:inst
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+B => inst4.IN1
+B => inst.IN1
+cin => inst2.IN1
+cin => inst1.IN0
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Subtrator6bits|SomadorSeisBits:inst|Somador:inst2
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+B => inst4.IN1
+B => inst.IN1
+cin => inst2.IN1
+cin => inst1.IN0
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Subtrator6bits|SomadorSeisBits:inst|Somador:inst3
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+B => inst4.IN1
+B => inst.IN1
+cin => inst2.IN1
+cin => inst1.IN0
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Subtrator6bits|SomadorSeisBits:inst|Somador:inst4
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+B => inst4.IN1
+B => inst.IN1
+cin => inst2.IN1
+cin => inst1.IN0
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Subtrator6bits|SomadorSeisBits:inst|Somador:inst5
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+B => inst4.IN1
+B => inst.IN1
+cin => inst2.IN1
+cin => inst1.IN0
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Subtrator6bits|SomadorSeisBits:inst|Somador:inst6
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+B => inst4.IN1
+B => inst.IN1
+cin => inst2.IN1
+cin => inst1.IN0
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Subtrator6bits|ComplementoDois:inst1
+O0 <= Somador:inst7.S
+E0 => inst.IN0
+O1 <= Somador:inst8.S
+E1 => inst1.IN0
+O2 <= Somador:inst10.S
+E2 => inst2.IN0
+O4 <= Somador:inst9.S
+E3 => inst3.IN0
+E4 => inst4.IN0
+O5 <= Somador:inst11.S
+E5 => inst13.IN0
+O3 <= Somador:inst12.S
+
+
+|Subtrator6bits|ComplementoDois:inst1|Somador:inst7
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+B => inst4.IN1
+B => inst.IN1
+cin => inst2.IN1
+cin => inst1.IN0
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Subtrator6bits|ComplementoDois:inst1|Somador:inst8
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+B => inst4.IN1
+B => inst.IN1
+cin => inst2.IN1
+cin => inst1.IN0
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Subtrator6bits|ComplementoDois:inst1|Somador:inst10
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+B => inst4.IN1
+B => inst.IN1
+cin => inst2.IN1
+cin => inst1.IN0
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Subtrator6bits|ComplementoDois:inst1|Somador:inst9
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+B => inst4.IN1
+B => inst.IN1
+cin => inst2.IN1
+cin => inst1.IN0
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Subtrator6bits|ComplementoDois:inst1|Somador:inst12
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+B => inst4.IN1
+B => inst.IN1
+cin => inst2.IN1
+cin => inst1.IN0
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Subtrator6bits|ComplementoDois:inst1|Somador:inst11
+C <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => inst4.IN0
+A => inst.IN0
+B => inst4.IN1
+B => inst.IN1
+cin => inst2.IN1
+cin => inst1.IN0
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
