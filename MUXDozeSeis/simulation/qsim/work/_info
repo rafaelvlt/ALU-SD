@@ -1,0 +1,130 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/quartusProjetos/MUXSeisDoze/simulation/qsim
+vhard_block
+Z1 !s110 1761715554
+!i10b 1
+!s100 PWd8aejdJlLLjH>X7?KXH0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Iz>8a^i7O0^`jg?2e5E<PP3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 dC:/quartusProjetos/MUXDozeSeis/simulation/qsim
+Z5 w1761715553
+Z6 8MUXDozeSeis.vo
+Z7 FMUXDozeSeis.vo
+!i122 12
+L0 441 34
+Z8 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1761715554.000000
+Z10 !s107 MUXDozeSeis.vo|
+Z11 !s90 -work|work|MUXDozeSeis.vo|
+!i113 1
+Z12 o-work work
+Z13 tCvgOpt 0
+vMUXDozeSeis
+R1
+!i10b 1
+!s100 OUFzOMC6eVof7n>dQThek0
+R2
+IgfUkBiDBC:o4Tl48I2[Fn3
+R3
+R4
+R5
+R6
+R7
+!i122 12
+Z14 L0 32 408
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+n@m@u@x@doze@seis
+vMUXDozeSeis_vlg_vec_tst
+R1
+!i10b 1
+!s100 BQbi;=0W>PZ;793mHJ[di0
+R2
+I3K<TIf_8faMMKF;gf<B=]2
+R3
+R4
+w1761715552
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 13
+Z15 L0 30 154
+R8
+r1
+!s85 0
+31
+R9
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R12
+R13
+n@m@u@x@doze@seis_vlg_vec_tst
+vMUXSeisDoze
+Z16 !s110 1761714796
+!i10b 1
+!s100 jl0HE1KIRkPh2:0N]LIRb3
+R2
+I?7VUgTjdS2?cedGmon3Be0
+R3
+R0
+w1761714795
+8MUXSeisDoze.vo
+FMUXSeisDoze.vo
+!i122 6
+R14
+R8
+r1
+!s85 0
+31
+Z17 !s108 1761714796.000000
+!s107 MUXSeisDoze.vo|
+!s90 -work|work|MUXSeisDoze.vo|
+!i113 1
+R12
+R13
+n@m@u@x@seis@doze
+vMUXSeisDoze_vlg_vec_tst
+R16
+!i10b 1
+!s100 K67okVTiM2kTQVLb31j5V1
+R2
+I8n<IFZK]7@kE>U0S^`SUR0
+R3
+R0
+w1761714794
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 7
+R15
+R8
+r1
+!s85 0
+31
+R17
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R12
+R13
+n@m@u@x@seis@doze_vlg_vec_tst

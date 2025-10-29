@@ -1,0 +1,535 @@
+$comment
+	File created using the following command:
+		vcd file MUXDozeSeis.msim.vcd -direction
+$end
+$date
+	Wed Oct 29 02:25:55 2025
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module MUXDozeSeis_vlg_vec_tst $end
+$var reg 6 ! NEG [5:0] $end
+$var reg 6 " POS [5:0] $end
+$var reg 1 # Sinal $end
+$var wire 1 $ O0 $end
+$var wire 1 % O1 $end
+$var wire 1 & O2 $end
+$var wire 1 ' O3 $end
+$var wire 1 ( O4 $end
+$var wire 1 ) O5 $end
+
+$scope module i1 $end
+$var wire 1 * gnd $end
+$var wire 1 + vcc $end
+$var wire 1 , unknown $end
+$var tri1 1 - devclrn $end
+$var tri1 1 . devpor $end
+$var tri1 1 / devoe $end
+$var wire 1 0 O0~output_o $end
+$var wire 1 1 O1~output_o $end
+$var wire 1 2 O2~output_o $end
+$var wire 1 3 O3~output_o $end
+$var wire 1 4 O4~output_o $end
+$var wire 1 5 O5~output_o $end
+$var wire 1 6 POS[0]~input_o $end
+$var wire 1 7 NEG[0]~input_o $end
+$var wire 1 8 Sinal~input_o $end
+$var wire 1 9 inst11~0_combout $end
+$var wire 1 : POS[1]~input_o $end
+$var wire 1 ; NEG[1]~input_o $end
+$var wire 1 < inst12~0_combout $end
+$var wire 1 = NEG[2]~input_o $end
+$var wire 1 > POS[2]~input_o $end
+$var wire 1 ? inst13~0_combout $end
+$var wire 1 @ NEG[3]~input_o $end
+$var wire 1 A POS[3]~input_o $end
+$var wire 1 B inst14~0_combout $end
+$var wire 1 C NEG[4]~input_o $end
+$var wire 1 D POS[4]~input_o $end
+$var wire 1 E inst15~0_combout $end
+$var wire 1 F NEG[5]~input_o $end
+$var wire 1 G POS[5]~input_o $end
+$var wire 1 H inst53~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+b0 "
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+1+
+x,
+1-
+1.
+1/
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+$end
+#30000
+b1 !
+17
+#60000
+b11 !
+b1 "
+b10 !
+16
+07
+1;
+19
+10
+1$
+#90000
+1#
+b11 !
+18
+17
+1<
+11
+1%
+#120000
+b111 !
+b11 "
+b101 !
+b10 "
+b100 !
+06
+1:
+07
+0;
+1=
+09
+0<
+1?
+12
+01
+00
+0$
+0%
+1&
+#150000
+b101 !
+17
+19
+10
+1$
+#180000
+0#
+b111 !
+b11 "
+b110 !
+08
+16
+07
+1;
+0?
+1<
+11
+02
+0&
+1%
+#210000
+b111 !
+17
+#240000
+b1111 !
+b111 "
+b1011 !
+b101 "
+b1001 !
+b100 "
+b1000 !
+06
+0:
+1>
+07
+0;
+0=
+1@
+09
+0<
+1?
+12
+01
+00
+0$
+0%
+1&
+#270000
+1#
+b1001 !
+18
+17
+1B
+0?
+19
+10
+02
+13
+1'
+0&
+1$
+#300000
+b1011 !
+b101 "
+b1010 !
+16
+07
+1;
+09
+1<
+11
+00
+0$
+1%
+#330000
+b1011 !
+17
+19
+10
+1$
+#360000
+b1111 !
+b111 "
+0#
+b1101 !
+b110 "
+b1100 !
+06
+1:
+07
+0;
+1=
+08
+09
+1?
+0B
+03
+12
+00
+0$
+1&
+0'
+#390000
+b1101 !
+17
+#420000
+b1111 !
+b111 "
+b1110 !
+16
+07
+1;
+19
+10
+1$
+#450000
+1#
+b1111 !
+18
+17
+1B
+13
+1'
+#480000
+b11111 !
+b1111 "
+b10111 !
+b1011 "
+b10011 !
+b1001 "
+b10001 !
+b1000 "
+b10000 !
+06
+0:
+0>
+1A
+07
+0;
+0=
+0@
+1C
+09
+0<
+0?
+0B
+1E
+14
+03
+02
+01
+00
+0$
+0%
+0&
+0'
+1(
+#510000
+b10001 !
+17
+19
+10
+1$
+#540000
+0#
+b10011 !
+b1001 "
+b10010 !
+08
+16
+07
+1;
+0E
+1B
+13
+04
+0(
+1'
+#570000
+b10011 !
+17
+#600000
+b10111 !
+b1011 "
+b10101 !
+b1010 "
+b10100 !
+06
+1:
+07
+0;
+1=
+09
+1<
+11
+00
+0$
+1%
+#630000
+1#
+b10101 !
+18
+17
+1E
+0B
+1?
+0<
+19
+10
+01
+12
+03
+14
+1(
+0'
+1&
+0%
+1$
+#660000
+b10111 !
+b1011 "
+b10110 !
+16
+07
+1;
+09
+1<
+11
+00
+0$
+1%
+#690000
+b10111 !
+17
+19
+10
+1$
+#720000
+b11111 !
+b1111 "
+b11011 !
+b1101 "
+0#
+b11001 !
+b1100 "
+b11000 !
+06
+0:
+1>
+07
+0;
+0=
+1@
+08
+09
+0<
+1B
+0E
+04
+13
+01
+00
+0$
+0%
+1'
+0(
+#750000
+b11001 !
+17
+#780000
+b11011 !
+b1101 "
+b11010 !
+16
+07
+1;
+19
+10
+1$
+#810000
+1#
+b11011 !
+18
+17
+1E
+0?
+1<
+11
+02
+14
+1(
+0&
+1%
+#840000
+b11111 !
+b1111 "
+b11101 !
+b1110 "
+b11100 !
+06
+1:
+07
+0;
+1=
+09
+0<
+1?
+12
+01
+00
+0$
+0%
+1&
+#870000
+b11101 !
+17
+19
+10
+1$
+#900000
+0#
+b11111 !
+b1111 "
+b11110 !
+08
+16
+07
+1;
+0E
+1<
+11
+04
+0(
+1%
+#930000
+b11111 !
+17
+#960000
+b111111 !
+b11111 "
+b101111 !
+b10111 "
+b100111 !
+b10011 "
+b100011 !
+b10001 "
+b100001 !
+b10000 "
+b100000 !
+06
+0:
+0>
+0A
+1D
+07
+0;
+0=
+0@
+0C
+1F
+09
+0<
+0?
+0B
+1E
+14
+03
+02
+01
+00
+0$
+0%
+0&
+0'
+1(
+#990000
+1#
+b100001 !
+18
+17
+1H
+0E
+19
+10
+04
+15
+1)
+0(
+1$
+#1000000
