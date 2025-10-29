@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/quartusProjetos/Conversor5bitspara6bits/simulation/qsim
+vConversor5bitspara6bits
+Z1 !s110 1761720343
+!i10b 1
+!s100 @fnB57`ab[lF5SCd]m7Ye1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Id<=WACjXNYAj^VWFXK_EH0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1761720342
+Z5 8Conversor5bitspara6bits.vo
+Z6 FConversor5bitspara6bits.vo
+!i122 6
+L0 32 288
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1761720343.000000
+Z9 !s107 Conversor5bitspara6bits.vo|
+Z10 !s90 -work|work|Conversor5bitspara6bits.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@conversor5bitspara6bits
+vConversor5bitspara6bits_vlg_vec_tst
+R1
+!i10b 1
+!s100 m4ffOANZSaIZh]iZSDY;=3
+R2
+IR9`eijC0QcYoA_iFV6H?B0
+R3
+R0
+w1761720341
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 7
+L0 30 88
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+n@conversor5bitspara6bits_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 mfc<SDZa7I?SU=N;=mE891
+R2
+Iaa8:<UK[Sh0o0SkzI3I=40
+R3
+R0
+R4
+R5
+R6
+!i122 6
+L0 321 34
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
