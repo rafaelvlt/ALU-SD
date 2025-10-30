@@ -1,0 +1,21 @@
+|opAND
+OUT[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst.IN0
+A[1] => inst1.IN0
+A[2] => inst2.IN0
+A[3] => inst4.IN0
+A[4] => inst5.IN0
+A[5] => inst6.IN0
+B[0] => inst.IN1
+B[1] => inst1.IN1
+B[2] => inst2.IN1
+B[3] => inst4.IN1
+B[4] => inst5.IN1
+B[5] => inst6.IN1
+
+

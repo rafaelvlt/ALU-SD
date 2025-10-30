@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Users/rabs4/Desktop/proj/ALU-SD/XOR/simulation/qsim
+vhard_block
+Z1 !s110 1761829551
+!i10b 1
+!s100 0@Lko0WhZ@SDMD?@[@HXo0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I4K[?eQTFA;XekVn_39h=Y2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1761829550
+Z5 8OR.vo
+Z6 FOR.vo
+!i122 2
+L0 417 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1761829551.000000
+Z9 !s107 OR.vo|
+Z10 !s90 -work|work|OR.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vopXOR
+R1
+!i10b 1
+!s100 zP_>g<7kTfkZe<kH1GX4?3
+R2
+IhjD81mAiEj6LddocV6`^41
+R3
+R0
+R4
+R5
+R6
+!i122 2
+L0 32 384
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+nop@x@o@r
+vopXOR_vlg_vec_tst
+R1
+!i10b 1
+!s100 P[:KDI3aUno<D`jVFiea<3
+R2
+IPNlP9i:0Qh25ZBYkCIVbA0
+R3
+R0
+w1761829546
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 3
+L0 30 129
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+nop@x@o@r_vlg_vec_tst
