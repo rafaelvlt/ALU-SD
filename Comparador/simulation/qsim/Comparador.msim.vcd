@@ -1,0 +1,320 @@
+$comment
+	File created using the following command:
+		vcd file Comparador.msim.vcd -direction
+$end
+$date
+	Thu Oct 30 12:19:17 2025
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module Comparador_vlg_vec_tst $end
+$var reg 6 ! A [5:0] $end
+$var reg 6 " B [5:0] $end
+$var wire 1 # IGUAL $end
+$var wire 1 $ MAIOR $end
+$var wire 1 % MENOR $end
+
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var tri1 1 ) devclrn $end
+$var tri1 1 * devpor $end
+$var tri1 1 + devoe $end
+$var wire 1 , IGUAL~output_o $end
+$var wire 1 - MENOR~output_o $end
+$var wire 1 . MAIOR~output_o $end
+$var wire 1 / A[0]~input_o $end
+$var wire 1 0 B[2]~input_o $end
+$var wire 1 1 B[1]~input_o $end
+$var wire 1 2 A[2]~input_o $end
+$var wire 1 3 A[1]~input_o $end
+$var wire 1 4 inst39~1_combout $end
+$var wire 1 5 B[0]~input_o $end
+$var wire 1 6 A[4]~input_o $end
+$var wire 1 7 B[4]~input_o $end
+$var wire 1 8 A[5]~input_o $end
+$var wire 1 9 B[5]~input_o $end
+$var wire 1 : inst46~0_combout $end
+$var wire 1 ; A[3]~input_o $end
+$var wire 1 < B[3]~input_o $end
+$var wire 1 = inst39~0_combout $end
+$var wire 1 > inst39~2_combout $end
+$var wire 1 ? inst46~1_combout $end
+$var wire 1 @ inst46~2_combout $end
+$var wire 1 A inst46~3_combout $end
+$var wire 1 B inst46~4_combout $end
+$var wire 1 C inst46~5_combout $end
+$var wire 1 D inst44~2_combout $end
+$var wire 1 E inst44~3_combout $end
+$var wire 1 F inst44~0_combout $end
+$var wire 1 G inst44~1_combout $end
+$var wire 1 H inst44~4_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+b0 "
+1#
+0$
+0%
+0&
+1'
+x(
+1)
+1*
+1+
+1,
+0-
+0.
+0/
+00
+01
+02
+03
+14
+05
+06
+07
+08
+09
+1:
+0;
+0<
+1=
+1>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+$end
+#80000
+b1 "
+15
+1B
+0>
+0,
+0#
+1C
+1-
+1%
+#100000
+b1 !
+1/
+0B
+1>
+1,
+1#
+0C
+0-
+0%
+#160000
+b11 "
+b10 "
+05
+11
+1E
+1A
+04
+0>
+0,
+1B
+0E
+0#
+1H
+1.
+1$
+1C
+0H
+0.
+1-
+1%
+0$
+#200000
+b11 !
+b10 !
+0/
+13
+0A
+14
+0B
+1>
+1,
+1#
+0C
+0-
+0%
+#240000
+b11 "
+15
+1B
+0>
+0,
+0#
+1C
+1-
+1%
+#300000
+b11 !
+1/
+0B
+1>
+1,
+1#
+0C
+0-
+0%
+#320000
+b111 "
+b101 "
+b100 "
+05
+01
+10
+1E
+1A
+04
+0>
+0,
+1B
+0E
+0#
+1H
+1.
+1$
+1C
+0H
+0.
+1-
+1%
+0$
+#400000
+b111 !
+b101 !
+b100 !
+b101 "
+15
+0/
+03
+12
+0A
+14
+#480000
+b111 "
+b110 "
+05
+11
+0B
+1A
+04
+1>
+1,
+1B
+1#
+0C
+0>
+0,
+0-
+0%
+0#
+1C
+1-
+1%
+#500000
+b101 !
+1/
+#560000
+b111 "
+15
+#600000
+b111 !
+b110 !
+0/
+13
+0A
+14
+#640000
+b1111 "
+b1011 "
+b1001 "
+b1000 "
+05
+01
+00
+1<
+0B
+1D
+04
+1@
+0=
+1>
+1,
+1E
+1#
+0>
+0,
+0#
+#700000
+b111 !
+1/
+#720000
+b1001 "
+15
+#800000
+b1111 !
+b1011 !
+b1001 !
+b1011 "
+b1000 !
+b1010 "
+05
+11
+0/
+03
+02
+1;
+0D
+1A
+0@
+1=
+0E
+1B
+0C
+1H
+1.
+0-
+0%
+1$
+0H
+1C
+1-
+0.
+0$
+1%
+#880000
+b1011 "
+15
+#900000
+b1001 !
+1/
+#960000
+b1111 "
+b1101 "
+b1100 "
+05
+01
+10
+#1000000

@@ -1,0 +1,30 @@
+|Comparador
+IGUAL <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst32.IN0
+A[0] => inst19.IN0
+A[1] => inst30.IN0
+A[1] => inst17.IN0
+A[2] => inst28.IN0
+A[2] => inst15.IN0
+A[3] => inst26.IN0
+A[3] => inst13.IN0
+A[4] => inst24.IN0
+A[4] => inst11.IN0
+A[5] => inst22.IN0
+A[5] => inst.IN0
+B[0] => inst20.IN0
+B[0] => inst31.IN1
+B[1] => inst18.IN0
+B[1] => inst29.IN1
+B[2] => inst16.IN0
+B[2] => inst27.IN1
+B[3] => inst14.IN0
+B[3] => inst25.IN1
+B[4] => inst12.IN0
+B[4] => inst23.IN1
+B[5] => inst10.IN0
+B[5] => inst21.IN1
+MENOR <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+MAIOR <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+
+
