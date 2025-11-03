@@ -1,0 +1,165 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Magnitude[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Magnitude[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Magnitude[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Magnitude[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Magnitude[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Magnitude[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Seletor[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Seletor[1]",
+					"strict" : false
+				},
+				{
+					"name" : "XOR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "AND[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Seletor[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Subtracao[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Soma[5]",
+					"strict" : false
+				},
+				{
+					"name" : "C2deB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "XOR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "AND[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Subtracao[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Soma[4]",
+					"strict" : false
+				},
+				{
+					"name" : "C2deB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "XOR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "AND[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Subtracao[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Soma[3]",
+					"strict" : false
+				},
+				{
+					"name" : "C2deB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "XOR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "AND[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Subtracao[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Soma[2]",
+					"strict" : false
+				},
+				{
+					"name" : "C2deB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "XOR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "AND[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Subtracao[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Soma[1]",
+					"strict" : false
+				},
+				{
+					"name" : "C2deB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "XOR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "AND[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Subtracao[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Soma[0]",
+					"strict" : false
+				},
+				{
+					"name" : "C2deB[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

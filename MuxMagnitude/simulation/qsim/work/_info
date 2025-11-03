@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/quartusProjetos/MuxMagnitude/simulation/qsim
+vhard_block
+Z1 !s110 1762200750
+!i10b 1
+!s100 amjFH5V^mBh=[Mj1UOjK:3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ImeN3k^c@PlAmn9j@djoDP3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1762200749
+Z5 8MuxMagnitude.vo
+Z6 FMuxMagnitude.vo
+!i122 2
+L0 947 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1762200750.000000
+Z9 !s107 MuxMagnitude.vo|
+Z10 !s90 -work|work|MuxMagnitude.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vMuxMagnitude
+R1
+!i10b 1
+!s100 h`>kkg>NTzjATMK;Y7:=:1
+R2
+IC:1L11lWG<z:CkMzC4W3h3
+R3
+R0
+R4
+R5
+R6
+!i122 2
+L0 32 914
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@mux@magnitude
+vMuxMagnitude_vlg_vec_tst
+!s110 1762200751
+!i10b 1
+!s100 ;=ahSnba2TUm85en]Mj5g3
+R2
+I]@V<jaLm5<z<o]CzX@lnH3
+R3
+R0
+w1762200748
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 3
+L0 30 287
+R7
+r1
+!s85 0
+31
+!s108 1762200751.000000
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R11
+R12
+n@mux@magnitude_vlg_vec_tst

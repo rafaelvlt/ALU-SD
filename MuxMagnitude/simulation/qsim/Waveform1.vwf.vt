@@ -1,0 +1,317 @@
+// Copyright (C) 2021  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "11/03/2025 17:12:28"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          MuxMagnitude
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module MuxMagnitude_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [5:0] AND;
+reg [5:0] C2deB;
+reg [2:0] Seletor;
+reg [5:0] Soma;
+reg [5:0] Subtracao;
+reg [5:0] XOR;
+// wires                                               
+wire [5:0] Magnitude;
+
+// assign statements (if any)                          
+MuxMagnitude i1 (
+// port map - connection between master ports and signals/registers   
+	.\AND (AND),
+	.C2deB(C2deB),
+	.Magnitude(Magnitude),
+	.Seletor(Seletor),
+	.Soma(Soma),
+	.Subtracao(Subtracao),
+	.\XOR (XOR)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+// Soma[ 5 ]
+initial
+begin
+	Soma[5] = 1'b0;
+	Soma[5] = #960000 1'b1;
+end 
+// Soma[ 4 ]
+initial
+begin
+	Soma[4] = 1'b0;
+	Soma[4] = #480000 1'b1;
+	Soma[4] = #480000 1'b0;
+end 
+// Soma[ 3 ]
+initial
+begin
+	repeat(2)
+	begin
+		Soma[3] = 1'b0;
+		Soma[3] = #240000 1'b1;
+		# 240000;
+	end
+	Soma[3] = 1'b0;
+end 
+// Soma[ 2 ]
+initial
+begin
+	repeat(4)
+	begin
+		Soma[2] = 1'b0;
+		Soma[2] = #120000 1'b1;
+		# 120000;
+	end
+	Soma[2] = 1'b0;
+end 
+// Soma[ 1 ]
+initial
+begin
+	repeat(8)
+	begin
+		Soma[1] = 1'b0;
+		Soma[1] = #60000 1'b1;
+		# 60000;
+	end
+	Soma[1] = 1'b0;
+end 
+// Soma[ 0 ]
+initial
+begin
+	repeat(16)
+	begin
+		Soma[0] = 1'b0;
+		Soma[0] = #30000 1'b1;
+		# 30000;
+	end
+	Soma[0] = 1'b0;
+	Soma[0] = #30000 1'b1;
+end 
+// Subtracao[ 5 ]
+initial
+begin
+	Subtracao[5] = 1'b0;
+end 
+// Subtracao[ 4 ]
+initial
+begin
+	Subtracao[4] = 1'b0;
+	Subtracao[4] = #960000 1'b1;
+end 
+// Subtracao[ 3 ]
+initial
+begin
+	Subtracao[3] = 1'b0;
+	Subtracao[3] = #480000 1'b1;
+	Subtracao[3] = #480000 1'b0;
+end 
+// Subtracao[ 2 ]
+initial
+begin
+	repeat(2)
+	begin
+		Subtracao[2] = 1'b0;
+		Subtracao[2] = #240000 1'b1;
+		# 240000;
+	end
+	Subtracao[2] = 1'b0;
+end 
+// Subtracao[ 1 ]
+initial
+begin
+	repeat(4)
+	begin
+		Subtracao[1] = 1'b0;
+		Subtracao[1] = #120000 1'b1;
+		# 120000;
+	end
+	Subtracao[1] = 1'b0;
+end 
+// Subtracao[ 0 ]
+initial
+begin
+	repeat(8)
+	begin
+		Subtracao[0] = 1'b0;
+		Subtracao[0] = #60000 1'b1;
+		# 60000;
+	end
+	Subtracao[0] = 1'b0;
+end 
+// C2deB[ 5 ]
+initial
+begin
+	C2deB[5] = 1'b0;
+end 
+// C2deB[ 4 ]
+initial
+begin
+	C2deB[4] = 1'b0;
+end 
+// C2deB[ 3 ]
+initial
+begin
+	C2deB[3] = 1'b0;
+	C2deB[3] = #960000 1'b1;
+end 
+// C2deB[ 2 ]
+initial
+begin
+	C2deB[2] = 1'b0;
+	C2deB[2] = #480000 1'b1;
+	C2deB[2] = #480000 1'b0;
+end 
+// C2deB[ 1 ]
+initial
+begin
+	repeat(2)
+	begin
+		C2deB[1] = 1'b0;
+		C2deB[1] = #240000 1'b1;
+		# 240000;
+	end
+	C2deB[1] = 1'b0;
+end 
+// C2deB[ 0 ]
+initial
+begin
+	repeat(4)
+	begin
+		C2deB[0] = 1'b0;
+		C2deB[0] = #120000 1'b1;
+		# 120000;
+	end
+	C2deB[0] = 1'b0;
+end 
+// \AND [ 5 ]
+initial
+begin
+	AND[5] = 1'b0;
+end 
+// \AND [ 4 ]
+initial
+begin
+	AND[4] = 1'b0;
+end 
+// \AND [ 3 ]
+initial
+begin
+	AND[3] = 1'b0;
+end 
+// \AND [ 2 ]
+initial
+begin
+	AND[2] = 1'b0;
+	AND[2] = #960000 1'b1;
+end 
+// \AND [ 1 ]
+initial
+begin
+	AND[1] = 1'b0;
+	AND[1] = #480000 1'b1;
+	AND[1] = #480000 1'b0;
+end 
+// \AND [ 0 ]
+initial
+begin
+	repeat(2)
+	begin
+		AND[0] = 1'b0;
+		AND[0] = #240000 1'b1;
+		# 240000;
+	end
+	AND[0] = 1'b0;
+end 
+// \XOR [ 5 ]
+initial
+begin
+	XOR[5] = 1'b0;
+end 
+// \XOR [ 4 ]
+initial
+begin
+	XOR[4] = 1'b0;
+end 
+// \XOR [ 3 ]
+initial
+begin
+	XOR[3] = 1'b0;
+end 
+// \XOR [ 2 ]
+initial
+begin
+	XOR[2] = 1'b0;
+end 
+// \XOR [ 1 ]
+initial
+begin
+	XOR[1] = 1'b0;
+	XOR[1] = #960000 1'b1;
+end 
+// \XOR [ 0 ]
+initial
+begin
+	XOR[0] = 1'b0;
+	XOR[0] = #480000 1'b1;
+	XOR[0] = #480000 1'b0;
+end 
+// Seletor[ 2 ]
+initial
+begin
+	repeat(2)
+	begin
+		Seletor[2] = 1'b0;
+		Seletor[2] = #240000 1'b1;
+		# 240000;
+	end
+	Seletor[2] = 1'b0;
+end 
+// Seletor[ 1 ]
+initial
+begin
+	repeat(4)
+	begin
+		Seletor[1] = 1'b0;
+		Seletor[1] = #120000 1'b1;
+		# 120000;
+	end
+	Seletor[1] = 1'b0;
+end 
+// Seletor[ 0 ]
+initial
+begin
+	repeat(8)
+	begin
+		Seletor[0] = 1'b0;
+		Seletor[0] = #60000 1'b1;
+		# 60000;
+	end
+	Seletor[0] = 1'b0;
+end 
+endmodule
+

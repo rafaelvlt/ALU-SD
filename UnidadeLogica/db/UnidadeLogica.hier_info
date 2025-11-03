@@ -1,0 +1,126 @@
+|UnidadeLogica
+MENOR <= Comparador:inst3.MENOR
+A[0] => Comparador:inst3.A[0]
+A[0] => opAND:inst.A[0]
+A[0] => opXOR:inst2.A[0]
+A[1] => Comparador:inst3.A[1]
+A[1] => opAND:inst.A[1]
+A[1] => opXOR:inst2.A[1]
+A[2] => Comparador:inst3.A[2]
+A[2] => opAND:inst.A[2]
+A[2] => opXOR:inst2.A[2]
+A[3] => Comparador:inst3.A[3]
+A[3] => opAND:inst.A[3]
+A[3] => opXOR:inst2.A[3]
+A[4] => Comparador:inst3.A[4]
+A[4] => opAND:inst.A[4]
+A[4] => opXOR:inst2.A[4]
+A[5] => Comparador:inst3.A[5]
+A[5] => opAND:inst.A[5]
+A[5] => opXOR:inst2.A[5]
+B[0] => Comparador:inst3.B[0]
+B[0] => opAND:inst.B[0]
+B[0] => opXOR:inst2.B[0]
+B[1] => Comparador:inst3.B[1]
+B[1] => opAND:inst.B[1]
+B[1] => opXOR:inst2.B[1]
+B[2] => Comparador:inst3.B[2]
+B[2] => opAND:inst.B[2]
+B[2] => opXOR:inst2.B[2]
+B[3] => Comparador:inst3.B[3]
+B[3] => opAND:inst.B[3]
+B[3] => opXOR:inst2.B[3]
+B[4] => Comparador:inst3.B[4]
+B[4] => opAND:inst.B[4]
+B[4] => opXOR:inst2.B[4]
+B[5] => Comparador:inst3.B[5]
+B[5] => opAND:inst.B[5]
+B[5] => opXOR:inst2.B[5]
+MAIOR <= Comparador:inst3.MAIOR
+IGUAL <= Comparador:inst3.IGUAL
+AND[0] <= opAND:inst.OUT[0]
+AND[1] <= opAND:inst.OUT[1]
+AND[2] <= opAND:inst.OUT[2]
+AND[3] <= opAND:inst.OUT[3]
+AND[4] <= opAND:inst.OUT[4]
+AND[5] <= opAND:inst.OUT[5]
+XOR[0] <= opXOR:inst2.OUT[0]
+XOR[1] <= opXOR:inst2.OUT[1]
+XOR[2] <= opXOR:inst2.OUT[2]
+XOR[3] <= opXOR:inst2.OUT[3]
+XOR[4] <= opXOR:inst2.OUT[4]
+XOR[5] <= opXOR:inst2.OUT[5]
+
+
+|UnidadeLogica|Comparador:inst3
+IGUAL <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst32.IN0
+A[0] => inst19.IN0
+A[1] => inst30.IN0
+A[1] => inst17.IN0
+A[2] => inst28.IN0
+A[2] => inst15.IN0
+A[3] => inst26.IN0
+A[3] => inst13.IN0
+A[4] => inst24.IN0
+A[4] => inst11.IN0
+A[5] => inst22.IN0
+A[5] => inst.IN0
+B[0] => inst20.IN0
+B[0] => inst31.IN1
+B[1] => inst18.IN0
+B[1] => inst29.IN1
+B[2] => inst16.IN0
+B[2] => inst27.IN1
+B[3] => inst14.IN0
+B[3] => inst25.IN1
+B[4] => inst12.IN0
+B[4] => inst23.IN1
+B[5] => inst10.IN0
+B[5] => inst21.IN1
+MENOR <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+MAIOR <= inst44.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|UnidadeLogica|opAND:inst
+OUT[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst.IN0
+A[1] => inst1.IN0
+A[2] => inst2.IN0
+A[3] => inst4.IN0
+A[4] => inst5.IN0
+A[5] => inst6.IN0
+B[0] => inst.IN1
+B[1] => inst1.IN1
+B[2] => inst2.IN1
+B[3] => inst4.IN1
+B[4] => inst5.IN1
+B[5] => inst6.IN1
+
+
+|UnidadeLogica|opXOR:inst2
+OUT[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst.IN0
+A[1] => inst1.IN0
+A[2] => inst2.IN0
+A[3] => inst3.IN0
+A[4] => inst4.IN0
+A[5] => inst5.IN0
+B[0] => inst.IN1
+B[1] => inst1.IN1
+B[2] => inst2.IN1
+B[3] => inst3.IN1
+B[4] => inst4.IN1
+B[5] => inst5.IN1
+
+

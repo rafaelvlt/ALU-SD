@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/quartusProjetos/MuxSinal/MuxSinal.bdf
+source_file = 1, C:/quartusProjetos/MuxSinal/db/MuxSinal.cbx.xml
+design_name = MuxSinal
+instance = comp, \outcomp~output , outcomp~output, MuxSinal, 1
+instance = comp, \S[1]~input , S[1]~input, MuxSinal, 1
+instance = comp, \S[2]~input , S[2]~input, MuxSinal, 1
+instance = comp, \Menor~input , Menor~input, MuxSinal, 1
+instance = comp, \S[0]~input , S[0]~input, MuxSinal, 1
+instance = comp, \Maior~input , Maior~input, MuxSinal, 1
+instance = comp, \inst7~0 , inst7~0, MuxSinal, 1
+instance = comp, \Igual~input , Igual~input, MuxSinal, 1
+instance = comp, \inst7~1 , inst7~1, MuxSinal, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/quartusProjetos/miniMux/simulation/qsim
+vhard_block
+Z1 !s110 1762199539
+!i10b 1
+!s100 lKf69:04bKD8U4<Xe:?[o0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IV[U?FiXb_fG8C6dla75Kg1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1762199537
+Z5 8miniMux.vo
+Z6 FminiMux.vo
+!i122 0
+L0 238 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1762199538.000000
+Z9 !s107 miniMux.vo|
+Z10 !s90 -work|work|miniMux.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vminiMux
+R1
+!i10b 1
+!s100 hWoDmRD?EK77e53`jQlFD0
+R2
+IkLbBne0YTCVcj_dM8hMej1
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 32 205
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+nmini@mux
+vminiMux_vlg_vec_tst
+R1
+!i10b 1
+!s100 S50M8P::M5;FJzBD<?`8B2
+R2
+I9mQO:dJEMPTT;oJi`UhYi0
+R3
+R0
+w1762199536
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 1
+L0 30 114
+R7
+r1
+!s85 0
+31
+!s108 1762199539.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+nmini@mux_vlg_vec_tst

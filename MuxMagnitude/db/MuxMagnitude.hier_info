@@ -1,0 +1,201 @@
+|MuxMagnitude
+Magnitude[0] <= miniMux:inst.outbit
+Magnitude[1] <= miniMux:inst1.outbit
+Magnitude[2] <= miniMux:inst2.outbit
+Magnitude[3] <= miniMux:inst3.outbit
+Magnitude[4] <= miniMux:inst4.outbit
+Magnitude[5] <= miniMux:inst5.outbit
+Soma[0] => miniMux:inst.Soma
+Soma[1] => miniMux:inst1.Soma
+Soma[2] => miniMux:inst2.Soma
+Soma[3] => miniMux:inst3.Soma
+Soma[4] => miniMux:inst4.Soma
+Soma[5] => miniMux:inst5.Soma
+Subtracao[0] => miniMux:inst.Sub
+Subtracao[1] => miniMux:inst1.Sub
+Subtracao[2] => miniMux:inst2.Sub
+Subtracao[3] => miniMux:inst3.Sub
+Subtracao[4] => miniMux:inst4.Sub
+Subtracao[5] => miniMux:inst5.Sub
+C2deB[0] => miniMux:inst.C2deB
+C2deB[1] => miniMux:inst1.C2deB
+C2deB[2] => miniMux:inst2.C2deB
+C2deB[3] => miniMux:inst3.C2deB
+C2deB[4] => miniMux:inst4.C2deB
+C2deB[5] => miniMux:inst5.C2deB
+AND[0] => miniMux:inst.AND
+AND[1] => miniMux:inst1.AND
+AND[2] => miniMux:inst2.AND
+AND[3] => miniMux:inst3.AND
+AND[4] => miniMux:inst4.AND
+AND[5] => miniMux:inst5.AND
+XOR[0] => miniMux:inst.XOR
+XOR[1] => miniMux:inst1.XOR
+XOR[2] => miniMux:inst2.XOR
+XOR[3] => miniMux:inst3.XOR
+XOR[4] => miniMux:inst4.XOR
+XOR[5] => miniMux:inst5.XOR
+Seletor[0] => miniMux:inst.S[0]
+Seletor[0] => miniMux:inst1.S[0]
+Seletor[0] => miniMux:inst2.S[0]
+Seletor[0] => miniMux:inst3.S[0]
+Seletor[0] => miniMux:inst4.S[0]
+Seletor[0] => miniMux:inst5.S[0]
+Seletor[1] => miniMux:inst.S[1]
+Seletor[1] => miniMux:inst1.S[1]
+Seletor[1] => miniMux:inst2.S[1]
+Seletor[1] => miniMux:inst3.S[1]
+Seletor[1] => miniMux:inst4.S[1]
+Seletor[1] => miniMux:inst5.S[1]
+Seletor[2] => miniMux:inst.S[2]
+Seletor[2] => miniMux:inst1.S[2]
+Seletor[2] => miniMux:inst2.S[2]
+Seletor[2] => miniMux:inst3.S[2]
+Seletor[2] => miniMux:inst4.S[2]
+Seletor[2] => miniMux:inst5.S[2]
+
+
+|MuxMagnitude|miniMux:inst
+outbit <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => inst4.IN0
+S[0] => inst15.IN0
+S[0] => inst1.IN0
+S[0] => inst12.IN0
+S[0] => inst14.IN0
+S[1] => inst4.IN1
+S[1] => inst3.IN1
+S[1] => inst9.IN0
+S[1] => inst11.IN0
+S[1] => inst2.IN1
+S[2] => inst4.IN2
+S[2] => inst3.IN2
+S[2] => inst8.IN0
+S[2] => inst10.IN0
+S[2] => inst13.IN0
+XOR => inst4.IN3
+AND => inst3.IN3
+Sub => inst1.IN3
+Soma => inst.IN3
+C2deB => inst2.IN3
+
+
+|MuxMagnitude|miniMux:inst1
+outbit <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => inst4.IN0
+S[0] => inst15.IN0
+S[0] => inst1.IN0
+S[0] => inst12.IN0
+S[0] => inst14.IN0
+S[1] => inst4.IN1
+S[1] => inst3.IN1
+S[1] => inst9.IN0
+S[1] => inst11.IN0
+S[1] => inst2.IN1
+S[2] => inst4.IN2
+S[2] => inst3.IN2
+S[2] => inst8.IN0
+S[2] => inst10.IN0
+S[2] => inst13.IN0
+XOR => inst4.IN3
+AND => inst3.IN3
+Sub => inst1.IN3
+Soma => inst.IN3
+C2deB => inst2.IN3
+
+
+|MuxMagnitude|miniMux:inst2
+outbit <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => inst4.IN0
+S[0] => inst15.IN0
+S[0] => inst1.IN0
+S[0] => inst12.IN0
+S[0] => inst14.IN0
+S[1] => inst4.IN1
+S[1] => inst3.IN1
+S[1] => inst9.IN0
+S[1] => inst11.IN0
+S[1] => inst2.IN1
+S[2] => inst4.IN2
+S[2] => inst3.IN2
+S[2] => inst8.IN0
+S[2] => inst10.IN0
+S[2] => inst13.IN0
+XOR => inst4.IN3
+AND => inst3.IN3
+Sub => inst1.IN3
+Soma => inst.IN3
+C2deB => inst2.IN3
+
+
+|MuxMagnitude|miniMux:inst3
+outbit <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => inst4.IN0
+S[0] => inst15.IN0
+S[0] => inst1.IN0
+S[0] => inst12.IN0
+S[0] => inst14.IN0
+S[1] => inst4.IN1
+S[1] => inst3.IN1
+S[1] => inst9.IN0
+S[1] => inst11.IN0
+S[1] => inst2.IN1
+S[2] => inst4.IN2
+S[2] => inst3.IN2
+S[2] => inst8.IN0
+S[2] => inst10.IN0
+S[2] => inst13.IN0
+XOR => inst4.IN3
+AND => inst3.IN3
+Sub => inst1.IN3
+Soma => inst.IN3
+C2deB => inst2.IN3
+
+
+|MuxMagnitude|miniMux:inst4
+outbit <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => inst4.IN0
+S[0] => inst15.IN0
+S[0] => inst1.IN0
+S[0] => inst12.IN0
+S[0] => inst14.IN0
+S[1] => inst4.IN1
+S[1] => inst3.IN1
+S[1] => inst9.IN0
+S[1] => inst11.IN0
+S[1] => inst2.IN1
+S[2] => inst4.IN2
+S[2] => inst3.IN2
+S[2] => inst8.IN0
+S[2] => inst10.IN0
+S[2] => inst13.IN0
+XOR => inst4.IN3
+AND => inst3.IN3
+Sub => inst1.IN3
+Soma => inst.IN3
+C2deB => inst2.IN3
+
+
+|MuxMagnitude|miniMux:inst5
+outbit <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => inst4.IN0
+S[0] => inst15.IN0
+S[0] => inst1.IN0
+S[0] => inst12.IN0
+S[0] => inst14.IN0
+S[1] => inst4.IN1
+S[1] => inst3.IN1
+S[1] => inst9.IN0
+S[1] => inst11.IN0
+S[1] => inst2.IN1
+S[2] => inst4.IN2
+S[2] => inst3.IN2
+S[2] => inst8.IN0
+S[2] => inst10.IN0
+S[2] => inst13.IN0
+XOR => inst4.IN3
+AND => inst3.IN3
+Sub => inst1.IN3
+Soma => inst.IN3
+C2deB => inst2.IN3
+
+

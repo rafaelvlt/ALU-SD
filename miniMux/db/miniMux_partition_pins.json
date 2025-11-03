@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "outbit",
+					"strict" : false
+				},
+				{
+					"name" : "Sub",
+					"strict" : false
+				},
+				{
+					"name" : "S[2]",
+					"strict" : false
+				},
+				{
+					"name" : "S[0]",
+					"strict" : false
+				},
+				{
+					"name" : "XOR",
+					"strict" : false
+				},
+				{
+					"name" : "AND",
+					"strict" : false
+				},
+				{
+					"name" : "S[1]",
+					"strict" : false
+				},
+				{
+					"name" : "C2deB",
+					"strict" : false
+				},
+				{
+					"name" : "Soma",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
