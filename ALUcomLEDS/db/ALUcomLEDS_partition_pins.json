@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LEDstatus",
+					"strict" : false
+				},
+				{
+					"name" : "LEDinA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDinA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDinA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDinA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDinA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDinB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDinB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDinB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDinB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDinB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDinSeletor[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDinSeletor[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDinSeletor[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDPlaca[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDPlaca[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDPlaca[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDPlaca[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDPlaca[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDPlaca[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Seletor[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Seletor[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Seletor[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
