@@ -1,5 +1,5 @@
 Analysis & Synthesis report for displayLedsEntradaSaida
-Sun Nov  2 22:34:35 2025
+Mon Nov  3 15:09:42 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Nov  2 22:34:35 2025           ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov  3 15:09:42 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; displayLedsEntradaSaida                         ;
 ; Top-level Entity Name              ; inputDisplay                                    ;
@@ -275,7 +275,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Sun Nov  2 22:34:22 2025
+    Info: Processing started: Mon Nov  3 15:09:28 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off displayLedsEntradaSaida -c displayLedsEntradaSaida
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -297,6 +297,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file subtrat
     Info (12023): Found entity 1: subtrator
 Info (12021): Found 1 design units, including 1 entities, in source file inputDisplay.bdf
     Info (12023): Found entity 1: inputDisplay
+Info (12021): Found 1 design units, including 1 entities, in source file outputDisplay.bdf
+    Info (12023): Found entity 1: outputDisplay
+Info (12021): Found 1 design units, including 1 entities, in source file detector_01010_10100_11110.bdf
+    Info (12023): Found entity 1: detector_01010_10100_11110
+Info (12021): Found 1 design units, including 1 entities, in source file adder_5bits.bdf
+    Info (12023): Found entity 1: adder_5bits
+Info (12021): Found 1 design units, including 1 entities, in source file subtrator_5bits_01010.bdf
+    Info (12023): Found entity 1: subtrator_5bits_01010
+Info (12021): Found 1 design units, including 1 entities, in source file subtrator_5bits_11110.bdf
+    Info (12023): Found entity 1: subtrator_5bits_11110
+Info (12021): Found 1 design units, including 1 entities, in source file subtrator_5bits_10100.bdf
+    Info (12023): Found entity 1: subtrator_5bits_10100
+Info (12021): Found 1 design units, including 1 entities, in source file multiplexer4x1.bdf
+    Info (12023): Found entity 1: multiplexer4x1
+Info (12021): Found 1 design units, including 1 entities, in source file multiplexer_16x4_4x1.bdf
+    Info (12023): Found entity 1: multiplexer_16x4_4x1
 Info (12127): Elaborating entity "inputDisplay" for the top level hierarchy
 Info (12128): Elaborating entity "displayLedsEntradaSaida" for hierarchy "displayLedsEntradaSaida:inst"
 Warning (12125): Using design file decoderBCD7segments.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
@@ -326,8 +342,8 @@ Info (21057): Implemented 64 device resources after synthesis - the final resour
     Info (21061): Implemented 16 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
     Info: Peak virtual memory: 359 megabytes
-    Info: Processing ended: Sun Nov  2 22:34:35 2025
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:31
+    Info: Processing ended: Mon Nov  3 15:09:42 2025
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:33
 
 
