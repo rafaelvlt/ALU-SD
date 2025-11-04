@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALUcomLEDS
-Mon Nov  3 18:37:37 2025
+Tue Nov  4 07:10:54 2025
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -43,16 +43,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov  3 18:37:37 2025       ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov  4 07:10:54 2025       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; ALUcomLEDS                                  ;
 ; Top-level Entity Name              ; ALUcomLEDS                                  ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 79                                          ;
-;     Total combinational functions  ; 79                                          ;
+; Total logic elements               ; 125                                         ;
+;     Total combinational functions  ; 125                                         ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 33                                          ;
+; Total pins                         ; 75                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -162,29 +162,49 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                  ;
-+----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------------+---------+
-; ALUcomLEDS.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/quartusProjetos/ALUcomLEDS/ALUcomLEDS.bdf                                  ;         ;
-; alu.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/alu/alu.bdf                                         ;         ;
-; muxsinal.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/muxsinal/muxsinal.bdf                               ;         ;
-; unidadelogica.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/unidadelogica/unidadelogica.bdf                     ;         ;
-; comparador.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/comparador/comparador.bdf                           ;         ;
-; opand.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/and/opand.bdf                                       ;         ;
-; opxor.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/xor/opxor.bdf                                       ;         ;
-; conversor5bitspara6bits.bdf      ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/conversor5bitspara6bits/conversor5bitspara6bits.bdf ;         ;
-; muxdozeseis.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/muxdozeseis/muxdozeseis.bdf                         ;         ;
-; complementodois.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/complementodois/complementodois.bdf                 ;         ;
-; somador.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/somador/somador.bdf                                 ;         ;
-; muxmagnitude.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/muxmagnitude/muxmagnitude.bdf                       ;         ;
-; minimux.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/minimux/minimux.bdf                                 ;         ;
-; unidadearitmetica.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/unidadearitmetica/unidadearitmetica.bdf             ;         ;
-; descomplementador.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/descomplementador/descomplementador.bdf             ;         ;
-; somadorseisbits.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/somadorseisbits/somadorseisbits.bdf                 ;         ;
-; subtrator6bits.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/subtrator6bits/subtrator6bits.bdf                   ;         ;
-+----------------------------------+-----------------+------------------------------------------+-------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------+---------+
+; ALUcomLEDS.bdf                   ; yes             ; User Block Diagram/Schematic File        ; C:/quartusProjetos/ALU-SD/ALUcomLEDS/ALUcomLEDS.bdf                              ;         ;
+; alu.bdf                          ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/alu/alu.bdf                                            ;         ;
+; muxsinal.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/muxsinal/muxsinal.bdf                                  ;         ;
+; unidadelogica.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/unidadelogica/unidadelogica.bdf                        ;         ;
+; comparador.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/comparador/comparador.bdf                              ;         ;
+; opand.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/and/opand.bdf                                          ;         ;
+; opxor.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/xor/opxor.bdf                                          ;         ;
+; conversor5bitspara6bits.bdf      ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/conversor5bitspara6bits/conversor5bitspara6bits.bdf    ;         ;
+; muxdozeseis.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/muxdozeseis/muxdozeseis.bdf                            ;         ;
+; complementodois.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/complementodois/complementodois.bdf                    ;         ;
+; somador.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/somador/somador.bdf                                    ;         ;
+; muxmagnitude.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/muxmagnitude/muxmagnitude.bdf                          ;         ;
+; minimux.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/minimux/minimux.bdf                                    ;         ;
+; unidadearitmetica.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/unidadearitmetica/unidadearitmetica.bdf                ;         ;
+; descomplementador.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/descomplementador/descomplementador.bdf                ;         ;
+; somadorseisbits.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/somadorseisbits/somadorseisbits.bdf                    ;         ;
+; subtrator6bits.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/subtrator6bits/subtrator6bits.bdf                      ;         ;
+; displayinput.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayinput/displayinput.bdf                          ;         ;
+; decoderbcd7segments.bdf          ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayledsentradasaida/decoderbcd7segments.bdf        ;         ;
+; detector_1010.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayledsentradasaida/detector_1010.bdf              ;         ;
+; multiplexer_2x1_4bits.bdf        ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayledsentradasaida/multiplexer_2x1_4bits.bdf      ;         ;
+; multiplexer_2x1.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayledsentradasaida/multiplexer_2x1.bdf            ;         ;
+; subtrator.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayledsentradasaida/subtrator.bdf                  ;         ;
+; adder4bits.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayledsentradasaida/adder4bits.bdf                 ;         ;
+; halfadder.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayledsentradasaida/halfadder.bdf                  ;         ;
+; fulladder.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayledsentradasaida/fulladder.bdf                  ;         ;
+; displayoutput.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayoutput/displayoutput.bdf                        ;         ;
+; detector_01010_10100_11110.bdf   ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayledsentradasaida/detector_01010_10100_11110.bdf ;         ;
+; multiplexer_16x4_4x1.bdf         ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayledsentradasaida/multiplexer_16x4_4x1.bdf       ;         ;
+; multiplexer4x1.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayledsentradasaida/multiplexer4x1.bdf             ;         ;
+; subtrator_5bits_11110.bdf        ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayledsentradasaida/subtrator_5bits_11110.bdf      ;         ;
+; adder_5bits.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayledsentradasaida/adder_5bits.bdf                ;         ;
+; subtrator_5bits_10100.bdf        ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayledsentradasaida/subtrator_5bits_10100.bdf      ;         ;
+; subtrator_5bits_01010.bdf        ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayledsentradasaida/subtrator_5bits_01010.bdf      ;         ;
+; bcd_signal.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/displayledsentradasaida/output_files/bcd_signal.bdf    ;         ;
+; mux7segmentos.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/mux7segmentos/mux7segmentos.bdf                        ;         ;
+; minimux7seg.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/alu-sd/minimux7seg/minimux7seg.bdf                            ;         ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -192,81 +212,107 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 79         ;
+; Estimated Total logic elements              ; 125        ;
 ;                                             ;            ;
-; Total combinational functions               ; 79         ;
+; Total combinational functions               ; 125        ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 60         ;
-;     -- 3 input functions                    ; 15         ;
-;     -- <=2 input functions                  ; 4          ;
+;     -- 4 input functions                    ; 96         ;
+;     -- 3 input functions                    ; 21         ;
+;     -- <=2 input functions                  ; 8          ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 79         ;
+;     -- normal mode                          ; 125        ;
 ;     -- arithmetic mode                      ; 0          ;
 ;                                             ;            ;
 ; Total registers                             ; 0          ;
 ;     -- Dedicated logic registers            ; 0          ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 33         ;
+; I/O pins                                    ; 75         ;
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; B[0]~input ;
-; Maximum fan-out                             ; 21         ;
-; Total fan-out                               ; 346        ;
-; Average fan-out                             ; 2.39       ;
+; Maximum fan-out                             ; 29         ;
+; Total fan-out                               ; 593        ;
+; Average fan-out                             ; 2.16       ;
 +---------------------------------------------+------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                 ;
-+---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+-------------------------+--------------+
-; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                     ; Entity Name             ; Library Name ;
-+---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+-------------------------+--------------+
-; |ALUcomLEDS                           ; 79 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 33   ; 0            ; |ALUcomLEDS                                                                                             ; ALUcomLEDS              ; work         ;
-;    |ALU:inst|                         ; 79 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst                                                                                    ; ALU                     ; work         ;
-;       |Conversor5bitspara6bits:inst2| ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst2                                                      ; Conversor5bitspara6bits ; work         ;
-;          |ComplementoDois:inst|       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst2|ComplementoDois:inst                                 ; ComplementoDois         ; work         ;
-;             |Somador:inst10|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst2|ComplementoDois:inst|Somador:inst10                  ; Somador                 ; work         ;
-;          |MUXDozeSeis:inst3|          ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst2|MUXDozeSeis:inst3                                    ; MUXDozeSeis             ; work         ;
-;       |Conversor5bitspara6bits:inst3| ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst3                                                      ; Conversor5bitspara6bits ; work         ;
-;          |ComplementoDois:inst|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst3|ComplementoDois:inst                                 ; ComplementoDois         ; work         ;
-;             |Somador:inst12|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst3|ComplementoDois:inst|Somador:inst12                  ; Somador                 ; work         ;
-;             |Somador:inst8|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst3|ComplementoDois:inst|Somador:inst8                   ; Somador                 ; work         ;
-;          |MUXDozeSeis:inst3|          ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst3|MUXDozeSeis:inst3                                    ; MUXDozeSeis             ; work         ;
-;       |MuxMagnitude:inst5|            ; 34 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|MuxMagnitude:inst5                                                                 ; MuxMagnitude            ; work         ;
-;          |miniMux:inst1|              ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|MuxMagnitude:inst5|miniMux:inst1                                                   ; miniMux                 ; work         ;
-;          |miniMux:inst2|              ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|MuxMagnitude:inst5|miniMux:inst2                                                   ; miniMux                 ; work         ;
-;          |miniMux:inst3|              ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|MuxMagnitude:inst5|miniMux:inst3                                                   ; miniMux                 ; work         ;
-;          |miniMux:inst4|              ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|MuxMagnitude:inst5|miniMux:inst4                                                   ; miniMux                 ; work         ;
-;          |miniMux:inst5|              ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|MuxMagnitude:inst5|miniMux:inst5                                                   ; miniMux                 ; work         ;
-;          |miniMux:inst|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|MuxMagnitude:inst5|miniMux:inst                                                    ; miniMux                 ; work         ;
-;       |MuxSinal:inst4|                ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|MuxSinal:inst4                                                                     ; MuxSinal                ; work         ;
-;       |UnidadeAritmetica:inst|        ; 24 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst                                                             ; UnidadeAritmetica       ; work         ;
-;          |Descomplementador:inst1|    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Descomplementador:inst1                                     ; Descomplementador       ; work         ;
-;             |ComplementoDois:inst|    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Descomplementador:inst1|ComplementoDois:inst                ; ComplementoDois         ; work         ;
-;                |Somador:inst10|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Descomplementador:inst1|ComplementoDois:inst|Somador:inst10 ; Somador                 ; work         ;
-;          |Descomplementador:inst2|    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Descomplementador:inst2                                     ; Descomplementador       ; work         ;
-;             |ComplementoDois:inst|    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Descomplementador:inst2|ComplementoDois:inst                ; ComplementoDois         ; work         ;
-;                |Somador:inst10|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Descomplementador:inst2|ComplementoDois:inst|Somador:inst10 ; Somador                 ; work         ;
-;                |Somador:inst8|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Descomplementador:inst2|ComplementoDois:inst|Somador:inst8  ; Somador                 ; work         ;
-;          |SomadorSeisBits:inst|       ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|SomadorSeisBits:inst                                        ; SomadorSeisBits         ; work         ;
-;             |Somador:inst2|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|SomadorSeisBits:inst|Somador:inst2                          ; Somador                 ; work         ;
-;             |Somador:inst3|           ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|SomadorSeisBits:inst|Somador:inst3                          ; Somador                 ; work         ;
-;             |Somador:inst4|           ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|SomadorSeisBits:inst|Somador:inst4                          ; Somador                 ; work         ;
-;             |Somador:inst5|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|SomadorSeisBits:inst|Somador:inst5                          ; Somador                 ; work         ;
-;          |Subtrator6bits:inst99|      ; 11 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99                                       ; Subtrator6bits          ; work         ;
-;             |ComplementoDois:inst1|   ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|ComplementoDois:inst1                 ; ComplementoDois         ; work         ;
-;                |Somador:inst10|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|ComplementoDois:inst1|Somador:inst10  ; Somador                 ; work         ;
-;                |Somador:inst9|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|ComplementoDois:inst1|Somador:inst9   ; Somador                 ; work         ;
-;             |SomadorSeisBits:inst|    ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst                  ; SomadorSeisBits         ; work         ;
-;                |Somador:inst2|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst|Somador:inst2    ; Somador                 ; work         ;
-;                |Somador:inst3|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst|Somador:inst3    ; Somador                 ; work         ;
-;                |Somador:inst4|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst|Somador:inst4    ; Somador                 ; work         ;
-;                |Somador:inst5|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst|Somador:inst5    ; Somador                 ; work         ;
-;                |Somador:inst6|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst|Somador:inst6    ; Somador                 ; work         ;
-+---------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+-------------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                        ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+----------------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                     ; Entity Name                ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+----------------------------+--------------+
+; |ALUcomLEDS                               ; 125 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 75   ; 0            ; |ALUcomLEDS                                                                                             ; ALUcomLEDS                 ; work         ;
+;    |ALU:inst|                             ; 82 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst                                                                                    ; ALU                        ; work         ;
+;       |Conversor5bitspara6bits:inst2|     ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst2                                                      ; Conversor5bitspara6bits    ; work         ;
+;          |ComplementoDois:inst|           ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst2|ComplementoDois:inst                                 ; ComplementoDois            ; work         ;
+;             |Somador:inst10|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst2|ComplementoDois:inst|Somador:inst10                  ; Somador                    ; work         ;
+;          |MUXDozeSeis:inst3|              ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst2|MUXDozeSeis:inst3                                    ; MUXDozeSeis                ; work         ;
+;       |Conversor5bitspara6bits:inst3|     ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst3                                                      ; Conversor5bitspara6bits    ; work         ;
+;          |ComplementoDois:inst|           ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst3|ComplementoDois:inst                                 ; ComplementoDois            ; work         ;
+;             |Somador:inst12|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst3|ComplementoDois:inst|Somador:inst12                  ; Somador                    ; work         ;
+;             |Somador:inst8|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst3|ComplementoDois:inst|Somador:inst8                   ; Somador                    ; work         ;
+;          |MUXDozeSeis:inst3|              ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|Conversor5bitspara6bits:inst3|MUXDozeSeis:inst3                                    ; MUXDozeSeis                ; work         ;
+;       |MuxMagnitude:inst5|                ; 33 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|MuxMagnitude:inst5                                                                 ; MuxMagnitude               ; work         ;
+;          |miniMux:inst1|                  ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|MuxMagnitude:inst5|miniMux:inst1                                                   ; miniMux                    ; work         ;
+;          |miniMux:inst2|                  ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|MuxMagnitude:inst5|miniMux:inst2                                                   ; miniMux                    ; work         ;
+;          |miniMux:inst3|                  ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|MuxMagnitude:inst5|miniMux:inst3                                                   ; miniMux                    ; work         ;
+;          |miniMux:inst4|                  ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|MuxMagnitude:inst5|miniMux:inst4                                                   ; miniMux                    ; work         ;
+;          |miniMux:inst5|                  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|MuxMagnitude:inst5|miniMux:inst5                                                   ; miniMux                    ; work         ;
+;          |miniMux:inst|                   ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|MuxMagnitude:inst5|miniMux:inst                                                    ; miniMux                    ; work         ;
+;       |MuxSinal:inst4|                    ; 12 (12)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|MuxSinal:inst4                                                                     ; MuxSinal                   ; work         ;
+;       |UnidadeAritmetica:inst|            ; 26 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst                                                             ; UnidadeAritmetica          ; work         ;
+;          |ComplementoDois:inst77|         ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|ComplementoDois:inst77                                      ; ComplementoDois            ; work         ;
+;             |Somador:inst12|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|ComplementoDois:inst77|Somador:inst12                       ; Somador                    ; work         ;
+;             |Somador:inst9|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|ComplementoDois:inst77|Somador:inst9                        ; Somador                    ; work         ;
+;          |Descomplementador:inst1|        ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Descomplementador:inst1                                     ; Descomplementador          ; work         ;
+;             |ComplementoDois:inst|        ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Descomplementador:inst1|ComplementoDois:inst                ; ComplementoDois            ; work         ;
+;                |Somador:inst10|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Descomplementador:inst1|ComplementoDois:inst|Somador:inst10 ; Somador                    ; work         ;
+;                |Somador:inst12|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Descomplementador:inst1|ComplementoDois:inst|Somador:inst12 ; Somador                    ; work         ;
+;          |Descomplementador:inst2|        ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Descomplementador:inst2                                     ; Descomplementador          ; work         ;
+;             |ComplementoDois:inst|        ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Descomplementador:inst2|ComplementoDois:inst                ; ComplementoDois            ; work         ;
+;                |Somador:inst8|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Descomplementador:inst2|ComplementoDois:inst|Somador:inst8  ; Somador                    ; work         ;
+;                |Somador:inst9|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Descomplementador:inst2|ComplementoDois:inst|Somador:inst9  ; Somador                    ; work         ;
+;          |SomadorSeisBits:inst|           ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|SomadorSeisBits:inst                                        ; SomadorSeisBits            ; work         ;
+;             |Somador:inst2|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|SomadorSeisBits:inst|Somador:inst2                          ; Somador                    ; work         ;
+;             |Somador:inst3|               ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|SomadorSeisBits:inst|Somador:inst3                          ; Somador                    ; work         ;
+;             |Somador:inst4|               ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|SomadorSeisBits:inst|Somador:inst4                          ; Somador                    ; work         ;
+;             |Somador:inst5|               ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|SomadorSeisBits:inst|Somador:inst5                          ; Somador                    ; work         ;
+;          |Subtrator6bits:inst99|          ; 11 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99                                       ; Subtrator6bits             ; work         ;
+;             |ComplementoDois:inst1|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|ComplementoDois:inst1                 ; ComplementoDois            ; work         ;
+;                |Somador:inst10|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|ComplementoDois:inst1|Somador:inst10  ; Somador                    ; work         ;
+;                |Somador:inst12|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|ComplementoDois:inst1|Somador:inst12  ; Somador                    ; work         ;
+;             |SomadorSeisBits:inst|        ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst                  ; SomadorSeisBits            ; work         ;
+;                |Somador:inst2|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst|Somador:inst2    ; Somador                    ; work         ;
+;                |Somador:inst3|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst|Somador:inst3    ; Somador                    ; work         ;
+;                |Somador:inst4|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst|Somador:inst4    ; Somador                    ; work         ;
+;                |Somador:inst5|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst|Somador:inst5    ; Somador                    ; work         ;
+;                |Somador:inst6|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst|Somador:inst6    ; Somador                    ; work         ;
+;    |DisplayInput:inst1|                   ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayInput:inst1                                                                          ; DisplayInput               ; work         ;
+;       |decoderBCD7segments:display2|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayInput:inst1|decoderBCD7segments:display2                                             ; decoderBCD7segments        ; work         ;
+;       |detector_1010:inst|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayInput:inst1|detector_1010:inst                                                       ; detector_1010              ; work         ;
+;    |DisplayInput:inst2|                   ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayInput:inst2                                                                          ; DisplayInput               ; work         ;
+;       |decoderBCD7segments:display2|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayInput:inst2|decoderBCD7segments:display2                                             ; decoderBCD7segments        ; work         ;
+;       |detector_1010:inst|                ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayInput:inst2|detector_1010:inst                                                       ; detector_1010              ; work         ;
+;    |DisplayOutput:inst3|                  ; 23 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayOutput:inst3                                                                         ; DisplayOutput              ; work         ;
+;       |decoderBCD7segments:display0|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayOutput:inst3|decoderBCD7segments:display0                                            ; decoderBCD7segments        ; work         ;
+;       |decoderBCD7segments:display1|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayOutput:inst3|decoderBCD7segments:display1                                            ; decoderBCD7segments        ; work         ;
+;       |detector_01010_10100_11110:inst10| ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayOutput:inst3|detector_01010_10100_11110:inst10                                       ; detector_01010_10100_11110 ; work         ;
+;       |multiplexer_16x4_4x1:inst5|        ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayOutput:inst3|multiplexer_16x4_4x1:inst5                                              ; multiplexer_16x4_4x1       ; work         ;
+;          |multiplexer4x1:inst1|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayOutput:inst3|multiplexer_16x4_4x1:inst5|multiplexer4x1:inst1                         ; multiplexer4x1             ; work         ;
+;          |multiplexer4x1:inst2|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayOutput:inst3|multiplexer_16x4_4x1:inst5|multiplexer4x1:inst2                         ; multiplexer4x1             ; work         ;
+;          |multiplexer4x1:inst3|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayOutput:inst3|multiplexer_16x4_4x1:inst5|multiplexer4x1:inst3                         ; multiplexer4x1             ; work         ;
+;          |multiplexer4x1:inst|            ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayOutput:inst3|multiplexer_16x4_4x1:inst5|multiplexer4x1:inst                          ; multiplexer4x1             ; work         ;
+;       |subtrator_5bits_11110:inst2|       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayOutput:inst3|subtrator_5bits_11110:inst2                                             ; subtrator_5bits_11110      ; work         ;
+;          |adder_5bits:inst|               ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayOutput:inst3|subtrator_5bits_11110:inst2|adder_5bits:inst                            ; adder_5bits                ; work         ;
+;             |fullAdder:inst2|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|DisplayOutput:inst3|subtrator_5bits_11110:inst2|adder_5bits:inst|fullAdder:inst2            ; fullAdder                  ; work         ;
+;    |MUX7segmentos:inst4|                  ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|MUX7segmentos:inst4                                                                         ; MUX7segmentos              ; work         ;
+;       |MiniMux7Seg:inst6|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|MUX7segmentos:inst4|MiniMux7Seg:inst6                                                       ; MiniMux7Seg                ; work         ;
+;       |MiniMux7Seg:inst7|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|MUX7segmentos:inst4|MiniMux7Seg:inst7                                                       ; MiniMux7Seg                ; work         ;
+;       |MiniMux7Seg:inst8|                 ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALUcomLEDS|MUX7segmentos:inst4|MiniMux7Seg:inst8                                                       ; MiniMux7Seg                ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -290,15 +336,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 33                          ;
-; cycloneiii_lcell_comb ; 79                          ;
-;     normal            ; 79                          ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 15                          ;
-;         4 data inputs ; 60                          ;
+; boundary_port         ; 75                          ;
+; cycloneiii_lcell_comb ; 128                         ;
+;     normal            ; 128                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 21                          ;
+;         4 data inputs ; 96                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 6.43                        ;
+; Max LUT depth         ; 13.00                       ;
+; Average LUT depth     ; 9.30                        ;
 +-----------------------+-----------------------------+
 
 
@@ -317,13 +365,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Mon Nov  3 18:37:18 2025
+    Info: Processing started: Tue Nov  4 07:10:37 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALUcomLEDS -c ALUcomLEDS
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file alucomleds.bdf
     Info (12023): Found entity 1: ALUcomLEDS
 Info (12127): Elaborating entity "ALUcomLEDS" for the top level hierarchy
+Warning (275011): Block or symbol "DisplayInput" of instance "inst1" overlaps another block or symbol
 Warning (12125): Using design file /quartusprojetos/alu-sd/alu/alu.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: ALU
 Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst"
@@ -374,17 +423,93 @@ Info (12128): Elaborating entity "SomadorSeisBits" for hierarchy "ALU:inst|Unida
 Warning (12125): Using design file /quartusprojetos/alu-sd/subtrator6bits/subtrator6bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Subtrator6bits
 Info (12128): Elaborating entity "Subtrator6bits" for hierarchy "ALU:inst|UnidadeAritmetica:inst|Subtrator6bits:inst99"
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayinput/displayinput.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: DisplayInput
+Info (12128): Elaborating entity "DisplayInput" for hierarchy "DisplayInput:inst1"
+Warning (275009): Pin "SA" not connected
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayledsentradasaida/decoderbcd7segments.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: decoderBCD7segments
+Info (12128): Elaborating entity "decoderBCD7segments" for hierarchy "DisplayInput:inst1|decoderBCD7segments:display1"
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayledsentradasaida/detector_1010.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: detector_1010
+Info (12128): Elaborating entity "detector_1010" for hierarchy "DisplayInput:inst1|detector_1010:inst"
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayledsentradasaida/multiplexer_2x1_4bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: multiplexer_2x1_4bits
+Info (12128): Elaborating entity "multiplexer_2x1_4bits" for hierarchy "DisplayInput:inst1|multiplexer_2x1_4bits:mult"
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayledsentradasaida/multiplexer_2x1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: multiplexer_2x1
+Info (12128): Elaborating entity "multiplexer_2x1" for hierarchy "DisplayInput:inst1|multiplexer_2x1_4bits:mult|multiplexer_2x1:inst"
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayledsentradasaida/subtrator.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: subtrator
+Info (12128): Elaborating entity "subtrator" for hierarchy "DisplayInput:inst1|subtrator:subt"
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayledsentradasaida/adder4bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: adder4Bits
+Info (12128): Elaborating entity "adder4Bits" for hierarchy "DisplayInput:inst1|subtrator:subt|adder4Bits:add4"
+Warning (275008): Primitive "GND" of instance "inst5" not used
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayledsentradasaida/halfadder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: halfAdder
+Info (12128): Elaborating entity "halfAdder" for hierarchy "DisplayInput:inst1|subtrator:subt|adder4Bits:add4|halfAdder:inst"
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayledsentradasaida/fulladder.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: fullAdder
+Info (12128): Elaborating entity "fullAdder" for hierarchy "DisplayInput:inst1|subtrator:subt|adder4Bits:add4|fullAdder:inst4"
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayoutput/displayoutput.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: DisplayOutput
+Info (12128): Elaborating entity "DisplayOutput" for hierarchy "DisplayOutput:inst3"
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayledsentradasaida/detector_01010_10100_11110.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: detector_01010_10100_11110
+Info (12128): Elaborating entity "detector_01010_10100_11110" for hierarchy "DisplayOutput:inst3|detector_01010_10100_11110:inst10"
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayledsentradasaida/multiplexer_16x4_4x1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: multiplexer_16x4_4x1
+Info (12128): Elaborating entity "multiplexer_16x4_4x1" for hierarchy "DisplayOutput:inst3|multiplexer_16x4_4x1:inst5"
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayledsentradasaida/multiplexer4x1.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: multiplexer4x1
+Info (12128): Elaborating entity "multiplexer4x1" for hierarchy "DisplayOutput:inst3|multiplexer_16x4_4x1:inst5|multiplexer4x1:inst"
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayledsentradasaida/subtrator_5bits_11110.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: subtrator_5bits_11110
+Info (12128): Elaborating entity "subtrator_5bits_11110" for hierarchy "DisplayOutput:inst3|subtrator_5bits_11110:inst2"
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayledsentradasaida/adder_5bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: adder_5bits
+Info (12128): Elaborating entity "adder_5bits" for hierarchy "DisplayOutput:inst3|subtrator_5bits_11110:inst2|adder_5bits:inst"
+Warning (275080): Converted elements in bus name "B" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B[0]" to "B0"
+    Warning (275081): Converted element name(s) from "B[1]" to "B1"
+    Warning (275081): Converted element name(s) from "B[2]" to "B2"
+    Warning (275081): Converted element name(s) from "B[3]" to "B3"
+    Warning (275081): Converted element name(s) from "B[4]" to "B4"
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayledsentradasaida/subtrator_5bits_10100.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: subtrator_5bits_10100
+Info (12128): Elaborating entity "subtrator_5bits_10100" for hierarchy "DisplayOutput:inst3|subtrator_5bits_10100:inst1"
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayledsentradasaida/subtrator_5bits_01010.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: subtrator_5bits_01010
+Info (12128): Elaborating entity "subtrator_5bits_01010" for hierarchy "DisplayOutput:inst3|subtrator_5bits_01010:inst"
+Warning (12125): Using design file /quartusprojetos/alu-sd/displayledsentradasaida/output_files/bcd_signal.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: bcd_signal
+Info (12128): Elaborating entity "bcd_signal" for hierarchy "DisplayOutput:inst3|bcd_signal:display2"
+Warning (12125): Using design file /quartusprojetos/alu-sd/mux7segmentos/mux7segmentos.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: MUX7segmentos
+Info (12128): Elaborating entity "MUX7segmentos" for hierarchy "MUX7segmentos:inst4"
+Warning (12125): Using design file /quartusprojetos/alu-sd/minimux7seg/minimux7seg.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: MiniMux7Seg
+Info (12128): Elaborating entity "MiniMux7Seg" for hierarchy "MUX7segmentos:inst4|MiniMux7Seg:inst5"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "displayb8" is stuck at GND
+    Warning (13410): Pin "displayb9" is stuck at GND
+    Warning (13410): Pin "displayb13" is stuck at VCC
+    Warning (13410): Pin "displaya8" is stuck at GND
+    Warning (13410): Pin "displaya9" is stuck at GND
+    Warning (13410): Pin "displaya13" is stuck at VCC
+    Warning (13410): Pin "pin_name9" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 112 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 200 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
-    Info (21059): Implemented 20 output pins
-    Info (21061): Implemented 79 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info (21059): Implemented 62 output pins
+    Info (21061): Implemented 125 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 56 warnings
     Info: Peak virtual memory: 4778 megabytes
-    Info: Processing ended: Mon Nov  3 18:37:37 2025
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Processing ended: Tue Nov  4 07:10:54 2025
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:33
 
 

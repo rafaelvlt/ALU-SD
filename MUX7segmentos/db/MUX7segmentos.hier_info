@@ -1,0 +1,105 @@
+|MUX7segmentos
+decoderOut[0] <= MiniMux7Seg:inst10.Fsaida
+decoderOut[1] <= MiniMux7Seg:inst9.Fsaida
+decoderOut[2] <= MiniMux7Seg:inst8.Fsaida
+decoderOut[3] <= MiniMux7Seg:inst7.Fsaida
+decoderOut[4] <= MiniMux7Seg:inst6.Fsaida
+decoderOut[5] <= MiniMux7Seg:inst5.Fsaida
+F[0] => MiniMux7Seg:inst10.Fbit
+F[1] => MiniMux7Seg:inst9.Fbit
+F[2] => MiniMux7Seg:inst8.Fbit
+F[3] => MiniMux7Seg:inst7.Fbit
+F[4] => MiniMux7Seg:inst6.Fbit
+F[5] => MiniMux7Seg:inst5.Fbit
+Seletor[0] => MiniMux7Seg:inst5.S[0]
+Seletor[0] => MiniMux7Seg:inst6.S[0]
+Seletor[0] => MiniMux7Seg:inst7.S[0]
+Seletor[0] => MiniMux7Seg:inst8.S[0]
+Seletor[0] => MiniMux7Seg:inst9.S[0]
+Seletor[0] => MiniMux7Seg:inst10.S[0]
+Seletor[1] => MiniMux7Seg:inst5.S[1]
+Seletor[1] => MiniMux7Seg:inst6.S[1]
+Seletor[1] => MiniMux7Seg:inst7.S[1]
+Seletor[1] => MiniMux7Seg:inst8.S[1]
+Seletor[1] => MiniMux7Seg:inst9.S[1]
+Seletor[1] => MiniMux7Seg:inst10.S[1]
+Seletor[2] => MiniMux7Seg:inst5.S[2]
+Seletor[2] => MiniMux7Seg:inst6.S[2]
+Seletor[2] => MiniMux7Seg:inst7.S[2]
+Seletor[2] => MiniMux7Seg:inst8.S[2]
+Seletor[2] => MiniMux7Seg:inst9.S[2]
+Seletor[2] => MiniMux7Seg:inst10.S[2]
+
+
+|MUX7segmentos|MiniMux7Seg:inst5
+Fsaida <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Fbit => inst2.IN0
+Fbit => inst.IN0
+S[0] => inst2.IN3
+S[0] => inst5.IN0
+S[1] => inst7.IN0
+S[1] => inst4.IN0
+S[2] => inst6.IN0
+S[2] => inst3.IN0
+
+
+|MUX7segmentos|MiniMux7Seg:inst6
+Fsaida <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Fbit => inst2.IN0
+Fbit => inst.IN0
+S[0] => inst2.IN3
+S[0] => inst5.IN0
+S[1] => inst7.IN0
+S[1] => inst4.IN0
+S[2] => inst6.IN0
+S[2] => inst3.IN0
+
+
+|MUX7segmentos|MiniMux7Seg:inst7
+Fsaida <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Fbit => inst2.IN0
+Fbit => inst.IN0
+S[0] => inst2.IN3
+S[0] => inst5.IN0
+S[1] => inst7.IN0
+S[1] => inst4.IN0
+S[2] => inst6.IN0
+S[2] => inst3.IN0
+
+
+|MUX7segmentos|MiniMux7Seg:inst8
+Fsaida <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Fbit => inst2.IN0
+Fbit => inst.IN0
+S[0] => inst2.IN3
+S[0] => inst5.IN0
+S[1] => inst7.IN0
+S[1] => inst4.IN0
+S[2] => inst6.IN0
+S[2] => inst3.IN0
+
+
+|MUX7segmentos|MiniMux7Seg:inst9
+Fsaida <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Fbit => inst2.IN0
+Fbit => inst.IN0
+S[0] => inst2.IN3
+S[0] => inst5.IN0
+S[1] => inst7.IN0
+S[1] => inst4.IN0
+S[2] => inst6.IN0
+S[2] => inst3.IN0
+
+
+|MUX7segmentos|MiniMux7Seg:inst10
+Fsaida <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Fbit => inst2.IN0
+Fbit => inst.IN0
+S[0] => inst2.IN3
+S[0] => inst5.IN0
+S[1] => inst7.IN0
+S[1] => inst4.IN0
+S[2] => inst6.IN0
+S[2] => inst3.IN0
+
+

@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Fsaida",
+					"strict" : false
+				},
+				{
+					"name" : "Fbit",
+					"strict" : false
+				},
+				{
+					"name" : "S[2]",
+					"strict" : false
+				},
+				{
+					"name" : "S[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
