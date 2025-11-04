@@ -4,27 +4,27 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2025  Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
-the Altera IP License Agreement, or other applicable license
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
-Altera and sold by Altera or its authorized distributors.  Please
-refer to the Altera Software License Subscription Agreements 
-on the Quartus Prime software download page.
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 */
 (header "graphic" (version "1.4"))
 (pin
 	(input)
 	(rect 448 176 616 192)
-	(text "INPUT" (rect 125 0 153 11)(font "Arial" (font_size 6)))
-	(text "A[4..0]" (rect 5 0 35 13)(font "Arial" ))
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "A[4..0]" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -34,14 +34,14 @@ on the Quartus Prime software download page.
 		(line (pt 109 4)(pt 113 8))
 		(line (pt 109 12)(pt 113 8))
 	)
-	(text "VCC" (rect 128 7 148 18)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 	(annotation_block (location)(rect 376 192 448 208))
 )
 (pin
 	(output)
 	(rect 888 176 1064 192)
-	(text "OUTPUT" (rect 1 0 39 11)(font "Arial" (font_size 6)))
-	(text "S[3..0]" (rect 90 0 120 13)(font "Arial" ))
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "S[3..0]" (rect 90 0 123 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -54,43 +54,71 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 696 152 824 248)
-	(text "adder_5bits" (rect 5 0 75 15)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Intel Clear" ))
+	(rect 696 152 824 312)
+	(text "adder_5bits" (rect 5 0 78 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 139 24 156)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "A[4..0]" (rect 0 0 38 15)(font "Intel Clear" (font_size 8)))
-		(text "A[4..0]" (rect 21 27 59 42)(font "Intel Clear" (font_size 8)))
+		(text "A[4..0]" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "A[4..0]" (rect 21 27 59 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "B[4..0]" (rect 0 0 38 15)(font "Intel Clear" (font_size 8)))
-		(text "B[4..0]" (rect 21 43 59 58)(font "Intel Clear" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
+		(text "B4" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B4" (rect 21 43 37 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "B3" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B3" (rect 21 59 37 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "B2" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B2" (rect 21 75 37 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "B1" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B1" (rect 21 91 37 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "B0" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "B0" (rect 21 107 37 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
 	)
 	(port
 		(pt 128 32)
 		(output)
-		(text "S[4..0]" (rect 0 0 37 15)(font "Intel Clear" (font_size 8)))
-		(text "S[4..0]" (rect 70 27 107 42)(font "Intel Clear" (font_size 8)))
+		(text "S[3..0]" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "S[3..0]" (rect 69 27 107 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 128 32)(pt 112 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 112 80))
+		(rectangle (rect 16 16 112 144))
 	)
 )
 (symbol
-	(rect 624 256 656 288)
-	(text "GND" (rect 8 16 29 27)(font "Arial" (font_size 6)))
-	(text "inst1" (rect 3 21 27 33)(font "Intel Clear" )(invisible))
+	(rect 648 312 680 344)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 21 25 38)(font "Intel Clear" )(invisible))
 	(port
 		(pt 16 0)
 		(output)
-		(text "1" (rect 18 0 25 13)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 18 0 25 13)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
 		(line (pt 16 8)(pt 16 0))
 	)
 	(drawing
@@ -100,14 +128,14 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 560 256 592 272)
-	(text "VCC" (rect 5 5 25 16)(font "Arial" (font_size 6)))
-	(text "inst2" (rect 5 -1 29 11)(font "Intel Clear" )(invisible))
+	(rect 608 320 640 336)
+	(text "VCC" (rect 5 6 25 16)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 7 -6 29 11)(font "Intel Clear" )(invisible))
 	(port
 		(pt 16 0)
 		(output)
-		(text "1" (rect 19 7 26 20)(font "Courier New" (bold))(invisible))
-		(text "1" (rect 6 -4 13 9)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 8 -3 13 9)(font "Courier New" (bold))(invisible))
 		(line (pt 16 0)(pt 16 8))
 	)
 	(drawing
@@ -116,94 +144,57 @@ on the Quartus Prime software download page.
 	(rotate180)
 )
 (connector
-	(text "A[4..0]" (rect 666 168 697 180)(font "Intel Clear" ))
+	(text "A[4..0]" (rect 666 168 696 185)(font "Intel Clear" ))
 	(pt 616 184)
 	(pt 696 184)
 	(bus)
 )
 (connector
-	(pt 616 248)
-	(pt 640 248)
-)
-(connector
-	(pt 640 248)
-	(pt 664 248)
-)
-(connector
-	(pt 576 248)
-	(pt 576 256)
-)
-(connector
-	(pt 560 248)
-	(pt 576 248)
-)
-(connector
-	(pt 576 248)
-	(pt 592 248)
-)
-(connector
-	(text "B4" (rect 544 221 556 233)(font "Intel Clear" )(vertical))
-	(pt 560 200)
-	(pt 560 248)
-)
-(connector
-	(pt 560 200)
-	(pt 592 200)
-	(bus)
-)
-(connector
-	(text "B2" (rect 576 221 588 233)(font "Intel Clear" )(vertical))
-	(pt 592 200)
-	(pt 592 248)
-)
-(connector
-	(pt 592 200)
-	(pt 616 200)
-	(bus)
-)
-(connector
-	(pt 616 200)
-	(pt 640 200)
-	(bus)
-)
-(connector
-	(pt 640 248)
-	(pt 640 256)
-)
-(connector
-	(pt 640 200)
-	(pt 664 200)
-	(bus)
-)
-(connector
-	(pt 664 200)
-	(pt 696 200)
-	(bus)
-)
-(connector
-	(text "B0" (rect 648 221 660 233)(font "Intel Clear" )(vertical))
-	(pt 664 248)
-	(pt 664 200)
-)
-(connector
-	(text "B1" (rect 624 221 636 233)(font "Intel Clear" )(vertical))
-	(pt 640 200)
-	(pt 640 248)
-)
-(connector
-	(text "B3" (rect 600 221 612 233)(font "Intel Clear" )(vertical))
-	(pt 616 200)
-	(pt 616 248)
-)
-(connector
-	(text "S[3..0]" (rect 866 168 896 180)(font "Intel Clear" ))
+	(text "S[3..0]" (rect 866 168 895 185)(font "Intel Clear" ))
 	(pt 824 184)
 	(pt 888 184)
 	(bus)
 )
-(junction (pt 640 248))
-(junction (pt 576 248))
-(junction (pt 592 200))
-(junction (pt 616 200))
-(junction (pt 640 200))
-(junction (pt 664 200))
+(connector
+	(pt 696 248)
+	(pt 664 248)
+)
+(connector
+	(pt 696 264)
+	(pt 664 264)
+)
+(connector
+	(pt 664 264)
+	(pt 664 312)
+)
+(connector
+	(pt 696 232)
+	(pt 624 232)
+)
+(connector
+	(pt 624 216)
+	(pt 624 232)
+)
+(connector
+	(pt 624 232)
+	(pt 624 320)
+)
+(connector
+	(pt 624 216)
+	(pt 696 216)
+)
+(connector
+	(pt 664 200)
+	(pt 664 248)
+)
+(connector
+	(pt 664 248)
+	(pt 664 264)
+)
+(connector
+	(pt 696 200)
+	(pt 664 200)
+)
+(junction (pt 664 264))
+(junction (pt 624 232))
+(junction (pt 664 248))

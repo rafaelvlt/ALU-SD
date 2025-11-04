@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Nov  3 15:09:42 2025
-Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Analysis & Synthesis Status : Successful - Tue Nov  4 02:52:09 2025
+Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 Revision Name : displayLedsEntradaSaida
-Top-level Entity Name : inputDisplay
+Top-level Entity Name : outputDisplay
 Family : Cyclone IV E
-Total logic elements : 16
-    Total combinational functions : 16
+Total logic elements : 15
+    Total combinational functions : 15
     Dedicated logic registers : 0
 Total registers : 0
-Total pins : 48
+Total pins : 33
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

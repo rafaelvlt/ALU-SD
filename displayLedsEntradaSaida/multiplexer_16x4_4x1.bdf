@@ -4,27 +4,27 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2025  Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
-the Altera IP License Agreement, or other applicable license
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
-Altera and sold by Altera or its authorized distributors.  Please
-refer to the Altera Software License Subscription Agreements 
-on the Quartus Prime software download page.
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 */
 (header "graphic" (version "1.4"))
 (pin
 	(input)
 	(rect 408 240 576 256)
-	(text "INPUT" (rect 125 0 153 11)(font "Arial" (font_size 6)))
-	(text "S1" (rect 5 0 17 13)(font "Arial" ))
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "S1" (rect 5 0 17 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -34,13 +34,13 @@ on the Quartus Prime software download page.
 		(line (pt 109 4)(pt 113 8))
 		(line (pt 109 12)(pt 113 8))
 	)
-	(text "VCC" (rect 128 7 148 18)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
 	(rect 408 264 576 280)
-	(text "INPUT" (rect 125 0 153 11)(font "Arial" (font_size 6)))
-	(text "S0" (rect 5 0 17 12)(font "Intel Clear" ))
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "S0" (rect 5 0 16 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -50,13 +50,13 @@ on the Quartus Prime software download page.
 		(line (pt 109 4)(pt 113 8))
 		(line (pt 109 12)(pt 113 8))
 	)
-	(text "VCC" (rect 128 7 148 18)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
 	(rect 408 104 576 120)
-	(text "INPUT" (rect 125 0 153 11)(font "Arial" (font_size 6)))
-	(text "A[3..0]" (rect 5 0 36 13)(font "Arial" ))
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "A[3..0]" (rect 5 0 38 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -66,14 +66,14 @@ on the Quartus Prime software download page.
 		(line (pt 109 4)(pt 113 8))
 		(line (pt 109 12)(pt 113 8))
 	)
-	(text "VCC" (rect 128 7 148 18)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 	(annotation_block (location)(rect 160 120 232 136))
 )
 (pin
 	(input)
 	(rect 408 136 576 152)
-	(text "INPUT" (rect 125 0 153 11)(font "Arial" (font_size 6)))
-	(text "B[3..0]" (rect 5 0 37 12)(font "Intel Clear" ))
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "B[3..0]" (rect 5 0 35 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -83,14 +83,14 @@ on the Quartus Prime software download page.
 		(line (pt 109 4)(pt 113 8))
 		(line (pt 109 12)(pt 113 8))
 	)
-	(text "VCC" (rect 128 7 148 18)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 	(annotation_block (location)(rect 160 152 232 168))
 )
 (pin
 	(input)
 	(rect 408 168 576 184)
-	(text "INPUT" (rect 125 0 153 11)(font "Arial" (font_size 6)))
-	(text "C[3..0]" (rect 5 0 37 12)(font "Intel Clear" ))
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "C[3..0]" (rect 5 0 35 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -100,13 +100,13 @@ on the Quartus Prime software download page.
 		(line (pt 109 4)(pt 113 8))
 		(line (pt 109 12)(pt 113 8))
 	)
-	(text "VCC" (rect 128 7 148 18)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(input)
 	(rect 408 200 576 216)
-	(text "INPUT" (rect 125 0 153 11)(font "Arial" (font_size 6)))
-	(text "D[3..0]" (rect 5 0 37 12)(font "Intel Clear" ))
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "D[3..0]" (rect 5 0 35 17)(font "Intel Clear" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -116,13 +116,13 @@ on the Quartus Prime software download page.
 		(line (pt 109 4)(pt 113 8))
 		(line (pt 109 12)(pt 113 8))
 	)
-	(text "VCC" (rect 128 7 148 18)(font "Arial" (font_size 6)))
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
 )
 (pin
 	(output)
 	(rect 1352 456 1528 472)
-	(text "OUTPUT" (rect 1 0 39 11)(font "Arial" (font_size 6)))
-	(text "Y[3..0]" (rect 90 0 120 13)(font "Arial" ))
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "Y[3..0]" (rect 90 0 124 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -136,55 +136,55 @@ on the Quartus Prime software download page.
 )
 (symbol
 	(rect 600 320 760 416)
-	(text "multiplexer4x1" (rect 0 5 15 93)(font "Intel Clear" (font_size 8))(vertical))
-	(text "inst1" (rect 144 8 156 32)(font "Intel Clear" )(vertical))
+	(text "multiplexer4x1" (rect 0 5 19 94)(font "Intel Clear" (font_size 8))(vertical))
+	(text "inst" (rect 139 8 156 24)(font "Intel Clear" )(vertical))
 	(port
 		(pt 32 0)
 		(input)
-		(text "S1" (rect 0 0 16 15)(font "Intel Clear" (font_size 8)))
-		(text "S1" (rect 27 21 42 37)(font "Intel Clear" (font_size 8))(vertical))
+		(text "S1" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "S1" (rect 27 21 46 37)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 32 0)(pt 32 16))
 	)
 	(port
 		(pt 48 0)
 		(input)
-		(text "S0" (rect 0 0 16 15)(font "Intel Clear" (font_size 8)))
-		(text "S0" (rect 43 21 58 37)(font "Intel Clear" (font_size 8))(vertical))
+		(text "S0" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "S0" (rect 43 21 62 37)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 48 0)(pt 48 16))
 	)
 	(port
 		(pt 64 0)
 		(input)
-		(text "A" (rect 0 0 9 15)(font "Intel Clear" (font_size 8)))
-		(text "A" (rect 59 21 74 30)(font "Intel Clear" (font_size 8))(vertical))
+		(text "A" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "A" (rect 59 21 78 29)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 64 0)(pt 64 16))
 	)
 	(port
 		(pt 80 0)
 		(input)
-		(text "B" (rect 0 0 8 15)(font "Intel Clear" (font_size 8)))
-		(text "B" (rect 75 21 90 29)(font "Intel Clear" (font_size 8))(vertical))
+		(text "B" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "B" (rect 75 21 94 29)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 80 0)(pt 80 16))
 	)
 	(port
 		(pt 96 0)
 		(input)
-		(text "C" (rect 0 0 8 15)(font "Intel Clear" (font_size 8)))
-		(text "C" (rect 91 21 106 29)(font "Intel Clear" (font_size 8))(vertical))
+		(text "C" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "C" (rect 91 21 110 29)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 96 0)(pt 96 16))
 	)
 	(port
 		(pt 112 0)
 		(input)
-		(text "D" (rect 0 0 9 15)(font "Intel Clear" (font_size 8)))
-		(text "D" (rect 107 21 122 30)(font "Intel Clear" (font_size 8))(vertical))
+		(text "D" (rect 0 0 9 19)(font "Intel Clear" (font_size 8)))
+		(text "D" (rect 107 21 126 30)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 112 0)(pt 112 16))
 	)
 	(port
 		(pt 32 96)
 		(output)
-		(text "Y" (rect 0 0 8 15)(font "Intel Clear" (font_size 8)))
-		(text "Y" (rect 27 67 42 75)(font "Intel Clear" (font_size 8))(vertical))
+		(text "Y" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "Y" (rect 27 67 46 75)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 32 96)(pt 32 80))
 	)
 	(drawing
@@ -194,55 +194,55 @@ on the Quartus Prime software download page.
 )
 (symbol
 	(rect 784 320 944 416)
-	(text "multiplexer4x1" (rect 0 5 15 93)(font "Intel Clear" (font_size 8))(vertical))
-	(text "inst2" (rect 144 8 156 32)(font "Intel Clear" )(vertical))
+	(text "multiplexer4x1" (rect 0 5 19 94)(font "Intel Clear" (font_size 8))(vertical))
+	(text "inst1" (rect 139 8 156 30)(font "Intel Clear" )(vertical))
 	(port
 		(pt 32 0)
 		(input)
-		(text "S1" (rect 0 0 16 15)(font "Intel Clear" (font_size 8)))
-		(text "S1" (rect 27 21 42 37)(font "Intel Clear" (font_size 8))(vertical))
+		(text "S1" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "S1" (rect 27 21 46 37)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 32 0)(pt 32 16))
 	)
 	(port
 		(pt 48 0)
 		(input)
-		(text "S0" (rect 0 0 16 15)(font "Intel Clear" (font_size 8)))
-		(text "S0" (rect 43 21 58 37)(font "Intel Clear" (font_size 8))(vertical))
+		(text "S0" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "S0" (rect 43 21 62 37)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 48 0)(pt 48 16))
 	)
 	(port
 		(pt 64 0)
 		(input)
-		(text "A" (rect 0 0 9 15)(font "Intel Clear" (font_size 8)))
-		(text "A" (rect 59 21 74 30)(font "Intel Clear" (font_size 8))(vertical))
+		(text "A" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "A" (rect 59 21 78 29)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 64 0)(pt 64 16))
 	)
 	(port
 		(pt 80 0)
 		(input)
-		(text "B" (rect 0 0 8 15)(font "Intel Clear" (font_size 8)))
-		(text "B" (rect 75 21 90 29)(font "Intel Clear" (font_size 8))(vertical))
+		(text "B" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "B" (rect 75 21 94 29)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 80 0)(pt 80 16))
 	)
 	(port
 		(pt 96 0)
 		(input)
-		(text "C" (rect 0 0 8 15)(font "Intel Clear" (font_size 8)))
-		(text "C" (rect 91 21 106 29)(font "Intel Clear" (font_size 8))(vertical))
+		(text "C" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "C" (rect 91 21 110 29)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 96 0)(pt 96 16))
 	)
 	(port
 		(pt 112 0)
 		(input)
-		(text "D" (rect 0 0 9 15)(font "Intel Clear" (font_size 8)))
-		(text "D" (rect 107 21 122 30)(font "Intel Clear" (font_size 8))(vertical))
+		(text "D" (rect 0 0 9 19)(font "Intel Clear" (font_size 8)))
+		(text "D" (rect 107 21 126 30)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 112 0)(pt 112 16))
 	)
 	(port
 		(pt 32 96)
 		(output)
-		(text "Y" (rect 0 0 8 15)(font "Intel Clear" (font_size 8)))
-		(text "Y" (rect 27 67 42 75)(font "Intel Clear" (font_size 8))(vertical))
+		(text "Y" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "Y" (rect 27 67 46 75)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 32 96)(pt 32 80))
 	)
 	(drawing
@@ -252,55 +252,55 @@ on the Quartus Prime software download page.
 )
 (symbol
 	(rect 968 320 1128 416)
-	(text "multiplexer4x1" (rect 0 5 15 93)(font "Intel Clear" (font_size 8))(vertical))
-	(text "inst3" (rect 144 8 156 32)(font "Intel Clear" )(vertical))
+	(text "multiplexer4x1" (rect 0 5 19 94)(font "Intel Clear" (font_size 8))(vertical))
+	(text "inst2" (rect 139 8 156 30)(font "Intel Clear" )(vertical))
 	(port
 		(pt 32 0)
 		(input)
-		(text "S1" (rect 0 0 16 15)(font "Intel Clear" (font_size 8)))
-		(text "S1" (rect 27 21 42 37)(font "Intel Clear" (font_size 8))(vertical))
+		(text "S1" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "S1" (rect 27 21 46 37)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 32 0)(pt 32 16))
 	)
 	(port
 		(pt 48 0)
 		(input)
-		(text "S0" (rect 0 0 16 15)(font "Intel Clear" (font_size 8)))
-		(text "S0" (rect 43 21 58 37)(font "Intel Clear" (font_size 8))(vertical))
+		(text "S0" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "S0" (rect 43 21 62 37)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 48 0)(pt 48 16))
 	)
 	(port
 		(pt 64 0)
 		(input)
-		(text "A" (rect 0 0 9 15)(font "Intel Clear" (font_size 8)))
-		(text "A" (rect 59 21 74 30)(font "Intel Clear" (font_size 8))(vertical))
+		(text "A" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "A" (rect 59 21 78 29)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 64 0)(pt 64 16))
 	)
 	(port
 		(pt 80 0)
 		(input)
-		(text "B" (rect 0 0 8 15)(font "Intel Clear" (font_size 8)))
-		(text "B" (rect 75 21 90 29)(font "Intel Clear" (font_size 8))(vertical))
+		(text "B" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "B" (rect 75 21 94 29)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 80 0)(pt 80 16))
 	)
 	(port
 		(pt 96 0)
 		(input)
-		(text "C" (rect 0 0 8 15)(font "Intel Clear" (font_size 8)))
-		(text "C" (rect 91 21 106 29)(font "Intel Clear" (font_size 8))(vertical))
+		(text "C" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "C" (rect 91 21 110 29)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 96 0)(pt 96 16))
 	)
 	(port
 		(pt 112 0)
 		(input)
-		(text "D" (rect 0 0 9 15)(font "Intel Clear" (font_size 8)))
-		(text "D" (rect 107 21 122 30)(font "Intel Clear" (font_size 8))(vertical))
+		(text "D" (rect 0 0 9 19)(font "Intel Clear" (font_size 8)))
+		(text "D" (rect 107 21 126 30)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 112 0)(pt 112 16))
 	)
 	(port
 		(pt 32 96)
 		(output)
-		(text "Y" (rect 0 0 8 15)(font "Intel Clear" (font_size 8)))
-		(text "Y" (rect 27 67 42 75)(font "Intel Clear" (font_size 8))(vertical))
+		(text "Y" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "Y" (rect 27 67 46 75)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 32 96)(pt 32 80))
 	)
 	(drawing
@@ -310,121 +310,61 @@ on the Quartus Prime software download page.
 )
 (symbol
 	(rect 1152 320 1312 416)
-	(text "multiplexer4x1" (rect 0 5 15 93)(font "Intel Clear" (font_size 8))(vertical))
-	(text "inst4" (rect 144 8 156 32)(font "Intel Clear" )(vertical))
+	(text "multiplexer4x1" (rect 0 5 19 94)(font "Intel Clear" (font_size 8))(vertical))
+	(text "inst3" (rect 139 8 156 30)(font "Intel Clear" )(vertical))
 	(port
 		(pt 32 0)
 		(input)
-		(text "S1" (rect 0 0 16 15)(font "Intel Clear" (font_size 8)))
-		(text "S1" (rect 27 21 42 37)(font "Intel Clear" (font_size 8))(vertical))
+		(text "S1" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "S1" (rect 27 21 46 37)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 32 0)(pt 32 16))
 	)
 	(port
 		(pt 48 0)
 		(input)
-		(text "S0" (rect 0 0 16 15)(font "Intel Clear" (font_size 8)))
-		(text "S0" (rect 43 21 58 37)(font "Intel Clear" (font_size 8))(vertical))
+		(text "S0" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "S0" (rect 43 21 62 37)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 48 0)(pt 48 16))
 	)
 	(port
 		(pt 64 0)
 		(input)
-		(text "A" (rect 0 0 9 15)(font "Intel Clear" (font_size 8)))
-		(text "A" (rect 59 21 74 30)(font "Intel Clear" (font_size 8))(vertical))
+		(text "A" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "A" (rect 59 21 78 29)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 64 0)(pt 64 16))
 	)
 	(port
 		(pt 80 0)
 		(input)
-		(text "B" (rect 0 0 8 15)(font "Intel Clear" (font_size 8)))
-		(text "B" (rect 75 21 90 29)(font "Intel Clear" (font_size 8))(vertical))
+		(text "B" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "B" (rect 75 21 94 29)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 80 0)(pt 80 16))
 	)
 	(port
 		(pt 96 0)
 		(input)
-		(text "C" (rect 0 0 8 15)(font "Intel Clear" (font_size 8)))
-		(text "C" (rect 91 21 106 29)(font "Intel Clear" (font_size 8))(vertical))
+		(text "C" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "C" (rect 91 21 110 29)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 96 0)(pt 96 16))
 	)
 	(port
 		(pt 112 0)
 		(input)
-		(text "D" (rect 0 0 9 15)(font "Intel Clear" (font_size 8)))
-		(text "D" (rect 107 21 122 30)(font "Intel Clear" (font_size 8))(vertical))
+		(text "D" (rect 0 0 9 19)(font "Intel Clear" (font_size 8)))
+		(text "D" (rect 107 21 126 30)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 112 0)(pt 112 16))
 	)
 	(port
 		(pt 32 96)
 		(output)
-		(text "Y" (rect 0 0 8 15)(font "Intel Clear" (font_size 8)))
-		(text "Y" (rect 27 67 42 75)(font "Intel Clear" (font_size 8))(vertical))
+		(text "Y" (rect 0 0 8 19)(font "Intel Clear" (font_size 8)))
+		(text "Y" (rect 27 67 46 75)(font "Intel Clear" (font_size 8))(vertical))
 		(line (pt 32 96)(pt 32 80))
 	)
 	(drawing
 		(rectangle (rect 16 16 144 80))
 	)
 	(flipy_rotate90)
-)
-(connector
-	(text "B3" (rect 664 293 676 305)(font "Intel Clear" )(vertical))
-	(pt 680 320)
-	(pt 680 144)
-)
-(connector
-	(text "A3" (rect 648 292 660 306)(font "Intel Clear" )(vertical))
-	(pt 664 112)
-	(pt 664 320)
-)
-(connector
-	(text "C3" (rect 680 292 692 306)(font "Intel Clear" )(vertical))
-	(pt 696 320)
-	(pt 696 176)
-)
-(connector
-	(text "D3" (rect 696 292 708 306)(font "Intel Clear" )(vertical))
-	(pt 712 320)
-	(pt 712 208)
-)
-(connector
-	(text "A2" (rect 832 292 844 306)(font "Intel Clear" )(vertical))
-	(pt 848 320)
-	(pt 848 112)
-)
-(connector
-	(text "B2" (rect 848 293 860 305)(font "Intel Clear" )(vertical))
-	(pt 864 320)
-	(pt 864 144)
-)
-(connector
-	(text "C2" (rect 864 292 876 306)(font "Intel Clear" )(vertical))
-	(pt 880 320)
-	(pt 880 176)
-)
-(connector
-	(text "D2" (rect 880 292 892 306)(font "Intel Clear" )(vertical))
-	(pt 896 320)
-	(pt 896 208)
-)
-(connector
-	(text "A1" (rect 1016 292 1028 306)(font "Intel Clear" )(vertical))
-	(pt 1032 320)
-	(pt 1032 112)
-)
-(connector
-	(text "B1" (rect 1032 293 1044 305)(font "Intel Clear" )(vertical))
-	(pt 1048 320)
-	(pt 1048 144)
-)
-(connector
-	(text "C1" (rect 1048 292 1060 306)(font "Intel Clear" )(vertical))
-	(pt 1064 320)
-	(pt 1064 176)
-)
-(connector
-	(text "D1" (rect 1064 292 1076 306)(font "Intel Clear" )(vertical))
-	(pt 1080 320)
-	(pt 1080 208)
 )
 (connector
 	(pt 632 320)
@@ -451,29 +391,14 @@ on the Quartus Prime software download page.
 	(pt 1016 272)
 )
 (connector
-	(text "Y3" (rect 616 437 628 449)(font "Intel Clear" )(vertical))
-	(pt 632 416)
-	(pt 632 464)
-)
-(connector
 	(pt 816 464)
 	(pt 632 464)
 	(bus)
 )
 (connector
-	(text "Y2" (rect 800 437 812 449)(font "Intel Clear" )(vertical))
-	(pt 816 416)
-	(pt 816 464)
-)
-(connector
 	(pt 1000 464)
 	(pt 816 464)
 	(bus)
-)
-(connector
-	(text "Y1" (rect 984 437 996 449)(font "Intel Clear" )(vertical))
-	(pt 1000 416)
-	(pt 1000 464)
 )
 (connector
 	(pt 1352 464)
@@ -484,31 +409,6 @@ on the Quartus Prime software download page.
 	(pt 1184 464)
 	(pt 1000 464)
 	(bus)
-)
-(connector
-	(text "Y0" (rect 1168 437 1180 449)(font "Intel Clear" )(vertical))
-	(pt 1184 416)
-	(pt 1184 464)
-)
-(connector
-	(text "A0" (rect 1200 292 1212 306)(font "Intel Clear" )(vertical))
-	(pt 1216 320)
-	(pt 1216 112)
-)
-(connector
-	(text "B0" (rect 1216 293 1228 305)(font "Intel Clear" )(vertical))
-	(pt 1232 320)
-	(pt 1232 144)
-)
-(connector
-	(text "C0" (rect 1232 292 1244 306)(font "Intel Clear" )(vertical))
-	(pt 1248 320)
-	(pt 1248 176)
-)
-(connector
-	(text "D0" (rect 1248 292 1260 306)(font "Intel Clear" )(vertical))
-	(pt 1264 320)
-	(pt 1264 208)
 )
 (connector
 	(pt 1200 320)
@@ -629,6 +529,106 @@ on the Quartus Prime software download page.
 	(pt 576 208)
 	(pt 712 208)
 	(bus)
+)
+(connector
+	(text "A[3]" (rect 647 291 664 311)(font "Intel Clear" )(vertical))
+	(pt 664 112)
+	(pt 664 320)
+)
+(connector
+	(text "Y[3]" (rect 615 436 632 456)(font "Intel Clear" )(vertical))
+	(pt 632 416)
+	(pt 632 464)
+)
+(connector
+	(text "B[3]" (rect 663 292 680 312)(font "Intel Clear" )(vertical))
+	(pt 680 320)
+	(pt 680 144)
+)
+(connector
+	(text "C[3]" (rect 679 291 696 311)(font "Intel Clear" )(vertical))
+	(pt 696 320)
+	(pt 696 176)
+)
+(connector
+	(text "D[3]" (rect 695 291 712 311)(font "Intel Clear" )(vertical))
+	(pt 712 320)
+	(pt 712 208)
+)
+(connector
+	(text "A[2]" (rect 831 291 848 311)(font "Intel Clear" )(vertical))
+	(pt 848 320)
+	(pt 848 112)
+)
+(connector
+	(text "Y[2]" (rect 799 436 816 456)(font "Intel Clear" )(vertical))
+	(pt 816 416)
+	(pt 816 464)
+)
+(connector
+	(text "B[2]" (rect 847 292 864 312)(font "Intel Clear" )(vertical))
+	(pt 864 320)
+	(pt 864 144)
+)
+(connector
+	(text "C[2]" (rect 863 291 880 311)(font "Intel Clear" )(vertical))
+	(pt 880 320)
+	(pt 880 176)
+)
+(connector
+	(text "D[2]" (rect 879 291 896 311)(font "Intel Clear" )(vertical))
+	(pt 896 320)
+	(pt 896 208)
+)
+(connector
+	(text "A[1]" (rect 1015 291 1032 311)(font "Intel Clear" )(vertical))
+	(pt 1032 320)
+	(pt 1032 112)
+)
+(connector
+	(text "Y[1]" (rect 983 436 1000 456)(font "Intel Clear" )(vertical))
+	(pt 1000 416)
+	(pt 1000 464)
+)
+(connector
+	(text "B[1]" (rect 1031 292 1048 312)(font "Intel Clear" )(vertical))
+	(pt 1048 320)
+	(pt 1048 144)
+)
+(connector
+	(text "C[1]" (rect 1047 291 1064 311)(font "Intel Clear" )(vertical))
+	(pt 1064 320)
+	(pt 1064 176)
+)
+(connector
+	(text "D[1]" (rect 1063 291 1080 311)(font "Intel Clear" )(vertical))
+	(pt 1080 320)
+	(pt 1080 208)
+)
+(connector
+	(text "A[0]" (rect 1199 291 1216 311)(font "Intel Clear" )(vertical))
+	(pt 1216 320)
+	(pt 1216 112)
+)
+(connector
+	(text "Y[0]" (rect 1167 436 1184 456)(font "Intel Clear" )(vertical))
+	(pt 1184 416)
+	(pt 1184 464)
+)
+(connector
+	(text "B[0]" (rect 1215 292 1232 312)(font "Intel Clear" )(vertical))
+	(pt 1232 320)
+	(pt 1232 144)
+)
+(connector
+	(text "C[0]" (rect 1231 291 1248 311)(font "Intel Clear" )(vertical))
+	(pt 1248 320)
+	(pt 1248 176)
+)
+(connector
+	(text "D[0]" (rect 1247 291 1264 311)(font "Intel Clear" )(vertical))
+	(pt 1264 320)
+	(pt 1264 208)
 )
 (junction (pt 680 144))
 (junction (pt 664 112))

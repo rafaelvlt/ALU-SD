@@ -1,10 +1,10 @@
-/* Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition */
+/* Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition */
 JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("/home/loki0b/eecs/cin/cin0007/ALU-SD/displayLedsEntradaSaida/output_files/") File("displayLedsEntradaSaida.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("D:/Users/hgl/eecs/ALU-SD/displayLedsEntradaSaida/output_files/") File("displayLedsEntradaSaida.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

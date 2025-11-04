@@ -39,10 +39,10 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY inputDisplay
+set_global_assignment -name TOP_LEVEL_ENTITY outputDisplay
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 24.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "02:53:29  OCTOBER 29, 2025"
-set_global_assignment -name LAST_QUARTUS_VERSION "24.1std.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "21.1.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
@@ -63,19 +63,9 @@ set_global_assignment -name BDF_FILE multiplexer_2x1_4bits.bdf
 set_global_assignment -name BDF_FILE adder4Bits.bdf
 set_global_assignment -name BDF_FILE subtrator.bdf
 set_global_assignment -name BDF_FILE inputDisplay.bdf
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_AB27 -to A[4]
-set_location_assignment PIN_AB28 -to A[0]
-set_location_assignment PIN_AC28 -to A[1]
-set_location_assignment PIN_AC27 -to A[2]
-set_location_assignment PIN_AD27 -to A[3]
-set_location_assignment PIN_AC26 -to B[0]
 set_location_assignment PIN_AD26 -to B[1]
 set_location_assignment PIN_AB26 -to B[2]
 set_location_assignment PIN_AC25 -to B[3]
-set_location_assignment PIN_AB25 -to B[4]
 set_location_assignment PIN_G19 -to A0_OUT
 set_location_assignment PIN_F19 -to A1_OUT
 set_location_assignment PIN_E19 -to A2_OUT
@@ -122,4 +112,42 @@ set_global_assignment -name BDF_FILE subtrator_5bits_11110.bdf
 set_global_assignment -name BDF_FILE subtrator_5bits_10100.bdf
 set_global_assignment -name BDF_FILE multiplexer4x1.bdf
 set_global_assignment -name BDF_FILE multiplexer_16x4_4x1.bdf
+set_location_assignment PIN_G18 -to display0_a
+set_location_assignment PIN_F22 -to display0_b
+set_location_assignment PIN_E17 -to display0_c
+set_location_assignment PIN_L26 -to display0_d
+set_location_assignment PIN_L25 -to display0_e
+set_location_assignment PIN_J22 -to display0_f
+set_location_assignment PIN_H22 -to display0_g
+set_location_assignment PIN_M24 -to display1_a
+set_location_assignment PIN_Y22 -to display1_b
+set_location_assignment PIN_W21 -to display1_c
+set_location_assignment PIN_W25 -to display1_e
+set_location_assignment PIN_W22 -to display1_d
+set_location_assignment PIN_U23 -to display1_f
+set_location_assignment PIN_U24 -to display1_g
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name BDF_FILE output_files/bcd_signal.bdf
+set_location_assignment PIN_AA25 -to display2_a
+set_location_assignment PIN_AA26 -to display2_b
+set_location_assignment PIN_Y25 -to display2_c
+set_location_assignment PIN_W26 -to display2_d
+set_location_assignment PIN_Y26 -to display2_e
+set_location_assignment PIN_W27 -to display2_f
+set_location_assignment PIN_W28 -to display2_g
+set_location_assignment PIN_AC26 -to F[5]
+set_location_assignment PIN_AB28 -to F[0]
+set_location_assignment PIN_AB27 -to F[4]
+set_location_assignment PIN_AC28 -to F[1]
+set_location_assignment PIN_AC27 -to F[2]
+set_location_assignment PIN_AD27 -to F[3]
+set_location_assignment PIN_E21 -to F_0
+set_location_assignment PIN_E22 -to F_1
+set_location_assignment PIN_E25 -to F_2
+set_location_assignment PIN_E24 -to F_3
+set_location_assignment PIN_H21 -to F_4
+set_location_assignment PIN_G20 -to F_S
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

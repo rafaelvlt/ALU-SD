@@ -1,6 +1,6 @@
 Analysis & Synthesis report for displayLedsEntradaSaida
-Mon Nov  3 15:09:42 2025
-Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Tue Nov  4 02:52:09 2025
+Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
 ---------------------
@@ -23,41 +23,41 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2025  Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2022  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
-the Altera IP License Agreement, or other applicable license
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
-Altera and sold by Altera or its authorized distributors.  Please
-refer to the Altera Software License Subscription Agreements 
-on the Quartus Prime software download page.
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov  3 15:09:42 2025           ;
-; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
-; Revision Name                      ; displayLedsEntradaSaida                         ;
-; Top-level Entity Name              ; inputDisplay                                    ;
-; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 16                                              ;
-;     Total combinational functions  ; 16                                              ;
-;     Dedicated logic registers      ; 0                                               ;
-; Total registers                    ; 0                                               ;
-; Total pins                         ; 48                                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0                                               ;
-; Embedded Multiplier 9-bit elements ; 0                                               ;
-; Total PLLs                         ; 0                                               ;
-+------------------------------------+-------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Nov  4 02:52:09 2025       ;
+; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
+; Revision Name                      ; displayLedsEntradaSaida                     ;
+; Top-level Entity Name              ; outputDisplay                               ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 15                                          ;
+;     Total combinational functions  ; 15                                          ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 33                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------+
@@ -66,7 +66,7 @@ on the Quartus Prime software download page.
 ; Option                                                           ; Setting            ; Default Value           ;
 +------------------------------------------------------------------+--------------------+-------------------------+
 ; Device                                                           ; EP4CE115F29C7      ;                         ;
-; Top-level entity name                                            ; inputDisplay       ; displayLedsEntradaSaida ;
+; Top-level entity name                                            ; outputDisplay      ; displayLedsEntradaSaida ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V               ;
 ; Use smart compilation                                            ; Off                ; Off                     ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                      ;
@@ -151,8 +151,8 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -162,22 +162,24 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                             ; Library ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------+---------+
-; displayLedsEntradaSaida.bdf      ; yes             ; User Block Diagram/Schematic File        ; /home/loki0b/eecs/cin/cin0007/ALU-SD/displayLedsEntradaSaida/displayLedsEntradaSaida.bdf ;         ;
-; halfAdder.bdf                    ; yes             ; User Block Diagram/Schematic File        ; /home/loki0b/eecs/cin/cin0007/ALU-SD/displayLedsEntradaSaida/halfAdder.bdf               ;         ;
-; fullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File        ; /home/loki0b/eecs/cin/cin0007/ALU-SD/displayLedsEntradaSaida/fullAdder.bdf               ;         ;
-; detector_1010.bdf                ; yes             ; User Block Diagram/Schematic File        ; /home/loki0b/eecs/cin/cin0007/ALU-SD/displayLedsEntradaSaida/detector_1010.bdf           ;         ;
-; multiplexer_2x1.bdf              ; yes             ; User Block Diagram/Schematic File        ; /home/loki0b/eecs/cin/cin0007/ALU-SD/displayLedsEntradaSaida/multiplexer_2x1.bdf         ;         ;
-; multiplexer_2x1_4bits.bdf        ; yes             ; User Block Diagram/Schematic File        ; /home/loki0b/eecs/cin/cin0007/ALU-SD/displayLedsEntradaSaida/multiplexer_2x1_4bits.bdf   ;         ;
-; adder4Bits.bdf                   ; yes             ; User Block Diagram/Schematic File        ; /home/loki0b/eecs/cin/cin0007/ALU-SD/displayLedsEntradaSaida/adder4Bits.bdf              ;         ;
-; subtrator.bdf                    ; yes             ; User Block Diagram/Schematic File        ; /home/loki0b/eecs/cin/cin0007/ALU-SD/displayLedsEntradaSaida/subtrator.bdf               ;         ;
-; inputDisplay.bdf                 ; yes             ; User Block Diagram/Schematic File        ; /home/loki0b/eecs/cin/cin0007/ALU-SD/displayLedsEntradaSaida/inputDisplay.bdf            ;         ;
-; decoderBCD7segments.bdf          ; yes             ; Auto-Found Block Diagram/Schematic File  ; /home/loki0b/eecs/cin/cin0007/ALU-SD/displayLedsEntradaSaida/decoderBCD7segments.bdf     ;         ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------+---------+
+; halfAdder.bdf                    ; yes             ; User Block Diagram/Schematic File        ; D:/Users/hgl/eecs/ALU-SD/displayLedsEntradaSaida/halfAdder.bdf                  ;         ;
+; fullAdder.bdf                    ; yes             ; User Block Diagram/Schematic File        ; D:/Users/hgl/eecs/ALU-SD/displayLedsEntradaSaida/fullAdder.bdf                  ;         ;
+; outputDisplay.bdf                ; yes             ; User Block Diagram/Schematic File        ; D:/Users/hgl/eecs/ALU-SD/displayLedsEntradaSaida/outputDisplay.bdf              ;         ;
+; detector_01010_10100_11110.bdf   ; yes             ; User Block Diagram/Schematic File        ; D:/Users/hgl/eecs/ALU-SD/displayLedsEntradaSaida/detector_01010_10100_11110.bdf ;         ;
+; adder_5bits.bdf                  ; yes             ; User Block Diagram/Schematic File        ; D:/Users/hgl/eecs/ALU-SD/displayLedsEntradaSaida/adder_5bits.bdf                ;         ;
+; subtrator_5bits_01010.bdf        ; yes             ; User Block Diagram/Schematic File        ; D:/Users/hgl/eecs/ALU-SD/displayLedsEntradaSaida/subtrator_5bits_01010.bdf      ;         ;
+; subtrator_5bits_11110.bdf        ; yes             ; User Block Diagram/Schematic File        ; D:/Users/hgl/eecs/ALU-SD/displayLedsEntradaSaida/subtrator_5bits_11110.bdf      ;         ;
+; subtrator_5bits_10100.bdf        ; yes             ; User Block Diagram/Schematic File        ; D:/Users/hgl/eecs/ALU-SD/displayLedsEntradaSaida/subtrator_5bits_10100.bdf      ;         ;
+; multiplexer4x1.bdf               ; yes             ; User Block Diagram/Schematic File        ; D:/Users/hgl/eecs/ALU-SD/displayLedsEntradaSaida/multiplexer4x1.bdf             ;         ;
+; multiplexer_16x4_4x1.bdf         ; yes             ; User Block Diagram/Schematic File        ; D:/Users/hgl/eecs/ALU-SD/displayLedsEntradaSaida/multiplexer_16x4_4x1.bdf       ;         ;
+; output_files/bcd_signal.bdf      ; yes             ; User Block Diagram/Schematic File        ; D:/Users/hgl/eecs/ALU-SD/displayLedsEntradaSaida/output_files/bcd_signal.bdf    ;         ;
+; decoderbcd7segments.bdf          ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/displayLedsEntradaSaida/decoderbcd7segments.bdf        ;         ;
++----------------------------------+-----------------+------------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -185,46 +187,47 @@ on the Quartus Prime software download page.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 16         ;
+; Estimated Total logic elements              ; 15         ;
 ;                                             ;            ;
-; Total combinational functions               ; 16         ;
+; Total combinational functions               ; 15         ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 14         ;
-;     -- 3 input functions                    ; 2          ;
+;     -- 4 input functions                    ; 12         ;
+;     -- 3 input functions                    ; 3          ;
 ;     -- <=2 input functions                  ; 0          ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 16         ;
+;     -- normal mode                          ; 15         ;
 ;     -- arithmetic mode                      ; 0          ;
 ;                                             ;            ;
 ; Total registers                             ; 0          ;
 ;     -- Dedicated logic registers            ; 0          ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 48         ;
+; I/O pins                                    ; 33         ;
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
-; Maximum fan-out node                        ; A[3]~input ;
+; Maximum fan-out node                        ; F[3]~input ;
 ; Maximum fan-out                             ; 9          ;
-; Total fan-out                               ; 142        ;
-; Average fan-out                             ; 1.27       ;
+; Total fan-out                               ; 110        ;
+; Average fan-out                             ; 1.36       ;
 +---------------------------------------------+------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                 ;
-+--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+-------------------------+--------------+
-; Compilation Hierarchy Node           ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name             ; Library Name ;
-+--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+-------------------------+--------------+
-; |inputDisplay                        ; 16 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 48   ; 0            ; |inputDisplay                                                            ; inputDisplay            ; work         ;
-;    |displayLedsEntradaSaida:inst1|   ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |inputDisplay|displayLedsEntradaSaida:inst1                              ; displayLedsEntradaSaida ; work         ;
-;       |decoderBCD7segments:display2| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |inputDisplay|displayLedsEntradaSaida:inst1|decoderBCD7segments:display2 ; decoderBCD7segments     ; work         ;
-;       |detector_1010:inst|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |inputDisplay|displayLedsEntradaSaida:inst1|detector_1010:inst           ; detector_1010           ; work         ;
-;    |displayLedsEntradaSaida:inst|    ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |inputDisplay|displayLedsEntradaSaida:inst                               ; displayLedsEntradaSaida ; work         ;
-;       |decoderBCD7segments:display2| ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |inputDisplay|displayLedsEntradaSaida:inst|decoderBCD7segments:display2  ; decoderBCD7segments     ; work         ;
-;       |detector_1010:inst|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |inputDisplay|displayLedsEntradaSaida:inst|detector_1010:inst            ; detector_1010           ; work         ;
-+--------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------+-------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                            ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+----------------------------+--------------+
+; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                            ; Entity Name                ; Library Name ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+----------------------------+--------------+
+; |outputDisplay                         ; 15 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 33   ; 0            ; |outputDisplay                                                 ; outputDisplay              ; work         ;
+;    |decoderBCD7segments:display0|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |outputDisplay|decoderBCD7segments:display0                    ; decoderBCD7segments        ; work         ;
+;    |decoderBCD7segments:display1|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |outputDisplay|decoderBCD7segments:display1                    ; decoderBCD7segments        ; work         ;
+;    |detector_01010_10100_11110:inst10| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |outputDisplay|detector_01010_10100_11110:inst10               ; detector_01010_10100_11110 ; work         ;
+;    |multiplexer_16x4_4x1:inst5|        ; 4 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |outputDisplay|multiplexer_16x4_4x1:inst5                      ; multiplexer_16x4_4x1       ; work         ;
+;       |multiplexer4x1:inst1|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |outputDisplay|multiplexer_16x4_4x1:inst5|multiplexer4x1:inst1 ; multiplexer4x1             ; work         ;
+;       |multiplexer4x1:inst2|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |outputDisplay|multiplexer_16x4_4x1:inst5|multiplexer4x1:inst2 ; multiplexer4x1             ; work         ;
+;       |multiplexer4x1:inst|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |outputDisplay|multiplexer_16x4_4x1:inst5|multiplexer4x1:inst  ; multiplexer4x1             ; work         ;
++----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -248,15 +251,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 48                          ;
-; cycloneiii_lcell_comb ; 18                          ;
-;     normal            ; 18                          ;
+; boundary_port         ; 33                          ;
+; cycloneiii_lcell_comb ; 19                          ;
+;     normal            ; 19                          ;
 ;         0 data inputs ; 2                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 14                          ;
+;         1 data inputs ; 2                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 12                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.86                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.56                        ;
 +-----------------------+-----------------------------+
 
 
@@ -265,7 +269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -274,16 +278,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Mon Nov  3 15:09:28 2025
+    Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+    Info: Processing started: Tue Nov  4 02:51:59 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off displayLedsEntradaSaida -c displayLedsEntradaSaida
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file displayLedsEntradaSaida.bdf
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file displayledsentradasaida.bdf
     Info (12023): Found entity 1: displayLedsEntradaSaida
-Info (12021): Found 1 design units, including 1 entities, in source file halfAdder.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file halfadder.bdf
     Info (12023): Found entity 1: halfAdder
-Info (12021): Found 1 design units, including 1 entities, in source file fullAdder.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file fulladder.bdf
     Info (12023): Found entity 1: fullAdder
 Info (12021): Found 1 design units, including 1 entities, in source file detector_1010.bdf
     Info (12023): Found entity 1: detector_1010
@@ -291,13 +295,13 @@ Info (12021): Found 1 design units, including 1 entities, in source file multipl
     Info (12023): Found entity 1: multiplexer_2x1
 Info (12021): Found 1 design units, including 1 entities, in source file multiplexer_2x1_4bits.bdf
     Info (12023): Found entity 1: multiplexer_2x1_4bits
-Info (12021): Found 1 design units, including 1 entities, in source file adder4Bits.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file adder4bits.bdf
     Info (12023): Found entity 1: adder4Bits
 Info (12021): Found 1 design units, including 1 entities, in source file subtrator.bdf
     Info (12023): Found entity 1: subtrator
-Info (12021): Found 1 design units, including 1 entities, in source file inputDisplay.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file inputdisplay.bdf
     Info (12023): Found entity 1: inputDisplay
-Info (12021): Found 1 design units, including 1 entities, in source file outputDisplay.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file outputdisplay.bdf
     Info (12023): Found entity 1: outputDisplay
 Info (12021): Found 1 design units, including 1 entities, in source file detector_01010_10100_11110.bdf
     Info (12023): Found entity 1: detector_01010_10100_11110
@@ -313,37 +317,47 @@ Info (12021): Found 1 design units, including 1 entities, in source file multipl
     Info (12023): Found entity 1: multiplexer4x1
 Info (12021): Found 1 design units, including 1 entities, in source file multiplexer_16x4_4x1.bdf
     Info (12023): Found entity 1: multiplexer_16x4_4x1
-Info (12127): Elaborating entity "inputDisplay" for the top level hierarchy
-Info (12128): Elaborating entity "displayLedsEntradaSaida" for hierarchy "displayLedsEntradaSaida:inst"
-Warning (12125): Using design file decoderBCD7segments.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Info (12021): Found 1 design units, including 1 entities, in source file output_files/bcd_signal.bdf
+    Info (12023): Found entity 1: bcd_signal
+Info (12127): Elaborating entity "outputDisplay" for the top level hierarchy
+Warning (12125): Using design file decoderbcd7segments.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: decoderBCD7segments
-Info (12128): Elaborating entity "decoderBCD7segments" for hierarchy "displayLedsEntradaSaida:inst|decoderBCD7segments:display1"
-Info (12128): Elaborating entity "detector_1010" for hierarchy "displayLedsEntradaSaida:inst|detector_1010:inst"
-Info (12128): Elaborating entity "multiplexer_2x1_4bits" for hierarchy "displayLedsEntradaSaida:inst|multiplexer_2x1_4bits:mult"
-Info (12128): Elaborating entity "multiplexer_2x1" for hierarchy "displayLedsEntradaSaida:inst|multiplexer_2x1_4bits:mult|multiplexer_2x1:inst"
-Info (12128): Elaborating entity "subtrator" for hierarchy "displayLedsEntradaSaida:inst|subtrator:subt"
-Info (12128): Elaborating entity "adder4Bits" for hierarchy "displayLedsEntradaSaida:inst|subtrator:subt|adder4Bits:add4"
-Warning (275008): Primitive "GND" of instance "inst5" not used
-Info (12128): Elaborating entity "halfAdder" for hierarchy "displayLedsEntradaSaida:inst|subtrator:subt|adder4Bits:add4|halfAdder:inst"
-Info (12128): Elaborating entity "fullAdder" for hierarchy "displayLedsEntradaSaida:inst|subtrator:subt|adder4Bits:add4|fullAdder:inst4"
+Info (12128): Elaborating entity "decoderBCD7segments" for hierarchy "decoderBCD7segments:display1"
+Info (12128): Elaborating entity "detector_01010_10100_11110" for hierarchy "detector_01010_10100_11110:inst10"
+Info (12128): Elaborating entity "multiplexer_16x4_4x1" for hierarchy "multiplexer_16x4_4x1:inst5"
+Info (12128): Elaborating entity "multiplexer4x1" for hierarchy "multiplexer_16x4_4x1:inst5|multiplexer4x1:inst"
+Info (12128): Elaborating entity "subtrator_5bits_11110" for hierarchy "subtrator_5bits_11110:inst2"
+Info (12128): Elaborating entity "adder_5bits" for hierarchy "subtrator_5bits_11110:inst2|adder_5bits:inst"
+Warning (275080): Converted elements in bus name "B" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "B[0]" to "B0"
+    Warning (275081): Converted element name(s) from "B[1]" to "B1"
+    Warning (275081): Converted element name(s) from "B[2]" to "B2"
+    Warning (275081): Converted element name(s) from "B[3]" to "B3"
+    Warning (275081): Converted element name(s) from "B[4]" to "B4"
+Info (12128): Elaborating entity "halfAdder" for hierarchy "subtrator_5bits_11110:inst2|adder_5bits:inst|halfAdder:inst"
+Info (12128): Elaborating entity "fullAdder" for hierarchy "subtrator_5bits_11110:inst2|adder_5bits:inst|fullAdder:inst1"
+Info (12128): Elaborating entity "subtrator_5bits_10100" for hierarchy "subtrator_5bits_10100:inst1"
+Info (12128): Elaborating entity "subtrator_5bits_01010" for hierarchy "subtrator_5bits_01010:inst"
+Info (12128): Elaborating entity "bcd_signal" for hierarchy "bcd_signal:display2"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "A_display1_b" is stuck at GND
-    Warning (13410): Pin "A_display1_c" is stuck at GND
-    Warning (13410): Pin "A_display1_g" is stuck at VCC
-    Warning (13410): Pin "B_display1_b" is stuck at GND
-    Warning (13410): Pin "B_display1_c" is stuck at GND
-    Warning (13410): Pin "B_display1_g" is stuck at VCC
+    Warning (13410): Pin "display1_b" is stuck at GND
+    Warning (13410): Pin "display2_a" is stuck at VCC
+    Warning (13410): Pin "display2_b" is stuck at VCC
+    Warning (13410): Pin "display2_c" is stuck at VCC
+    Warning (13410): Pin "display2_d" is stuck at VCC
+    Warning (13410): Pin "display2_e" is stuck at VCC
+    Warning (13410): Pin "display2_f" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 64 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 38 output pins
-    Info (21061): Implemented 16 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 359 megabytes
-    Info: Processing ended: Mon Nov  3 15:09:42 2025
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:33
+Info (21057): Implemented 48 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 27 output pins
+    Info (21061): Implemented 15 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 4801 megabytes
+    Info: Processing ended: Tue Nov  4 02:52:09 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:08
 
 
