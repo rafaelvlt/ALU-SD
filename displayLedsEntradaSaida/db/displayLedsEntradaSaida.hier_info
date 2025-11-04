@@ -1,0 +1,493 @@
+|outputDisplay
+display1_a <= decoderBCD7segments:display1.a
+F[0] => detector_01010_10100_11110:inst10.A[0]
+F[0] => subtrator_5bits_11110:inst2.A[0]
+F[0] => subtrator_5bits_10100:inst1.A[0]
+F[0] => subtrator_5bits_01010:inst.A[0]
+F[0] => multiplexer_16x4_4x1:inst5.D[0]
+F[0] => F_0.DATAIN
+F[1] => detector_01010_10100_11110:inst10.A[1]
+F[1] => subtrator_5bits_11110:inst2.A[1]
+F[1] => subtrator_5bits_10100:inst1.A[1]
+F[1] => subtrator_5bits_01010:inst.A[1]
+F[1] => multiplexer_16x4_4x1:inst5.D[1]
+F[1] => F_1.DATAIN
+F[2] => detector_01010_10100_11110:inst10.A[2]
+F[2] => subtrator_5bits_11110:inst2.A[2]
+F[2] => subtrator_5bits_10100:inst1.A[2]
+F[2] => subtrator_5bits_01010:inst.A[2]
+F[2] => multiplexer_16x4_4x1:inst5.D[2]
+F[2] => F_2.DATAIN
+F[3] => detector_01010_10100_11110:inst10.A[3]
+F[3] => subtrator_5bits_11110:inst2.A[3]
+F[3] => subtrator_5bits_10100:inst1.A[3]
+F[3] => subtrator_5bits_01010:inst.A[3]
+F[3] => multiplexer_16x4_4x1:inst5.D[3]
+F[3] => F_3.DATAIN
+F[4] => detector_01010_10100_11110:inst10.A[4]
+F[4] => subtrator_5bits_11110:inst2.A[4]
+F[4] => subtrator_5bits_10100:inst1.A[4]
+F[4] => subtrator_5bits_01010:inst.A[4]
+F[4] => F_4.DATAIN
+F[5] => bcd_signal:display2.H
+F[5] => F_S.DATAIN
+display1_b <= decoderBCD7segments:display1.b
+display1_c <= decoderBCD7segments:display1.c
+display1_d <= decoderBCD7segments:display1.d
+display1_e <= decoderBCD7segments:display1.e
+display1_f <= decoderBCD7segments:display1.f
+display1_g <= decoderBCD7segments:display1.g
+display0_a <= decoderBCD7segments:display0.a
+display0_b <= decoderBCD7segments:display0.b
+display0_c <= decoderBCD7segments:display0.c
+display0_d <= decoderBCD7segments:display0.d
+display0_e <= decoderBCD7segments:display0.e
+display0_f <= decoderBCD7segments:display0.f
+display0_g <= decoderBCD7segments:display0.g
+display2_a <= bcd_signal:display2.a
+display2_b <= bcd_signal:display2.b
+display2_c <= bcd_signal:display2.c
+display2_d <= bcd_signal:display2.d
+display2_e <= bcd_signal:display2.e
+display2_f <= bcd_signal:display2.f
+display2_g <= bcd_signal:display2.g
+F_4 <= F[4].DB_MAX_OUTPUT_PORT_TYPE
+F_S <= F[5].DB_MAX_OUTPUT_PORT_TYPE
+F_3 <= F[3].DB_MAX_OUTPUT_PORT_TYPE
+F_2 <= F[2].DB_MAX_OUTPUT_PORT_TYPE
+F_1 <= F[1].DB_MAX_OUTPUT_PORT_TYPE
+F_0 <= F[0].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|decoderBCD7segments:display1
+c <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+in_D => inst5.IN0
+in_D => inst14.IN0
+in_D => inst16.IN0
+in_D => inst20.IN0
+in_D => inst22.IN0
+in_D => inst23.IN0
+in_D => inst24.IN0
+in_D => inst8.IN0
+in_D => inst11.IN0
+in_C => inst13.IN1
+in_C => inst4.IN0
+in_C => inst16.IN1
+in_C => inst21.IN0
+in_C => inst23.IN1
+in_C => inst24.IN1
+in_C => inst12.IN1
+in_B => inst3.IN0
+in_B => inst15.IN2
+in_B => inst16.IN2
+in_B => inst19.IN1
+in_B => inst24.IN2
+in_B => inst7.IN2
+in_B => inst11.IN2
+in_B => inst12.IN2
+d <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+in_A => inst.IN0
+e <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+f <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+g <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+a <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+b <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|detector_01010_10100_11110:inst10
+Y1 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => ~NO_FANOUT~
+A[1] => inst15.IN1
+A[1] => inst14.IN1
+A[2] => inst.IN1
+A[2] => inst5.IN0
+A[2] => inst15.IN0
+A[2] => inst14.IN0
+A[3] => inst.IN0
+A[3] => inst4.IN0
+A[3] => inst18.IN1
+A[4] => inst11.IN1
+A[4] => inst20.IN2
+A[4] => inst3.IN0
+Y0 <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|decoderBCD7segments:display0
+c <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+in_D => inst5.IN0
+in_D => inst14.IN0
+in_D => inst16.IN0
+in_D => inst20.IN0
+in_D => inst22.IN0
+in_D => inst23.IN0
+in_D => inst24.IN0
+in_D => inst8.IN0
+in_D => inst11.IN0
+in_C => inst13.IN1
+in_C => inst4.IN0
+in_C => inst16.IN1
+in_C => inst21.IN0
+in_C => inst23.IN1
+in_C => inst24.IN1
+in_C => inst12.IN1
+in_B => inst3.IN0
+in_B => inst15.IN2
+in_B => inst16.IN2
+in_B => inst19.IN1
+in_B => inst24.IN2
+in_B => inst7.IN2
+in_B => inst11.IN2
+in_B => inst12.IN2
+d <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+in_A => inst.IN0
+e <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+f <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+g <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+a <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+b <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|multiplexer_16x4_4x1:inst5
+Y[0] <= multiplexer4x1:inst3.Y
+Y[1] <= multiplexer4x1:inst2.Y
+Y[2] <= multiplexer4x1:inst1.Y
+Y[3] <= multiplexer4x1:inst.Y
+S1 => multiplexer4x1:inst.S1
+S1 => multiplexer4x1:inst1.S1
+S1 => multiplexer4x1:inst2.S1
+S1 => multiplexer4x1:inst3.S1
+S0 => multiplexer4x1:inst.S0
+S0 => multiplexer4x1:inst1.S0
+S0 => multiplexer4x1:inst2.S0
+S0 => multiplexer4x1:inst3.S0
+A[0] => multiplexer4x1:inst3.A
+A[1] => multiplexer4x1:inst2.A
+A[2] => multiplexer4x1:inst1.A
+A[3] => multiplexer4x1:inst.A
+B[0] => multiplexer4x1:inst3.B
+B[1] => multiplexer4x1:inst2.B
+B[2] => multiplexer4x1:inst1.B
+B[3] => multiplexer4x1:inst.B
+C[0] => multiplexer4x1:inst3.C
+C[1] => multiplexer4x1:inst2.C
+C[2] => multiplexer4x1:inst1.C
+C[3] => multiplexer4x1:inst.C
+D[0] => multiplexer4x1:inst3.D
+D[1] => multiplexer4x1:inst2.D
+D[2] => multiplexer4x1:inst1.D
+D[3] => multiplexer4x1:inst.D
+
+
+|outputDisplay|multiplexer_16x4_4x1:inst5|multiplexer4x1:inst
+Y <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => inst2.IN1
+S[0] => inst4.IN1
+S[0] => inst1.IN0
+S[1] => inst2.IN0
+S[1] => inst.IN0
+S[1] => inst3.IN0
+A => inst2.IN2
+C => inst4.IN2
+D => inst5.IN2
+B => inst3.IN2
+
+
+|outputDisplay|multiplexer_16x4_4x1:inst5|multiplexer4x1:inst1
+Y <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => inst2.IN1
+S[0] => inst4.IN1
+S[0] => inst1.IN0
+S[1] => inst2.IN0
+S[1] => inst.IN0
+S[1] => inst3.IN0
+A => inst2.IN2
+C => inst4.IN2
+D => inst5.IN2
+B => inst3.IN2
+
+
+|outputDisplay|multiplexer_16x4_4x1:inst5|multiplexer4x1:inst2
+Y <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => inst2.IN1
+S[0] => inst4.IN1
+S[0] => inst1.IN0
+S[1] => inst2.IN0
+S[1] => inst.IN0
+S[1] => inst3.IN0
+A => inst2.IN2
+C => inst4.IN2
+D => inst5.IN2
+B => inst3.IN2
+
+
+|outputDisplay|multiplexer_16x4_4x1:inst5|multiplexer4x1:inst3
+Y <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+S[0] => inst2.IN1
+S[0] => inst4.IN1
+S[0] => inst1.IN0
+S[1] => inst2.IN0
+S[1] => inst.IN0
+S[1] => inst3.IN0
+A => inst2.IN2
+C => inst4.IN2
+D => inst5.IN2
+B => inst3.IN2
+
+
+|outputDisplay|subtrator_5bits_11110:inst2
+S[0] <= adder_5bits:inst.S[0]
+S[1] <= adder_5bits:inst.S[1]
+S[2] <= adder_5bits:inst.S[2]
+S[3] <= adder_5bits:inst.S[3]
+A[0] => adder_5bits:inst.A[0]
+A[1] => adder_5bits:inst.A[1]
+A[2] => adder_5bits:inst.A[2]
+A[3] => adder_5bits:inst.A[3]
+A[4] => adder_5bits:inst.A[4]
+
+
+|outputDisplay|subtrator_5bits_11110:inst2|adder_5bits:inst
+S[0] <= halfAdder:inst.S
+S[1] <= fullAdder:inst1.S
+S[2] <= fullAdder:inst2.S
+S[3] <= fullAdder:inst3.S
+A[0] => halfAdder:inst.A
+A[1] => fullAdder:inst1.A
+A[2] => fullAdder:inst2.A
+A[3] => fullAdder:inst3.A
+A[4] => fullAdder:inst4.A
+B0 => halfAdder:inst.B
+B1 => fullAdder:inst1.B
+B2 => fullAdder:inst2.B
+B3 => fullAdder:inst3.B
+B4 => fullAdder:inst4.B
+
+
+|outputDisplay|subtrator_5bits_11110:inst2|adder_5bits:inst|halfAdder:inst
+S <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+A => xor0.IN0
+A => and0.IN0
+B => xor0.IN1
+B => and0.IN1
+Cout <= and0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|subtrator_5bits_11110:inst2|adder_5bits:inst|fullAdder:inst1
+S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
+A => ADD_XOR0.IN0
+A => ADD_AND1.IN1
+B => ADD_XOR0.IN1
+B => ADD_AND1.IN0
+Cin => ADD_XOR1.IN1
+Cin => ADD_AND0.IN0
+Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|subtrator_5bits_11110:inst2|adder_5bits:inst|fullAdder:inst2
+S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
+A => ADD_XOR0.IN0
+A => ADD_AND1.IN1
+B => ADD_XOR0.IN1
+B => ADD_AND1.IN0
+Cin => ADD_XOR1.IN1
+Cin => ADD_AND0.IN0
+Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|subtrator_5bits_11110:inst2|adder_5bits:inst|fullAdder:inst3
+S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
+A => ADD_XOR0.IN0
+A => ADD_AND1.IN1
+B => ADD_XOR0.IN1
+B => ADD_AND1.IN0
+Cin => ADD_XOR1.IN1
+Cin => ADD_AND0.IN0
+Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|subtrator_5bits_11110:inst2|adder_5bits:inst|fullAdder:inst4
+S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
+A => ADD_XOR0.IN0
+A => ADD_AND1.IN1
+B => ADD_XOR0.IN1
+B => ADD_AND1.IN0
+Cin => ADD_XOR1.IN1
+Cin => ADD_AND0.IN0
+Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|subtrator_5bits_10100:inst1
+S[0] <= adder_5bits:inst.S[0]
+S[1] <= adder_5bits:inst.S[1]
+S[2] <= adder_5bits:inst.S[2]
+S[3] <= adder_5bits:inst.S[3]
+A[0] => adder_5bits:inst.A[0]
+A[1] => adder_5bits:inst.A[1]
+A[2] => adder_5bits:inst.A[2]
+A[3] => adder_5bits:inst.A[3]
+A[4] => adder_5bits:inst.A[4]
+
+
+|outputDisplay|subtrator_5bits_10100:inst1|adder_5bits:inst
+S[0] <= halfAdder:inst.S
+S[1] <= fullAdder:inst1.S
+S[2] <= fullAdder:inst2.S
+S[3] <= fullAdder:inst3.S
+A[0] => halfAdder:inst.A
+A[1] => fullAdder:inst1.A
+A[2] => fullAdder:inst2.A
+A[3] => fullAdder:inst3.A
+A[4] => fullAdder:inst4.A
+B0 => halfAdder:inst.B
+B1 => fullAdder:inst1.B
+B2 => fullAdder:inst2.B
+B3 => fullAdder:inst3.B
+B4 => fullAdder:inst4.B
+
+
+|outputDisplay|subtrator_5bits_10100:inst1|adder_5bits:inst|halfAdder:inst
+S <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+A => xor0.IN0
+A => and0.IN0
+B => xor0.IN1
+B => and0.IN1
+Cout <= and0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|subtrator_5bits_10100:inst1|adder_5bits:inst|fullAdder:inst1
+S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
+A => ADD_XOR0.IN0
+A => ADD_AND1.IN1
+B => ADD_XOR0.IN1
+B => ADD_AND1.IN0
+Cin => ADD_XOR1.IN1
+Cin => ADD_AND0.IN0
+Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|subtrator_5bits_10100:inst1|adder_5bits:inst|fullAdder:inst2
+S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
+A => ADD_XOR0.IN0
+A => ADD_AND1.IN1
+B => ADD_XOR0.IN1
+B => ADD_AND1.IN0
+Cin => ADD_XOR1.IN1
+Cin => ADD_AND0.IN0
+Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|subtrator_5bits_10100:inst1|adder_5bits:inst|fullAdder:inst3
+S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
+A => ADD_XOR0.IN0
+A => ADD_AND1.IN1
+B => ADD_XOR0.IN1
+B => ADD_AND1.IN0
+Cin => ADD_XOR1.IN1
+Cin => ADD_AND0.IN0
+Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|subtrator_5bits_10100:inst1|adder_5bits:inst|fullAdder:inst4
+S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
+A => ADD_XOR0.IN0
+A => ADD_AND1.IN1
+B => ADD_XOR0.IN1
+B => ADD_AND1.IN0
+Cin => ADD_XOR1.IN1
+Cin => ADD_AND0.IN0
+Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|subtrator_5bits_01010:inst
+S[0] <= adder_5bits:inst.S[0]
+S[1] <= adder_5bits:inst.S[1]
+S[2] <= adder_5bits:inst.S[2]
+S[3] <= adder_5bits:inst.S[3]
+A[0] => adder_5bits:inst.A[0]
+A[1] => adder_5bits:inst.A[1]
+A[2] => adder_5bits:inst.A[2]
+A[3] => adder_5bits:inst.A[3]
+A[4] => adder_5bits:inst.A[4]
+
+
+|outputDisplay|subtrator_5bits_01010:inst|adder_5bits:inst
+S[0] <= halfAdder:inst.S
+S[1] <= fullAdder:inst1.S
+S[2] <= fullAdder:inst2.S
+S[3] <= fullAdder:inst3.S
+A[0] => halfAdder:inst.A
+A[1] => fullAdder:inst1.A
+A[2] => fullAdder:inst2.A
+A[3] => fullAdder:inst3.A
+A[4] => fullAdder:inst4.A
+B0 => halfAdder:inst.B
+B1 => fullAdder:inst1.B
+B2 => fullAdder:inst2.B
+B3 => fullAdder:inst3.B
+B4 => fullAdder:inst4.B
+
+
+|outputDisplay|subtrator_5bits_01010:inst|adder_5bits:inst|halfAdder:inst
+S <= xor0.DB_MAX_OUTPUT_PORT_TYPE
+A => xor0.IN0
+A => and0.IN0
+B => xor0.IN1
+B => and0.IN1
+Cout <= and0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|subtrator_5bits_01010:inst|adder_5bits:inst|fullAdder:inst1
+S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
+A => ADD_XOR0.IN0
+A => ADD_AND1.IN1
+B => ADD_XOR0.IN1
+B => ADD_AND1.IN0
+Cin => ADD_XOR1.IN1
+Cin => ADD_AND0.IN0
+Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|subtrator_5bits_01010:inst|adder_5bits:inst|fullAdder:inst2
+S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
+A => ADD_XOR0.IN0
+A => ADD_AND1.IN1
+B => ADD_XOR0.IN1
+B => ADD_AND1.IN0
+Cin => ADD_XOR1.IN1
+Cin => ADD_AND0.IN0
+Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|subtrator_5bits_01010:inst|adder_5bits:inst|fullAdder:inst3
+S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
+A => ADD_XOR0.IN0
+A => ADD_AND1.IN1
+B => ADD_XOR0.IN1
+B => ADD_AND1.IN0
+Cin => ADD_XOR1.IN1
+Cin => ADD_AND0.IN0
+Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|subtrator_5bits_01010:inst|adder_5bits:inst|fullAdder:inst4
+S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
+A => ADD_XOR0.IN0
+A => ADD_AND1.IN1
+B => ADD_XOR0.IN1
+B => ADD_AND1.IN0
+Cin => ADD_XOR1.IN1
+Cin => ADD_AND0.IN0
+Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|outputDisplay|bcd_signal:display2
+a <= <VCC>
+b <= <VCC>
+c <= <VCC>
+d <= <VCC>
+e <= <VCC>
+f <= <VCC>
+g <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+H => inst1.IN0
+
+

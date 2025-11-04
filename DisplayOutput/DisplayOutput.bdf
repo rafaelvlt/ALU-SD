@@ -4,9 +4,9 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2021  Intel Corporation. All rights reserved.
+Copyright (C) 2017  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -16,8 +16,7 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+refer to the applicable agreement for further details.
 */
 (header "graphic" (version "1.4"))
 (pin
@@ -993,25 +992,19 @@ https://fpgasoftware.intel.com/eula.
 	(pt 344 40)
 )
 (connector
-	(text "F[4..0]" (rect 262 246 279 275)(font "Intel Clear" )(vertical))
-	(pt 280 264)
-	(pt 280 216)
-	(bus)
-)
-(connector
-	(text "F[4..0]" (rect 463 224 480 253)(font "Intel Clear" )(vertical))
+	(text "F[4..0]" (rect 463 176 480 205)(font "Intel Clear" )(vertical))
 	(pt 480 264)
 	(pt 480 216)
 	(bus)
 )
 (connector
-	(text "F[4..0]" (rect 558 225 575 254)(font "Intel Clear" )(vertical))
+	(text "F[4..0]" (rect 558 177 575 206)(font "Intel Clear" )(vertical))
 	(pt 576 264)
 	(pt 576 216)
 	(bus)
 )
 (connector
-	(text "F[4..0]" (rect 655 221 672 250)(font "Intel Clear" )(vertical))
+	(text "F[4..0]" (rect 655 181 672 210)(font "Intel Clear" )(vertical))
 	(pt 672 264)
 	(pt 672 216)
 	(bus)
@@ -1083,16 +1076,6 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(pt 248 216)
-	(pt 280 216)
-	(bus)
-)
-(connector
-	(pt 280 216)
-	(pt 480 216)
-	(bus)
-)
-(connector
 	(pt 480 216)
 	(pt 576 216)
 	(bus)
@@ -1105,6 +1088,22 @@ https://fpgasoftware.intel.com/eula.
 (connector
 	(pt 512 408)
 	(pt 672 408)
+	(bus)
+)
+(connector
+	(text "F[4..0]" (rect 262 182 279 211)(font "Intel Clear" )(vertical))
+	(pt 280 264)
+	(pt 280 216)
+	(bus)
+)
+(connector
+	(pt 248 216)
+	(pt 280 216)
+	(bus)
+)
+(connector
+	(pt 280 216)
+	(pt 480 216)
 	(bus)
 )
 (junction (pt 248 464))

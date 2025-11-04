@@ -1,34 +1,34 @@
 |ALUcomLEDS
 LEDstatus <= ALU:inst.Status
 A[0] => ALU:inst.A[0]
-A[0] => DisplayInput:inst1.A0
+A[0] => DisplayInput:inst2.A0
 A[0] => LEDinA[0].DATAIN
 A[1] => ALU:inst.A[1]
-A[1] => DisplayInput:inst1.A1
+A[1] => DisplayInput:inst2.A1
 A[1] => LEDinA[1].DATAIN
 A[2] => ALU:inst.A[2]
-A[2] => DisplayInput:inst1.A2
+A[2] => DisplayInput:inst2.A2
 A[2] => LEDinA[2].DATAIN
 A[3] => ALU:inst.A[3]
-A[3] => DisplayInput:inst1.A3
+A[3] => DisplayInput:inst2.A3
 A[3] => LEDinA[3].DATAIN
 A[4] => ALU:inst.A[4]
-A[4] => DisplayInput:inst1.SA
+A[4] => DisplayInput:inst2.SA
 A[4] => LEDinA[4].DATAIN
 B[0] => ALU:inst.B[0]
-B[0] => DisplayInput:inst2.A0
+B[0] => DisplayInput:inst1.A0
 B[0] => LEDinB[0].DATAIN
 B[1] => ALU:inst.B[1]
-B[1] => DisplayInput:inst2.A1
+B[1] => DisplayInput:inst1.A1
 B[1] => LEDinB[1].DATAIN
 B[2] => ALU:inst.B[2]
-B[2] => DisplayInput:inst2.A2
+B[2] => DisplayInput:inst1.A2
 B[2] => LEDinB[2].DATAIN
 B[3] => ALU:inst.B[3]
-B[3] => DisplayInput:inst2.A3
+B[3] => DisplayInput:inst1.A3
 B[3] => LEDinB[3].DATAIN
 B[4] => ALU:inst.B[4]
-B[4] => DisplayInput:inst2.SA
+B[4] => DisplayInput:inst1.SA
 B[4] => LEDinB[4].DATAIN
 Seletor[0] => ALU:inst.Seletor[0]
 Seletor[0] => MUX7segmentos:inst4.Seletor[0]
@@ -67,20 +67,27 @@ displaya3 <= DisplayInput:inst2.display0_d
 displaya4 <= DisplayInput:inst2.display0_e
 displaya5 <= DisplayInput:inst2.display0_f
 displaya6 <= DisplayInput:inst2.display0_g
-pin_name9 <= DisplayOutput:inst3.display1_b
-pin_name10 <= DisplayOutput:inst3.display1_c
-pin_name11 <= DisplayOutput:inst3.display1_d
-pin_name12 <= DisplayOutput:inst3.display1_e
-pin_name13 <= DisplayOutput:inst3.display1_f
-pin_name14 <= DisplayOutput:inst3.display1_g
-pin_name15 <= DisplayOutput:inst3.display0_a
-pin_name16 <= DisplayOutput:inst3.display0_b
-pin_name17 <= DisplayOutput:inst3.display0_c
-pin_name18 <= DisplayOutput:inst3.display0_d
-pin_name19 <= DisplayOutput:inst3.display0_e
-pin_name20 <= DisplayOutput:inst3.display0_f
-pin_name21 <= DisplayOutput:inst3.display0_g
-pin_name22 <= DisplayOutput:inst3.display1_a
+displayout0g <= DisplayOutput:inst3.display0_g
+displayout0a <= DisplayOutput:inst3.display0_a
+displayout0b <= DisplayOutput:inst3.display0_b
+displayout0c <= DisplayOutput:inst3.display0_c
+displayout0d <= DisplayOutput:inst3.display0_d
+displayout0e <= DisplayOutput:inst3.display0_e
+displayout1a <= DisplayOutput:inst3.display1_a
+displayout1b <= DisplayOutput:inst3.display1_b
+displayout1c <= DisplayOutput:inst3.display1_c
+displayout1d <= DisplayOutput:inst3.display1_d
+displayout1e <= DisplayOutput:inst3.display1_e
+displayout1f <= DisplayOutput:inst3.display1_f
+displayout1g <= DisplayOutput:inst3.display1_g
+displayout2g <= DisplayOutput:inst3.display2_g
+displayout2a <= DisplayOutput:inst3.display2_a
+displayout2b <= DisplayOutput:inst3.display2_b
+displayout2c <= DisplayOutput:inst3.display2_c
+displayout2d <= DisplayOutput:inst3.display2_d
+displayout2e <= DisplayOutput:inst3.display2_e
+displayout2f <= DisplayOutput:inst3.display2_f
+displayout0f <= DisplayOutput:inst3.display0_f
 LEDinA[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
 LEDinA[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
 LEDinA[2] <= A[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -105,15 +112,25 @@ LEDPlaca[5] <= ALU:inst.Resultado[5]
 |ALUcomLEDS|ALU:inst
 Status <= MuxSinal:inst4.outcomp
 A[0] => Conversor5bitspara6bits:inst2.IN0
+A[0] => UnidadeANDXOR:inst6.A[0]
 A[1] => Conversor5bitspara6bits:inst2.IN1
+A[1] => UnidadeANDXOR:inst6.A[1]
 A[2] => Conversor5bitspara6bits:inst2.IN2
+A[2] => UnidadeANDXOR:inst6.A[2]
 A[3] => Conversor5bitspara6bits:inst2.IN3
+A[3] => UnidadeANDXOR:inst6.A[3]
 A[4] => Conversor5bitspara6bits:inst2.Sinal
+A[4] => UnidadeANDXOR:inst6.A[4]
 B[0] => Conversor5bitspara6bits:inst3.IN0
+B[0] => UnidadeANDXOR:inst6.B[0]
 B[1] => Conversor5bitspara6bits:inst3.IN1
+B[1] => UnidadeANDXOR:inst6.B[1]
 B[2] => Conversor5bitspara6bits:inst3.IN2
+B[2] => UnidadeANDXOR:inst6.B[2]
 B[3] => Conversor5bitspara6bits:inst3.IN3
+B[3] => UnidadeANDXOR:inst6.B[3]
 B[4] => Conversor5bitspara6bits:inst3.Sinal
+B[4] => UnidadeANDXOR:inst6.B[4]
 Seletor[0] => MuxSinal:inst4.S[0]
 Seletor[0] => MuxMagnitude:inst5.Seletor[0]
 Seletor[1] => MuxSinal:inst4.S[1]
@@ -145,7 +162,7 @@ Maior => inst2.IN3
 
 
 |ALUcomLEDS|ALU:inst|UnidadeLogica:inst1
-MENOR <= Comparador:inst3.MENOR
+IGUAL <= Comparador:inst3.IGUAL
 A[0] => Comparador:inst3.A[0]
 A[0] => opAND:inst.A[0]
 A[0] => opXOR:inst2.A[0]
@@ -182,8 +199,8 @@ B[4] => opXOR:inst2.B[4]
 B[5] => Comparador:inst3.B[5]
 B[5] => opAND:inst.B[5]
 B[5] => opXOR:inst2.B[5]
-MAIOR <= Comparador:inst3.MAIOR
-IGUAL <= Comparador:inst3.IGUAL
+Maior <= Comparador:inst3.MENOR
+Menor <= Comparador:inst3.MAIOR
 AND[0] <= opAND:inst.OUT[0]
 AND[1] <= opAND:inst.OUT[1]
 AND[2] <= opAND:inst.OUT[2]
@@ -723,6 +740,87 @@ AND => inst3.IN3
 Sub => inst1.IN3
 Soma => inst.IN3
 C2deB => inst2.IN3
+
+
+|ALUcomLEDS|ALU:inst|UnidadeANDXOR:inst6
+AND[0] <= opAND:inst2.OUT[0]
+AND[1] <= opAND:inst2.OUT[1]
+AND[2] <= opAND:inst2.OUT[2]
+AND[3] <= opAND:inst2.OUT[3]
+AND[4] <= opAND:inst2.OUT[4]
+AND[5] <= opAND:inst2.OUT[5]
+A[0] => opAND:inst2.A[0]
+A[0] => opXOR:inst.A[0]
+A[1] => opAND:inst2.A[1]
+A[1] => opXOR:inst.A[1]
+A[2] => opAND:inst2.A[2]
+A[2] => opXOR:inst.A[2]
+A[3] => opAND:inst2.A[3]
+A[3] => opXOR:inst.A[3]
+A[4] => opAND:inst2.A[4]
+A[4] => opXOR:inst.A[4]
+A[5] => opAND:inst2.A[5]
+A[5] => opXOR:inst.A[5]
+B[0] => opAND:inst2.B[0]
+B[0] => opXOR:inst.B[0]
+B[1] => opAND:inst2.B[1]
+B[1] => opXOR:inst.B[1]
+B[2] => opAND:inst2.B[2]
+B[2] => opXOR:inst.B[2]
+B[3] => opAND:inst2.B[3]
+B[3] => opXOR:inst.B[3]
+B[4] => opAND:inst2.B[4]
+B[4] => opXOR:inst.B[4]
+B[5] => opAND:inst2.B[5]
+B[5] => opXOR:inst.B[5]
+XOR[0] <= opXOR:inst.OUT[0]
+XOR[1] <= opXOR:inst.OUT[1]
+XOR[2] <= opXOR:inst.OUT[2]
+XOR[3] <= opXOR:inst.OUT[3]
+XOR[4] <= opXOR:inst.OUT[4]
+XOR[5] <= opXOR:inst.OUT[5]
+
+
+|ALUcomLEDS|ALU:inst|UnidadeANDXOR:inst6|opAND:inst2
+OUT[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst.IN0
+A[1] => inst1.IN0
+A[2] => inst2.IN0
+A[3] => inst4.IN0
+A[4] => inst5.IN0
+A[5] => inst6.IN0
+B[0] => inst.IN1
+B[1] => inst1.IN1
+B[2] => inst2.IN1
+B[3] => inst4.IN1
+B[4] => inst5.IN1
+B[5] => inst6.IN1
+
+
+|ALUcomLEDS|ALU:inst|UnidadeANDXOR:inst6|opXOR:inst
+OUT[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst.IN0
+A[1] => inst1.IN0
+A[2] => inst2.IN0
+A[3] => inst3.IN0
+A[4] => inst4.IN0
+A[5] => inst5.IN0
+B[0] => inst.IN1
+B[1] => inst1.IN1
+B[2] => inst2.IN1
+B[3] => inst3.IN1
+B[4] => inst4.IN1
+B[5] => inst5.IN1
 
 
 |ALUcomLEDS|ALU:inst|UnidadeAritmetica:inst
@@ -1401,12 +1499,12 @@ S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
 display1_a <= decoderBCD7segments:display1.a
 A3 => detector_1010:inst.A3
 A3 => multiplexer_2x1_4bits:mult.A3
-A3 => subtrator:subt.A3
+A3 => subtratorde1010:inst1.A3
 A2 => detector_1010:inst.A2
-A2 => subtrator:subt.A2
+A2 => subtratorde1010:inst1.A2
 A2 => multiplexer_2x1_4bits:mult.A2
 A1 => detector_1010:inst.A1
-A1 => subtrator:subt.A1
+A1 => subtratorde1010:inst1.A1
 A1 => multiplexer_2x1_4bits:mult.A1
 display1_b <= decoderBCD7segments:display1.b
 display1_c <= decoderBCD7segments:display1.c
@@ -1415,7 +1513,7 @@ display1_e <= decoderBCD7segments:display1.e
 display1_f <= decoderBCD7segments:display1.f
 display1_g <= decoderBCD7segments:display1.g
 display0_a <= decoderBCD7segments:display2.a
-A0 => subtrator:subt.A0
+A0 => subtratorde1010:inst1.A0
 A0 => multiplexer_2x1_4bits:mult.A0
 display0_b <= decoderBCD7segments:display2.b
 display0_c <= decoderBCD7segments:display2.c
@@ -1554,7 +1652,7 @@ D => inst2.IN0
 A => inst.IN0
 
 
-|ALUcomLEDS|DisplayInput:inst1|subtrator:subt
+|ALUcomLEDS|DisplayInput:inst1|subtratorde1010:inst1
 S3 <= adder4Bits:add4.out3
 A3 => adder4Bits:add4.A3
 A2 => adder4Bits:add4.A2
@@ -1565,7 +1663,7 @@ S1 <= adder4Bits:add4.out1
 S0 <= adder4Bits:add4.out0
 
 
-|ALUcomLEDS|DisplayInput:inst1|subtrator:subt|adder4Bits:add4
+|ALUcomLEDS|DisplayInput:inst1|subtratorde1010:inst1|adder4Bits:add4
 out0 <= halfAdder:inst.S
 A0 => halfAdder:inst.A
 B0 => halfAdder:inst.B
@@ -1580,7 +1678,7 @@ out2 <= fullAdder:inst3.S
 out1 <= fullAdder:inst2.S
 
 
-|ALUcomLEDS|DisplayInput:inst1|subtrator:subt|adder4Bits:add4|halfAdder:inst
+|ALUcomLEDS|DisplayInput:inst1|subtratorde1010:inst1|adder4Bits:add4|halfAdder:inst
 S <= xor0.DB_MAX_OUTPUT_PORT_TYPE
 A => xor0.IN0
 A => and0.IN0
@@ -1589,7 +1687,7 @@ B => and0.IN1
 Cout <= and0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUcomLEDS|DisplayInput:inst1|subtrator:subt|adder4Bits:add4|fullAdder:inst4
+|ALUcomLEDS|DisplayInput:inst1|subtratorde1010:inst1|adder4Bits:add4|fullAdder:inst4
 S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
 A => ADD_XOR0.IN0
 A => ADD_AND1.IN1
@@ -1600,7 +1698,7 @@ Cin => ADD_AND0.IN0
 Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUcomLEDS|DisplayInput:inst1|subtrator:subt|adder4Bits:add4|fullAdder:inst3
+|ALUcomLEDS|DisplayInput:inst1|subtratorde1010:inst1|adder4Bits:add4|fullAdder:inst3
 S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
 A => ADD_XOR0.IN0
 A => ADD_AND1.IN1
@@ -1611,7 +1709,7 @@ Cin => ADD_AND0.IN0
 Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUcomLEDS|DisplayInput:inst1|subtrator:subt|adder4Bits:add4|fullAdder:inst2
+|ALUcomLEDS|DisplayInput:inst1|subtratorde1010:inst1|adder4Bits:add4|fullAdder:inst2
 S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
 A => ADD_XOR0.IN0
 A => ADD_AND1.IN1
@@ -1626,12 +1724,12 @@ Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
 display1_a <= decoderBCD7segments:display1.a
 A3 => detector_1010:inst.A3
 A3 => multiplexer_2x1_4bits:mult.A3
-A3 => subtrator:subt.A3
+A3 => subtratorde1010:inst1.A3
 A2 => detector_1010:inst.A2
-A2 => subtrator:subt.A2
+A2 => subtratorde1010:inst1.A2
 A2 => multiplexer_2x1_4bits:mult.A2
 A1 => detector_1010:inst.A1
-A1 => subtrator:subt.A1
+A1 => subtratorde1010:inst1.A1
 A1 => multiplexer_2x1_4bits:mult.A1
 display1_b <= decoderBCD7segments:display1.b
 display1_c <= decoderBCD7segments:display1.c
@@ -1640,7 +1738,7 @@ display1_e <= decoderBCD7segments:display1.e
 display1_f <= decoderBCD7segments:display1.f
 display1_g <= decoderBCD7segments:display1.g
 display0_a <= decoderBCD7segments:display2.a
-A0 => subtrator:subt.A0
+A0 => subtratorde1010:inst1.A0
 A0 => multiplexer_2x1_4bits:mult.A0
 display0_b <= decoderBCD7segments:display2.b
 display0_c <= decoderBCD7segments:display2.c
@@ -1779,7 +1877,7 @@ D => inst2.IN0
 A => inst.IN0
 
 
-|ALUcomLEDS|DisplayInput:inst2|subtrator:subt
+|ALUcomLEDS|DisplayInput:inst2|subtratorde1010:inst1
 S3 <= adder4Bits:add4.out3
 A3 => adder4Bits:add4.A3
 A2 => adder4Bits:add4.A2
@@ -1790,7 +1888,7 @@ S1 <= adder4Bits:add4.out1
 S0 <= adder4Bits:add4.out0
 
 
-|ALUcomLEDS|DisplayInput:inst2|subtrator:subt|adder4Bits:add4
+|ALUcomLEDS|DisplayInput:inst2|subtratorde1010:inst1|adder4Bits:add4
 out0 <= halfAdder:inst.S
 A0 => halfAdder:inst.A
 B0 => halfAdder:inst.B
@@ -1805,7 +1903,7 @@ out2 <= fullAdder:inst3.S
 out1 <= fullAdder:inst2.S
 
 
-|ALUcomLEDS|DisplayInput:inst2|subtrator:subt|adder4Bits:add4|halfAdder:inst
+|ALUcomLEDS|DisplayInput:inst2|subtratorde1010:inst1|adder4Bits:add4|halfAdder:inst
 S <= xor0.DB_MAX_OUTPUT_PORT_TYPE
 A => xor0.IN0
 A => and0.IN0
@@ -1814,7 +1912,7 @@ B => and0.IN1
 Cout <= and0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUcomLEDS|DisplayInput:inst2|subtrator:subt|adder4Bits:add4|fullAdder:inst4
+|ALUcomLEDS|DisplayInput:inst2|subtratorde1010:inst1|adder4Bits:add4|fullAdder:inst4
 S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
 A => ADD_XOR0.IN0
 A => ADD_AND1.IN1
@@ -1825,7 +1923,7 @@ Cin => ADD_AND0.IN0
 Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUcomLEDS|DisplayInput:inst2|subtrator:subt|adder4Bits:add4|fullAdder:inst3
+|ALUcomLEDS|DisplayInput:inst2|subtratorde1010:inst1|adder4Bits:add4|fullAdder:inst3
 S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
 A => ADD_XOR0.IN0
 A => ADD_AND1.IN1
@@ -1836,7 +1934,7 @@ Cin => ADD_AND0.IN0
 Cout <= ADD_XOR2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ALUcomLEDS|DisplayInput:inst2|subtrator:subt|adder4Bits:add4|fullAdder:inst2
+|ALUcomLEDS|DisplayInput:inst2|subtratorde1010:inst1|adder4Bits:add4|fullAdder:inst2
 S <= ADD_XOR1.DB_MAX_OUTPUT_PORT_TYPE
 A => ADD_XOR0.IN0
 A => ADD_AND1.IN1

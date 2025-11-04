@@ -96,55 +96,59 @@
 					"strict" : false
 				},
 				{
-					"name" : "pin_name10",
+					"name" : "displayout0g",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name11",
+					"name" : "displayout0a",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name12",
+					"name" : "displayout0b",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name13",
+					"name" : "displayout0c",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name14",
+					"name" : "displayout0d",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name15",
+					"name" : "displayout0e",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name16",
+					"name" : "displayout1a",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name17",
+					"name" : "displayout1c",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name18",
+					"name" : "displayout1d",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name19",
+					"name" : "displayout1e",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name20",
+					"name" : "displayout1f",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name21",
+					"name" : "displayout1g",
 					"strict" : false
 				},
 				{
-					"name" : "pin_name22",
+					"name" : "displayout2g",
+					"strict" : false
+				},
+				{
+					"name" : "displayout0f",
 					"strict" : false
 				},
 				{
@@ -228,10 +232,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[3]",
-					"strict" : false
-				},
-				{
 					"name" : "B[2]",
 					"strict" : false
 				},
@@ -241,6 +241,10 @@
 				},
 				{
 					"name" : "B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "B[3]",
 					"strict" : false
 				},
 				{

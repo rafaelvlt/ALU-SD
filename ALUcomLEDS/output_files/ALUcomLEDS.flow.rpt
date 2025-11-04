@@ -1,6 +1,6 @@
 Flow report for ALUcomLEDS
-Tue Nov  4 07:11:21 2025
-Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Tue Nov  4 12:14:36 2025
+Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2021  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov  4 07:11:21 2025       ;
-; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
+; Flow Status                        ; Successful - Tue Nov  4 12:14:36 2025       ;
+; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; ALUcomLEDS                                  ;
 ; Top-level Entity Name              ; ALUcomLEDS                                  ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 125 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 125 / 114,480 ( < 1 % )                     ;
+; Total logic elements               ; 129 / 114,480 ( < 1 % )                     ;
+;     Total combinational functions  ; 129 / 114,480 ( < 1 % )                     ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 75 / 529 ( 14 % )                           ;
+; Total pins                         ; 82 / 529 ( 16 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
@@ -65,58 +65,60 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/04/2025 07:10:37 ;
+; Start date & time ; 11/04/2025 12:14:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ALUcomLEDS          ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                                       ;
-+-------------------------------------+----------------------------------------------------------------+---------------+-------------+-----------------------------------+
-; Assignment Name                     ; Value                                                          ; Default Value ; Entity Name ; Section Id                        ;
-+-------------------------------------+----------------------------------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 229549758640077.176225103710772                                ; --            ; --          ; --                                ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                            ; --            ; --          ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                            ; --            ; --          ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                            ; --            ; --          ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                            ; --            ; --          ; eda_board_design_symbol           ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                    ; --            ; --          ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                                             ; <None>        ; --          ; --                                ;
-; EDA_TIME_SCALE                      ; 1 ps                                                           ; --            ; --          ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                                             ; --            ; --          ; --                                ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                                              ; --            ; --          ; --                                ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                           ; --            ; --          ; --                                ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family)                         ; --            ; --          ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                         ; --            ; --          ; Top                               ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                         ; --            ; --          ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                            ; --            ; --          ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                          ; --            ; --          ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                   ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/displayledsentradasaida/output_files ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/displayoutput                        ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/mux7segmentos                        ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/minimux7seg                          ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/displayinput                         ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/xor                                  ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/unidadelogica                        ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/unidadearitmetica                    ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/subtrator6bits                       ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/somadorseisbits                      ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/somador                              ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/muxsinal                             ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/muxmagnitude                         ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/muxdozeseis                          ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/minimux                              ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/displayledsentradasaida              ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/descomplementador                    ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/conversor5bitspara6bits              ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/complementodois                      ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/comparador                           ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/and                                  ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd/alu                                  ; --            ; --          ; --                                ;
-; SEARCH_PATH                         ; c:/quartusprojetos/alu-sd                                      ; --            ; --          ; --                                ;
-+-------------------------------------+----------------------------------------------------------------+---------------+-------------+-----------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                   ;
++-------------------------------------+--------------------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                     ; Value                                      ; Default Value ; Entity Name ; Section Id                        ;
++-------------------------------------+--------------------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID               ; 238368719731819.176226924306220            ; --            ; --          ; --                                ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                        ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                        ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                        ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                        ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                         ; <None>        ; --          ; --                                ;
+; EDA_TIME_SCALE                      ; 1 ps                                       ; --            ; --          ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                         ; --            ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                          ; --            ; --          ; --                                ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                       ; --            ; --          ; --                                ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)     ; --            ; --          ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)     ; --            ; --          ; Top                               ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)     ; --            ; --          ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                        ; --            ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW      ; --            ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                               ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../unidadeandxor                           ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; d:\users\hgl\eecs\alu-sd\somadorseisbits   ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; d:\users\hgl\eecs\alu-sd\subtratorseisbits ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../xor                                     ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../unidadelogica                           ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../unidadearitmetica                       ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../subtratorseisbits                       ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../subtrator6bits                          ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../somador                                 ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../muxsinal                                ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../muxmagnitude                            ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../muxdozeseis                             ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../mux7segmentos                           ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../minimux7seg                             ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../minimux                                 ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../displayoutput                           ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../displayledsentradasaida/output_files    ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../displayledsentradasaida                 ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../displayinput                            ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../descomplementador                       ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../conversor5bitspara6bits                 ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../complementodois                         ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../comparador                              ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../and                                     ; --            ; --          ; --                                ;
+; SEARCH_PATH                         ; ../alu                                     ; --            ; --          ; --                                ;
++-------------------------------------+--------------------------------------------+---------------+-------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -124,12 +126,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4778 MB             ; 00:00:33                           ;
-; Fitter               ; 00:00:15     ; 1.0                     ; 5758 MB             ; 00:00:23                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4999 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 4886 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4677 MB             ; 00:00:01                           ;
-; Total                ; 00:00:38     ; --                      ; --                  ; 00:01:02                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4804 MB             ; 00:00:09                           ;
+; Fitter               ; 00:00:10     ; 1.0                     ; 6731 MB             ; 00:00:11                           ;
+; Assembler            ; 00:00:05     ; 1.0                     ; 4741 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.1                     ; 4988 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4661 MB             ; 00:00:00                           ;
+; Total                ; 00:00:32     ; --                      ; --                  ; 00:00:23                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -138,11 +140,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; rafaelvlt        ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; rafaelvlt        ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; rafaelvlt        ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; rafaelvlt        ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; rafaelvlt        ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; HWC29            ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; HWC29            ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; HWC29            ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; HWC29            ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; HWC29            ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

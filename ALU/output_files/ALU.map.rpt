@@ -1,6 +1,6 @@
 Analysis & Synthesis report for ALU
-Mon Nov  3 17:23:57 2025
-Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
+Tue Nov  4 12:08:00 2025
+Quartus Prime Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
 
 
 ---------------------
@@ -23,7 +23,7 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2021  Intel Corporation. All rights reserved.
+Copyright (C) 2022  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -43,13 +43,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Nov  3 17:23:57 2025       ;
-; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov  4 12:08:00 2025       ;
+; Quartus Prime Version              ; 21.1.1 Build 850 06/23/2022 SJ Lite Edition ;
 ; Revision Name                      ; ALU                                         ;
 ; Top-level Entity Name              ; ALU                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 79                                          ;
-;     Total combinational functions  ; 79                                          ;
+; Total logic elements               ; 80                                          ;
+;     Total combinational functions  ; 80                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
 ; Total pins                         ; 20                                          ;
@@ -150,8 +150,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -161,28 +161,29 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                           ; Library ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------+---------+
-; ALU.bdf                          ; yes             ; User Block Diagram/Schematic File        ; C:/quartusProjetos/ALU/ALU.bdf                                         ;         ;
-; muxsinal.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/muxsinal/muxsinal.bdf                               ;         ;
-; unidadelogica.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/unidadelogica/unidadelogica.bdf                     ;         ;
-; comparador.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/comparador/comparador.bdf                           ;         ;
-; opand.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/and/opand.bdf                                       ;         ;
-; opxor.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/xor/opxor.bdf                                       ;         ;
-; conversor5bitspara6bits.bdf      ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/conversor5bitspara6bits/conversor5bitspara6bits.bdf ;         ;
-; muxdozeseis.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/muxdozeseis/muxdozeseis.bdf                         ;         ;
-; complementodois.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/complementodois/complementodois.bdf                 ;         ;
-; somador.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/somador/somador.bdf                                 ;         ;
-; muxmagnitude.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/muxmagnitude/muxmagnitude.bdf                       ;         ;
-; minimux.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/minimux/minimux.bdf                                 ;         ;
-; unidadearitmetica.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/unidadearitmetica/unidadearitmetica.bdf             ;         ;
-; descomplementador.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/descomplementador/descomplementador.bdf             ;         ;
-; somadorseisbits.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/somadorseisbits/somadorseisbits.bdf                 ;         ;
-; subtrator6bits.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; c:/quartusprojetos/subtrator6bits/subtrator6bits.bdf                   ;         ;
-+----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------+---------+
+; ALU.bdf                          ; yes             ; User Block Diagram/Schematic File        ; D:/Users/hgl/eecs/ALU-SD/ALU/ALU.bdf                                         ;         ;
+; muxsinal.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/muxsinal/muxsinal.bdf                               ;         ;
+; unidadelogica.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/unidadelogica/unidadelogica.bdf                     ;         ;
+; comparador.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/comparador/comparador.bdf                           ;         ;
+; opand.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/and/opand.bdf                                       ;         ;
+; opxor.bdf                        ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/xor/opxor.bdf                                       ;         ;
+; conversor5bitspara6bits.bdf      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/conversor5bitspara6bits/conversor5bitspara6bits.bdf ;         ;
+; muxdozeseis.bdf                  ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/muxdozeseis/muxdozeseis.bdf                         ;         ;
+; complementodois.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/complementodois/complementodois.bdf                 ;         ;
+; somador.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/somador/somador.bdf                                 ;         ;
+; muxmagnitude.bdf                 ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/muxmagnitude/muxmagnitude.bdf                       ;         ;
+; minimux.bdf                      ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/minimux/minimux.bdf                                 ;         ;
+; unidadeandxor.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/unidadeandxor/unidadeandxor.bdf                     ;         ;
+; unidadearitmetica.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/unidadearitmetica/unidadearitmetica.bdf             ;         ;
+; descomplementador.bdf            ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/descomplementador/descomplementador.bdf             ;         ;
+; somadorseisbits.bdf              ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/somadorseisbits/somadorseisbits.bdf                 ;         ;
+; subtrator6bits.bdf               ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Users/hgl/eecs/ALU-SD/subtrator6bits/subtrator6bits.bdf                   ;         ;
++----------------------------------+-----------------+------------------------------------------+------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -190,16 +191,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 79         ;
+; Estimated Total logic elements              ; 80         ;
 ;                                             ;            ;
-; Total combinational functions               ; 79         ;
+; Total combinational functions               ; 80         ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 60         ;
-;     -- 3 input functions                    ; 15         ;
-;     -- <=2 input functions                  ; 4          ;
+;     -- 4 input functions                    ; 61         ;
+;     -- 3 input functions                    ; 12         ;
+;     -- <=2 input functions                  ; 7          ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 79         ;
+;     -- normal mode                          ; 80         ;
 ;     -- arithmetic mode                      ; 0          ;
 ;                                             ;            ;
 ; Total registers                             ; 0          ;
@@ -211,9 +212,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; B[0]~input ;
-; Maximum fan-out                             ; 20         ;
-; Total fan-out                               ; 320        ;
-; Average fan-out                             ; 2.69       ;
+; Maximum fan-out                             ; 18         ;
+; Total fan-out                               ; 321        ;
+; Average fan-out                             ; 2.67       ;
 +---------------------------------------------+------------+
 
 
@@ -222,25 +223,25 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                     ; Entity Name             ; Library Name ;
 +------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------+-------------------------+--------------+
-; |ALU                               ; 79 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |ALU                                                                                    ; ALU                     ; work         ;
+; |ALU                               ; 80 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 20   ; 0            ; |ALU                                                                                    ; ALU                     ; work         ;
 ;    |Conversor5bitspara6bits:inst2| ; 5 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|Conversor5bitspara6bits:inst2                                                      ; Conversor5bitspara6bits ; work         ;
 ;       |ComplementoDois:inst|       ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|Conversor5bitspara6bits:inst2|ComplementoDois:inst                                 ; ComplementoDois         ; work         ;
 ;          |Somador:inst10|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|Conversor5bitspara6bits:inst2|ComplementoDois:inst|Somador:inst10                  ; Somador                 ; work         ;
 ;       |MUXDozeSeis:inst3|          ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|Conversor5bitspara6bits:inst2|MUXDozeSeis:inst3                                    ; MUXDozeSeis             ; work         ;
-;    |Conversor5bitspara6bits:inst3| ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|Conversor5bitspara6bits:inst3                                                      ; Conversor5bitspara6bits ; work         ;
+;    |Conversor5bitspara6bits:inst3| ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|Conversor5bitspara6bits:inst3                                                      ; Conversor5bitspara6bits ; work         ;
 ;       |ComplementoDois:inst|       ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|Conversor5bitspara6bits:inst3|ComplementoDois:inst                                 ; ComplementoDois         ; work         ;
 ;          |Somador:inst12|          ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|Conversor5bitspara6bits:inst3|ComplementoDois:inst|Somador:inst12                  ; Somador                 ; work         ;
 ;          |Somador:inst8|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|Conversor5bitspara6bits:inst3|ComplementoDois:inst|Somador:inst8                   ; Somador                 ; work         ;
-;       |MUXDozeSeis:inst3|          ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|Conversor5bitspara6bits:inst3|MUXDozeSeis:inst3                                    ; MUXDozeSeis             ; work         ;
-;    |MuxMagnitude:inst5|            ; 34 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|MuxMagnitude:inst5                                                                 ; MuxMagnitude            ; work         ;
+;       |MUXDozeSeis:inst3|          ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|Conversor5bitspara6bits:inst3|MUXDozeSeis:inst3                                    ; MUXDozeSeis             ; work         ;
+;    |MuxMagnitude:inst5|            ; 30 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|MuxMagnitude:inst5                                                                 ; MuxMagnitude            ; work         ;
 ;       |miniMux:inst1|              ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|MuxMagnitude:inst5|miniMux:inst1                                                   ; miniMux                 ; work         ;
 ;       |miniMux:inst2|              ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|MuxMagnitude:inst5|miniMux:inst2                                                   ; miniMux                 ; work         ;
-;       |miniMux:inst3|              ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|MuxMagnitude:inst5|miniMux:inst3                                                   ; miniMux                 ; work         ;
-;       |miniMux:inst4|              ; 9 (9)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|MuxMagnitude:inst5|miniMux:inst4                                                   ; miniMux                 ; work         ;
-;       |miniMux:inst5|              ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|MuxMagnitude:inst5|miniMux:inst5                                                   ; miniMux                 ; work         ;
+;       |miniMux:inst3|              ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|MuxMagnitude:inst5|miniMux:inst3                                                   ; miniMux                 ; work         ;
+;       |miniMux:inst4|              ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|MuxMagnitude:inst5|miniMux:inst4                                                   ; miniMux                 ; work         ;
+;       |miniMux:inst5|              ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|MuxMagnitude:inst5|miniMux:inst5                                                   ; miniMux                 ; work         ;
 ;       |miniMux:inst|               ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|MuxMagnitude:inst5|miniMux:inst                                                    ; miniMux                 ; work         ;
-;    |MuxSinal:inst4|                ; 10 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|MuxSinal:inst4                                                                     ; MuxSinal                ; work         ;
-;    |UnidadeAritmetica:inst|        ; 24 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst                                                             ; UnidadeAritmetica       ; work         ;
+;    |MuxSinal:inst4|                ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|MuxSinal:inst4                                                                     ; MuxSinal                ; work         ;
+;    |UnidadeAritmetica:inst|        ; 26 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst                                                             ; UnidadeAritmetica       ; work         ;
 ;       |Descomplementador:inst1|    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Descomplementador:inst1                                     ; Descomplementador       ; work         ;
 ;          |ComplementoDois:inst|    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Descomplementador:inst1|ComplementoDois:inst                ; ComplementoDois         ; work         ;
 ;             |Somador:inst10|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Descomplementador:inst1|ComplementoDois:inst|Somador:inst10 ; Somador                 ; work         ;
@@ -248,21 +249,23 @@ https://fpgasoftware.intel.com/eula.
 ;          |ComplementoDois:inst|    ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Descomplementador:inst2|ComplementoDois:inst                ; ComplementoDois         ; work         ;
 ;             |Somador:inst10|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Descomplementador:inst2|ComplementoDois:inst|Somador:inst10 ; Somador                 ; work         ;
 ;             |Somador:inst8|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Descomplementador:inst2|ComplementoDois:inst|Somador:inst8  ; Somador                 ; work         ;
-;       |SomadorSeisBits:inst|       ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|SomadorSeisBits:inst                                        ; SomadorSeisBits         ; work         ;
+;       |SomadorSeisBits:inst|       ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|SomadorSeisBits:inst                                        ; SomadorSeisBits         ; work         ;
 ;          |Somador:inst2|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|SomadorSeisBits:inst|Somador:inst2                          ; Somador                 ; work         ;
-;          |Somador:inst3|           ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|SomadorSeisBits:inst|Somador:inst3                          ; Somador                 ; work         ;
+;          |Somador:inst3|           ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|SomadorSeisBits:inst|Somador:inst3                          ; Somador                 ; work         ;
 ;          |Somador:inst4|           ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|SomadorSeisBits:inst|Somador:inst4                          ; Somador                 ; work         ;
-;          |Somador:inst5|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|SomadorSeisBits:inst|Somador:inst5                          ; Somador                 ; work         ;
-;       |Subtrator6bits:inst99|      ; 11 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Subtrator6bits:inst99                                       ; Subtrator6bits          ; work         ;
+;          |Somador:inst5|           ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|SomadorSeisBits:inst|Somador:inst5                          ; Somador                 ; work         ;
+;          |Somador:inst6|           ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|SomadorSeisBits:inst|Somador:inst6                          ; Somador                 ; work         ;
+;       |Subtrator6bits:inst99|      ; 12 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Subtrator6bits:inst99                                       ; Subtrator6bits          ; work         ;
 ;          |ComplementoDois:inst1|   ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Subtrator6bits:inst99|ComplementoDois:inst1                 ; ComplementoDois         ; work         ;
 ;             |Somador:inst10|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Subtrator6bits:inst99|ComplementoDois:inst1|Somador:inst10  ; Somador                 ; work         ;
-;             |Somador:inst9|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Subtrator6bits:inst99|ComplementoDois:inst1|Somador:inst9   ; Somador                 ; work         ;
-;          |SomadorSeisBits:inst|    ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst                  ; SomadorSeisBits         ; work         ;
+;             |Somador:inst12|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Subtrator6bits:inst99|ComplementoDois:inst1|Somador:inst12  ; Somador                 ; work         ;
+;          |SomadorSeisBits:inst|    ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst                  ; SomadorSeisBits         ; work         ;
 ;             |Somador:inst2|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst|Somador:inst2    ; Somador                 ; work         ;
 ;             |Somador:inst3|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst|Somador:inst3    ; Somador                 ; work         ;
 ;             |Somador:inst4|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst|Somador:inst4    ; Somador                 ; work         ;
 ;             |Somador:inst5|        ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst|Somador:inst5    ; Somador                 ; work         ;
 ;             |Somador:inst6|        ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst|Somador:inst6    ; Somador                 ; work         ;
+;             |Somador:inst|         ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|UnidadeAritmetica:inst|Subtrator6bits:inst99|SomadorSeisBits:inst|Somador:inst     ; Somador                 ; work         ;
 +------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -288,14 +291,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 20                          ;
-; cycloneiii_lcell_comb ; 79                          ;
-;     normal            ; 79                          ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 15                          ;
-;         4 data inputs ; 60                          ;
+; cycloneiii_lcell_comb ; 81                          ;
+;     normal            ; 81                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 12                          ;
+;         4 data inputs ; 61                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 6.43                        ;
+; Average LUT depth     ; 6.62                        ;
 +-----------------------+-----------------------------+
 
 
@@ -313,72 +317,77 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Mon Nov  3 17:23:44 2025
+    Info: Version 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+    Info: Processing started: Tue Nov  4 12:07:50 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file alu.bdf
     Info (12023): Found entity 1: ALU
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Warning (12125): Using design file /quartusprojetos/muxsinal/muxsinal.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (275002): No superset bus at connection
+Warning (275002): No superset bus at connection
+Warning (12125): Using design file /users/hgl/eecs/alu-sd/muxsinal/muxsinal.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: MuxSinal
 Info (12128): Elaborating entity "MuxSinal" for hierarchy "MuxSinal:inst4"
-Warning (12125): Using design file /quartusprojetos/unidadelogica/unidadelogica.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file /users/hgl/eecs/alu-sd/unidadelogica/unidadelogica.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: UnidadeLogica
 Info (12128): Elaborating entity "UnidadeLogica" for hierarchy "UnidadeLogica:inst1"
-Warning (12125): Using design file /quartusprojetos/comparador/comparador.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file /users/hgl/eecs/alu-sd/comparador/comparador.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Comparador
 Info (12128): Elaborating entity "Comparador" for hierarchy "UnidadeLogica:inst1|Comparador:inst3"
 Warning (275011): Block or symbol "AND3" of instance "inst7" overlaps another block or symbol
 Warning (275011): Block or symbol "AND2" of instance "inst51" overlaps another block or symbol
-Warning (12125): Using design file /quartusprojetos/and/opand.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file /users/hgl/eecs/alu-sd/and/opand.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: opAND
 Info (12128): Elaborating entity "opAND" for hierarchy "UnidadeLogica:inst1|opAND:inst"
-Warning (12125): Using design file /quartusprojetos/xor/opxor.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file /users/hgl/eecs/alu-sd/xor/opxor.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: opXOR
 Info (12128): Elaborating entity "opXOR" for hierarchy "UnidadeLogica:inst1|opXOR:inst2"
-Warning (12125): Using design file /quartusprojetos/conversor5bitspara6bits/conversor5bitspara6bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file /users/hgl/eecs/alu-sd/conversor5bitspara6bits/conversor5bitspara6bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Conversor5bitspara6bits
 Info (12128): Elaborating entity "Conversor5bitspara6bits" for hierarchy "Conversor5bitspara6bits:inst2"
-Warning (12125): Using design file /quartusprojetos/muxdozeseis/muxdozeseis.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file /users/hgl/eecs/alu-sd/muxdozeseis/muxdozeseis.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: MUXDozeSeis
 Info (12128): Elaborating entity "MUXDozeSeis" for hierarchy "Conversor5bitspara6bits:inst2|MUXDozeSeis:inst3"
-Warning (12125): Using design file /quartusprojetos/complementodois/complementodois.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file /users/hgl/eecs/alu-sd/complementodois/complementodois.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: ComplementoDois
 Info (12128): Elaborating entity "ComplementoDois" for hierarchy "Conversor5bitspara6bits:inst2|ComplementoDois:inst"
-Warning (12125): Using design file /quartusprojetos/somador/somador.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file /users/hgl/eecs/alu-sd/somador/somador.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Somador
 Info (12128): Elaborating entity "Somador" for hierarchy "Conversor5bitspara6bits:inst2|ComplementoDois:inst|Somador:inst7"
-Warning (12125): Using design file /quartusprojetos/muxmagnitude/muxmagnitude.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file /users/hgl/eecs/alu-sd/muxmagnitude/muxmagnitude.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: MuxMagnitude
 Info (12128): Elaborating entity "MuxMagnitude" for hierarchy "MuxMagnitude:inst5"
-Warning (12125): Using design file /quartusprojetos/minimux/minimux.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file /users/hgl/eecs/alu-sd/minimux/minimux.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: miniMux
 Info (12128): Elaborating entity "miniMux" for hierarchy "MuxMagnitude:inst5|miniMux:inst"
-Warning (12125): Using design file /quartusprojetos/unidadearitmetica/unidadearitmetica.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file /users/hgl/eecs/alu-sd/unidadeandxor/unidadeandxor.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: UnidadeANDXOR
+Info (12128): Elaborating entity "UnidadeANDXOR" for hierarchy "UnidadeANDXOR:inst6"
+Warning (12125): Using design file /users/hgl/eecs/alu-sd/unidadearitmetica/unidadearitmetica.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: UnidadeAritmetica
 Info (12128): Elaborating entity "UnidadeAritmetica" for hierarchy "UnidadeAritmetica:inst"
-Warning (12125): Using design file /quartusprojetos/descomplementador/descomplementador.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file /users/hgl/eecs/alu-sd/descomplementador/descomplementador.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Descomplementador
 Info (12128): Elaborating entity "Descomplementador" for hierarchy "UnidadeAritmetica:inst|Descomplementador:inst1"
-Warning (12125): Using design file /quartusprojetos/somadorseisbits/somadorseisbits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file /users/hgl/eecs/alu-sd/somadorseisbits/somadorseisbits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: SomadorSeisBits
 Info (12128): Elaborating entity "SomadorSeisBits" for hierarchy "UnidadeAritmetica:inst|SomadorSeisBits:inst"
-Warning (12125): Using design file /quartusprojetos/subtrator6bits/subtrator6bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Warning (12125): Using design file /users/hgl/eecs/alu-sd/subtrator6bits/subtrator6bits.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Subtrator6bits
 Info (12128): Elaborating entity "Subtrator6bits" for hierarchy "UnidadeAritmetica:inst|Subtrator6bits:inst99"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 99 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 100 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 79 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 4785 megabytes
-    Info: Processing ended: Mon Nov  3 17:23:57 2025
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:28
+    Info (21061): Implemented 80 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 4793 megabytes
+    Info: Processing ended: Tue Nov  4 12:08:00 2025
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:09
 
 

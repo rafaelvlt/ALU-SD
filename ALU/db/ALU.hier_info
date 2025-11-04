@@ -1,15 +1,25 @@
 |ALU
 Status <= MuxSinal:inst4.outcomp
 A[0] => Conversor5bitspara6bits:inst2.IN0
+A[0] => UnidadeANDXOR:inst6.A[0]
 A[1] => Conversor5bitspara6bits:inst2.IN1
+A[1] => UnidadeANDXOR:inst6.A[1]
 A[2] => Conversor5bitspara6bits:inst2.IN2
+A[2] => UnidadeANDXOR:inst6.A[2]
 A[3] => Conversor5bitspara6bits:inst2.IN3
+A[3] => UnidadeANDXOR:inst6.A[3]
 A[4] => Conversor5bitspara6bits:inst2.Sinal
+A[4] => UnidadeANDXOR:inst6.A[4]
 B[0] => Conversor5bitspara6bits:inst3.IN0
+B[0] => UnidadeANDXOR:inst6.B[0]
 B[1] => Conversor5bitspara6bits:inst3.IN1
+B[1] => UnidadeANDXOR:inst6.B[1]
 B[2] => Conversor5bitspara6bits:inst3.IN2
+B[2] => UnidadeANDXOR:inst6.B[2]
 B[3] => Conversor5bitspara6bits:inst3.IN3
+B[3] => UnidadeANDXOR:inst6.B[3]
 B[4] => Conversor5bitspara6bits:inst3.Sinal
+B[4] => UnidadeANDXOR:inst6.B[4]
 Seletor[0] => MuxSinal:inst4.S[0]
 Seletor[0] => MuxMagnitude:inst5.Seletor[0]
 Seletor[1] => MuxSinal:inst4.S[1]
@@ -41,7 +51,7 @@ Maior => inst2.IN3
 
 
 |ALU|UnidadeLogica:inst1
-MENOR <= Comparador:inst3.MENOR
+IGUAL <= Comparador:inst3.IGUAL
 A[0] => Comparador:inst3.A[0]
 A[0] => opAND:inst.A[0]
 A[0] => opXOR:inst2.A[0]
@@ -78,8 +88,8 @@ B[4] => opXOR:inst2.B[4]
 B[5] => Comparador:inst3.B[5]
 B[5] => opAND:inst.B[5]
 B[5] => opXOR:inst2.B[5]
-MAIOR <= Comparador:inst3.MAIOR
-IGUAL <= Comparador:inst3.IGUAL
+Maior <= Comparador:inst3.MENOR
+Menor <= Comparador:inst3.MAIOR
 AND[0] <= opAND:inst.OUT[0]
 AND[1] <= opAND:inst.OUT[1]
 AND[2] <= opAND:inst.OUT[2]
@@ -619,6 +629,87 @@ AND => inst3.IN3
 Sub => inst1.IN3
 Soma => inst.IN3
 C2deB => inst2.IN3
+
+
+|ALU|UnidadeANDXOR:inst6
+AND[0] <= opXOR:inst.OUT[0]
+AND[1] <= opXOR:inst.OUT[1]
+AND[2] <= opXOR:inst.OUT[2]
+AND[3] <= opXOR:inst.OUT[3]
+AND[4] <= opXOR:inst.OUT[4]
+AND[5] <= opXOR:inst.OUT[5]
+A[0] => opXOR:inst.A[0]
+A[0] => opAND:inst2.A[0]
+A[1] => opXOR:inst.A[1]
+A[1] => opAND:inst2.A[1]
+A[2] => opXOR:inst.A[2]
+A[2] => opAND:inst2.A[2]
+A[3] => opXOR:inst.A[3]
+A[3] => opAND:inst2.A[3]
+A[4] => opXOR:inst.A[4]
+A[4] => opAND:inst2.A[4]
+A[5] => opXOR:inst.A[5]
+A[5] => opAND:inst2.A[5]
+B[0] => opXOR:inst.B[0]
+B[0] => opAND:inst2.B[0]
+B[1] => opXOR:inst.B[1]
+B[1] => opAND:inst2.B[1]
+B[2] => opXOR:inst.B[2]
+B[2] => opAND:inst2.B[2]
+B[3] => opXOR:inst.B[3]
+B[3] => opAND:inst2.B[3]
+B[4] => opXOR:inst.B[4]
+B[4] => opAND:inst2.B[4]
+B[5] => opXOR:inst.B[5]
+B[5] => opAND:inst2.B[5]
+XOR[0] <= opAND:inst2.OUT[0]
+XOR[1] <= opAND:inst2.OUT[1]
+XOR[2] <= opAND:inst2.OUT[2]
+XOR[3] <= opAND:inst2.OUT[3]
+XOR[4] <= opAND:inst2.OUT[4]
+XOR[5] <= opAND:inst2.OUT[5]
+
+
+|ALU|UnidadeANDXOR:inst6|opXOR:inst
+OUT[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst.IN0
+A[1] => inst1.IN0
+A[2] => inst2.IN0
+A[3] => inst3.IN0
+A[4] => inst4.IN0
+A[5] => inst5.IN0
+B[0] => inst.IN1
+B[1] => inst1.IN1
+B[2] => inst2.IN1
+B[3] => inst3.IN1
+B[4] => inst4.IN1
+B[5] => inst5.IN1
+
+
+|ALU|UnidadeANDXOR:inst6|opAND:inst2
+OUT[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst.IN0
+A[1] => inst1.IN0
+A[2] => inst2.IN0
+A[3] => inst4.IN0
+A[4] => inst5.IN0
+A[5] => inst6.IN0
+B[0] => inst.IN1
+B[1] => inst1.IN1
+B[2] => inst2.IN1
+B[3] => inst4.IN1
+B[4] => inst5.IN1
+B[5] => inst6.IN1
 
 
 |ALU|UnidadeAritmetica:inst
